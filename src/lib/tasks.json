@@ -1,0 +1,422 @@
+[
+	{
+		"Task": "Data Capture 1",
+		" ": "Yes",
+		"Date": "March 24, 2026 \u2192 March 25, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-384",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Orchestrator Returns \u201cNo Response\u201d ",
+		" ": "Yes",
+		"Date": "March 17, 2026 \u2192 March 18, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-354",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Update Usage Overview Cards ",
+		" ": "Yes",
+		"Date": "March 20, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-363",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Image Recognition Feature-Learn more page",
+		" ": "Yes",
+		"Date": "March 20, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-362",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "WriteHere",
+		" ": "Yes",
+		"Date": "March 21, 2026",
+		"LINK": "https://github.com/principia-ai/WriteHERE",
+		"Task Type": "Personal"
+	},
+	{
+		"Task": "\u00a0Modifier Name Prompt Appears Multiple Times",
+		" ": "Yes",
+		"Date": "March 23, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-375",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "PII Masking Framework",
+		" ": "Yes",
+		"Date": "March 23, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-374",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "OCR Integration for Knowledge Base",
+		" ": "Yes",
+		"Date": "March 23, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "KT on Setup",
+		" ": "Yes",
+		"Date": "March 13, 2026",
+		"LINK": "",
+		"Task Type": "Chore, Work"
+	},
+	{
+		"Task": "KT on Code",
+		" ": "Yes",
+		"Date": "March 16, 2026",
+		"LINK": "",
+		"Task Type": "Chore, Work"
+	},
+	{
+		"Task": "Semantic KB answer not provided correctly for spreadsheet-based query",
+		" ": "Yes",
+		"Date": "March 27, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-156",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Doc Ock",
+		" ": "Yes",
+		"Date": "March 28, 2026 \u2192 March 29, 2026",
+		"LINK": "https://github.com/kgoel59/doc-ock",
+		"Task Type": "Personal"
+	},
+	{
+		"Task": "\u00a0Search functionality not working in Assets feature",
+		" ": "Yes",
+		"Date": "March 26, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-390",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Add ocr_enabled flag in Knowledgebase APIs and upload flow",
+		" ": "Yes",
+		"Date": "March 26, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-145",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Data Capture Prod Issue",
+		" ": "Yes",
+		"Date": "March 27, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-384",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Data Capture 2",
+		" ": "Yes",
+		"Date": "March 30, 2026 \u2192 March 31, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-384",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "OCR Testing",
+		" ": "Yes",
+		"Date": "March 30, 2026 \u2192 March 31, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "\u00a0Search functionality not working in Assets feature - 2",
+		" ": "Yes",
+		"Date": "March 30, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-390",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Wash Clothes",
+		" ": "Yes",
+		"Date": "March 31, 2026",
+		"LINK": "",
+		"Task Type": "Chore, Personal"
+	},
+	{
+		"Task": "OCR Issue 2",
+		" ": "Yes",
+		"Date": "April 1, 2026 \u2192 April 4, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Take Charger from Omkar",
+		" ": "Yes",
+		"Date": "April 1, 2026",
+		"LINK": "",
+		"Task Type": "Chore"
+	},
+	{
+		"Task": "Audit Trail Logs Not Reflecting Correct Changes",
+		" ": "Yes",
+		"Date": "April 1, 2026 \u2192 April 4, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-407",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Sent Keka regularise after confirming",
+		" ": "Yes",
+		"Date": "April 2, 2026",
+		"LINK": "",
+		"Task Type": "Chore"
+	},
+	{
+		"Task": "Test Semantic",
+		" ": "Yes",
+		"Date": "April 8, 2026 \u2192 April 9, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-156",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Create a tool for one click setup",
+		" ": "Yes",
+		"Date": "April 4, 2026 \u2192 April 7, 2026",
+		"LINK": "",
+		"Task Type": "Personal"
+	},
+	{
+		"Task": "Dynamic Tool Integration in UI",
+		" ": "Yes",
+		"Date": "April 6, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-446",
+		"Task Type": "Chore"
+	},
+	{
+		"Task": "OCR Testing",
+		" ": "Yes",
+		"Date": "April 6, 2026",
+		"LINK": "",
+		"Task Type": "Chore"
+	},
+	{
+		"Task": "Add fields to Data Capture",
+		" ": "Yes",
+		"Date": "April 6, 2026 \u2192 April 8, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-416",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Tool Capture Fix",
+		" ": "Yes",
+		"Date": "April 7, 2026 \u2192 April 8, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-422",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Change agent_status to active",
+		" ": "Yes",
+		"Date": "April 7, 2026 \u2192 April 8, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-407",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "OCR 3",
+		" ": "Yes",
+		"Date": "April 9, 2026",
+		"LINK": "https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing",
+		"Task Type": "Chore, Work"
+	},
+	{
+		"Task": "BE- Provide Currency Conversion Support for Dashboard Total Cost",
+		" ": "Yes",
+		"Date": "April 7, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-420",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Create PRs for Prod",
+		" ": "Yes",
+		"Date": "April 9, 2026",
+		"LINK": "",
+		"Task Type": "Chore, Work"
+	},
+	{
+		"Task": "Agentic Cache Issue",
+		" ": "Yes",
+		"Date": "April 13, 2026 \u2192 April 17, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-172",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "AI Assistant Dashboard Metrics API",
+		" ": "Yes",
+		"Date": "April 15, 2026 \u2192 April 16, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-424",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Prod Issue",
+		" ": "Yes",
+		"Date": "April 10, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-363",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Tool Trace 2",
+		" ": "Yes",
+		"Date": "April 13, 2026 \u2192 April 14, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-422",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "OCR 4",
+		" ": "Yes",
+		"Date": "April 20, 2026 \u2192 April 21, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Global Variable",
+		" ": "Yes",
+		"Date": "April 16, 2026 \u2192 April 17, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-452",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Integration API",
+		" ": "Yes",
+		"Date": "April 14, 2026 \u2192 April 15, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-446",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Currency Conversion",
+		" ": "Yes",
+		"Date": "April 15, 2026 \u2192 April 16, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-420",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Prod Issue",
+		" ": "Yes",
+		"Date": "April 16, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-172",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "AI Assistant Dashboard Metrics API 2",
+		" ": "Yes",
+		"Date": "April 17, 2026 \u2192 April 17, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-424",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Prod PR",
+		" ": "Yes",
+		"Date": "May 5, 2026 \u2192 May 7, 2026",
+		"LINK": "",
+		"Task Type": "Chore, Work"
+	},
+	{
+		"Task": "GPT Setup",
+		" ": "Yes",
+		"Date": "April 18, 2026",
+		"LINK": "OpenWebUI",
+		"Task Type": "Personal"
+	},
+	{
+		"Task": "Enable Status for Delete - 1",
+		" ": "Yes",
+		"Date": "April 21, 2026 \u2192 April 22, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-463",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Intgration API",
+		" ": "Yes",
+		"Date": "April 20, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-446",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Update Metric for 3rd Card",
+		" ": "Yes",
+		"Date": "April 22, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-466",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Campaign Automation - 1 - 1",
+		" ": "Yes",
+		"Date": "April 23, 2026 \u2192 April 24, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-478",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "OCR - 5",
+		" ": "Yes",
+		"Date": "May 4, 2026 \u2192 May 5, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Campaign Automation - 2",
+		" ": "Yes",
+		"Date": "April 27, 2026 \u2192 April 29, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-478",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "Semantic Sheet Upload",
+		" ": "Yes",
+		"Date": "May 4, 2026 \u2192 May 5, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-470",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Campaigns API Fix",
+		" ": "Yes",
+		"Date": "May 6, 2026 \u2192 May 7, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-478",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "\nAdd a retry/filter to fix wrong status code in fallback",
+		" ": "Yes",
+		"Date": "May 6, 2026 \u2192 May 8, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-496",
+		"Task Type": "Development, Issue"
+	},
+	{
+		"Task": "Set up Backend Repo",
+		" ": "Yes",
+		"Date": "May 11, 2026",
+		"LINK": "",
+		"Task Type": "Chore"
+	},
+	{
+		"Task": "Move Pinecone to Qdrant - 1",
+		" ": "Yes",
+		"Date": "May 12, 2026 \u2192 May 12, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-508",
+		"Task Type": "Development"
+	},
+	{
+		"Task": "[Stage] Assistant Preview Displays Image URLs Instead of Rendering Images - 1",
+		" ": "Yes",
+		"Date": "May 12, 2026 \u2192 May 12, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-504",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Global vars - 2",
+		" ": "Yes",
+		"Date": "May 13, 2026",
+		"LINK": "https://chat360-jira.atlassian.net/browse/AA-452",
+		"Task Type": "Issue"
+	},
+	{
+		"Task": "Move Pinecone to Qdrant - 2",
+		" ": "No",
+		"Date": "May 14, 2026",
+		"LINK": "",
+		"Task Type": ""
+	},
+	{
+		"Task": "Wfh",
+		" ": "Yes",
+		"Date": "May 13, 2026",
+		"LINK": "",
+		"Task Type": "Personal"
+	}
+]

@@ -1,0 +1,2983 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Work Dashboard</title>
+		<style>
+			/* cspell:disable-file */
+			/* webkit printing magic: print all background colors */
+			html {
+				-webkit-print-color-adjust: exact;
+			}
+			* {
+				box-sizing: border-box;
+				-webkit-print-color-adjust: exact;
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			@media only screen {
+				body {
+					margin: 2em auto;
+					max-width: 900px;
+					color: rgb(55, 53, 47);
+				}
+			}
+
+			body {
+				line-height: 1.5;
+				white-space: pre-wrap;
+			}
+
+			a,
+			a.visited {
+				color: inherit;
+				text-decoration: underline;
+			}
+
+			.pdf-relative-link-path {
+				font-size: 80%;
+				color: #444;
+			}
+
+			h1,
+			h2,
+			h3 {
+				letter-spacing: -0.01em;
+				line-height: 1.2;
+				font-weight: 600;
+				margin-bottom: 0;
+			}
+
+			/* Override strong tags inside headings to maintain consistent weight */
+			h1 strong,
+			h2 strong,
+			h3 strong {
+				font-weight: 600;
+			}
+
+			.page-title {
+				font-size: 2.5rem;
+				font-weight: 700;
+				margin-top: 0;
+				margin-bottom: 0.75em;
+			}
+
+			h1 {
+				font-size: 1.875rem;
+				margin-top: 1.875rem;
+			}
+
+			h2 {
+				font-size: 1.5rem;
+				margin-top: 1.5rem;
+			}
+
+			h3 {
+				font-size: 1.25rem;
+				margin-top: 1.25rem;
+			}
+
+			.source {
+				border: 1px solid #ddd;
+				border-radius: 3px;
+				padding: 1.5em;
+				word-break: break-all;
+			}
+
+			.callout {
+				border-radius: 10px;
+				padding: 1rem;
+			}
+
+			figure {
+				margin: 1.25em 0;
+				page-break-inside: avoid;
+			}
+
+			figcaption {
+				opacity: 0.5;
+				font-size: 85%;
+				margin-top: 0.5em;
+			}
+
+			mark {
+				background-color: transparent;
+			}
+
+			.indented {
+				padding-left: 1.5em;
+			}
+
+			hr {
+				background: transparent;
+				display: block;
+				width: 100%;
+				height: 1px;
+				visibility: visible;
+				border: none;
+				border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+			}
+
+			img {
+				max-width: 100%;
+			}
+
+			@media only print {
+				img {
+					max-height: 100vh;
+					object-fit: contain;
+				}
+
+				table.collection-content {
+					width: 100%;
+					table-layout: fixed;
+				}
+
+				table.collection-content th,
+				table.collection-content td {
+					overflow-wrap: anywhere;
+				}
+
+				table.collection-content td > .user,
+				table.collection-content td > time {
+					white-space: pre-wrap;
+				}
+			}
+
+			@page {
+				margin: 1in;
+			}
+
+			.collection-content-wrapper {
+				overflow-x: auto;
+			}
+
+			@media only print {
+				.collection-content-wrapper {
+					overflow-x: visible;
+				}
+			}
+
+			.collection-content {
+				font-size: 0.875rem;
+			}
+
+			.collection-content td {
+				white-space: pre-wrap;
+				word-break: break-word;
+			}
+
+			.column-list {
+				display: flex;
+				gap: 46px;
+			}
+
+			.column {
+				min-width: 0;
+				overflow: hidden;
+			}
+
+			.column > *:first-child {
+				margin-top: 0;
+			}
+
+			.table_of_contents-item {
+				display: block;
+				font-size: 0.875rem;
+				line-height: 1.3;
+				padding: 0.125rem;
+			}
+
+			.table_of_contents-indent-1 {
+				margin-left: 1.5rem;
+			}
+
+			.table_of_contents-indent-2 {
+				margin-left: 3rem;
+			}
+
+			.table_of_contents-indent-3 {
+				margin-left: 4.5rem;
+			}
+
+			.table_of_contents-link {
+				text-decoration: none;
+				opacity: 0.7;
+				border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+			}
+
+			table,
+			th,
+			td {
+				border: 1px solid rgba(55, 53, 47, 0.09);
+			}
+
+			table {
+				border-collapse: collapse;
+				border-left: none;
+				border-right: none;
+			}
+
+			th,
+			td {
+				font-weight: normal;
+				padding: 0.25em 0.5em;
+				line-height: 1.5;
+				min-height: 1.5em;
+				text-align: left;
+			}
+
+			th {
+				color: rgba(55, 53, 47, 0.6);
+			}
+
+			ol,
+			ul {
+				margin: 0;
+				margin-block-start: 0.6em;
+				margin-block-end: 0.6em;
+			}
+
+			li > ol:first-child,
+			li > ul:first-child {
+				margin-block-start: 0.6em;
+			}
+
+			ul > li {
+				list-style: disc;
+			}
+
+			ul.to-do-list {
+				padding-inline-start: 0;
+			}
+
+			ul.to-do-list > li {
+				list-style: none;
+			}
+
+			.to-do-children-checked {
+				text-decoration: line-through;
+				opacity: 0.375;
+			}
+
+			ul.toggle > li {
+				list-style: none;
+			}
+
+			ul {
+				padding-inline-start: 1.7em;
+			}
+
+			ul > li {
+				padding-left: 0.1em;
+			}
+
+			ol {
+				padding-inline-start: 1.6em;
+			}
+
+			ol.numbered-list.numbered-list-digits-2 {
+				padding-inline-start: 2em;
+			}
+
+			ol.numbered-list.numbered-list-digits-3plus {
+				padding-inline-start: 2.4em;
+			}
+
+			ol > li {
+				padding-left: 0.2em;
+			}
+
+			.mono ol {
+				padding-inline-start: 2em;
+			}
+
+			.mono ol > li {
+				text-indent: -0.4em;
+			}
+
+			.toggle {
+				padding-inline-start: 0em;
+				list-style-type: none;
+			}
+
+			/* Indent toggle children */
+			.toggle > li > details {
+				padding-left: 1.7em;
+			}
+
+			.toggle > li > details > summary {
+				margin-left: -1.1em;
+			}
+
+			.selected-value {
+				display: inline-block;
+				padding: 0 0.5em;
+				background: rgba(206, 205, 202, 0.5);
+				border-radius: 3px;
+				margin-right: 0.5em;
+				margin-top: 0.3em;
+				margin-bottom: 0.3em;
+				white-space: nowrap;
+			}
+
+			.collection-title {
+				display: inline-block;
+				margin-right: 1em;
+			}
+
+			.page-description {
+				margin-bottom: 2em;
+			}
+
+			.simple-table {
+				margin-top: 1em;
+				font-size: 0.875rem;
+				empty-cells: show;
+			}
+			.simple-table td {
+				height: 29px;
+				min-width: 120px;
+			}
+
+			.simple-table th {
+				height: 29px;
+				min-width: 120px;
+			}
+
+			.simple-table-header-color {
+				background: rgb(247, 246, 243);
+				color: black;
+			}
+			.simple-table-header {
+				font-weight: 500;
+			}
+
+			time {
+				opacity: 0.5;
+			}
+
+			.icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				max-width: 1.2em;
+				max-height: 1.2em;
+				text-decoration: none;
+				vertical-align: text-bottom;
+				margin-right: 0.5em;
+			}
+
+			img.icon {
+				border-radius: 3px;
+			}
+
+			.callout img.notion-static-icon {
+				width: 1em;
+				height: 1em;
+			}
+
+			.callout p {
+				margin: 0;
+			}
+
+			.callout h1,
+			.callout h2,
+			.callout h3 {
+				margin: 0 0 0.6rem;
+			}
+
+			.user-icon {
+				width: 1.5em;
+				height: 1.5em;
+				border-radius: 100%;
+				margin-right: 0.5rem;
+			}
+
+			.user-icon-inner {
+				font-size: 0.8em;
+			}
+
+			.text-icon {
+				border: 1px solid #000;
+				text-align: center;
+			}
+
+			.page-cover-image {
+				display: block;
+				object-fit: cover;
+				width: 100%;
+				max-height: 30vh;
+			}
+
+			.page-header-icon {
+				font-size: 3rem;
+				margin-bottom: 1rem;
+			}
+
+			.page-header-icon-with-cover {
+				margin-top: -0.72em;
+				margin-left: 0.07em;
+			}
+
+			.page-header-icon img {
+				border-radius: 3px;
+			}
+
+			.link-to-page {
+				margin: 1em 0;
+				padding: 0;
+				border: none;
+				font-weight: 500;
+			}
+
+			p > .user {
+				opacity: 0.5;
+			}
+
+			td > .user,
+			td > time {
+				white-space: nowrap;
+			}
+
+			input[type='checkbox'] {
+				transform: scale(1.5);
+				margin-right: 0.6em;
+				vertical-align: middle;
+			}
+
+			p {
+				margin-top: 0.5em;
+				margin-bottom: 0.5em;
+			}
+
+			.image {
+				border: none;
+				margin: 1.5em 0;
+				padding: 0;
+				border-radius: 0;
+				text-align: center;
+			}
+
+			.code,
+			code {
+				background: rgba(135, 131, 120, 0.15);
+				border-radius: 3px;
+				padding: 0.2em 0.4em;
+				border-radius: 3px;
+				font-size: 85%;
+				tab-size: 2;
+			}
+
+			code {
+				color: #eb5757;
+			}
+
+			.code {
+				padding: 1.5em 1em;
+			}
+
+			.code-wrap {
+				white-space: pre-wrap;
+				word-break: break-all;
+			}
+
+			.code > code {
+				background: none;
+				padding: 0;
+				font-size: 100%;
+				color: inherit;
+			}
+
+			blockquote {
+				font-size: 1em;
+				margin: 1em 0;
+				padding-left: 1em;
+				border-left: 3px solid rgb(55, 53, 47);
+			}
+
+			blockquote.quote-large {
+				font-size: 1.25em;
+			}
+
+			.bookmark {
+				text-decoration: none;
+				max-height: 8em;
+				padding: 0;
+				display: flex;
+				width: 100%;
+				align-items: stretch;
+			}
+
+			.bookmark-title {
+				font-size: 0.85em;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				height: 1.75em;
+				white-space: nowrap;
+			}
+
+			.bookmark-text {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.bookmark-info {
+				flex: 4 1 180px;
+				padding: 12px 14px 14px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			.bookmark-image {
+				width: 33%;
+				flex: 1 1 180px;
+				display: block;
+				position: relative;
+				object-fit: cover;
+				border-radius: 1px;
+			}
+
+			.bookmark-description {
+				color: rgba(55, 53, 47, 0.6);
+				font-size: 0.75em;
+				overflow: hidden;
+				max-height: 4.5em;
+				word-break: break-word;
+			}
+
+			.bookmark-href {
+				font-size: 0.75em;
+				margin-top: 0.25em;
+			}
+
+			.sans {
+				font-family:
+					ui-sans-serif,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI Variable Display',
+					'Segoe UI',
+					Helvetica,
+					'Apple Color Emoji',
+					'Noto Sans Arabic',
+					'Noto Sans Hebrew',
+					Arial,
+					sans-serif,
+					'Segoe UI Emoji',
+					'Segoe UI Symbol';
+			}
+			.code {
+				font-family:
+					'SFMono-Regular', Menlo, Consolas, 'PT Mono', 'Liberation Mono', Courier, monospace;
+			}
+			.serif {
+				font-family: Lyon-Text, Georgia, ui-serif, serif;
+			}
+			.mono {
+				font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+			}
+			.pdf .sans {
+				font-family:
+					Inter,
+					ui-sans-serif,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI Variable Display',
+					'Segoe UI',
+					Helvetica,
+					'Apple Color Emoji',
+					'Noto Sans Arabic',
+					'Noto Sans Hebrew',
+					Arial,
+					sans-serif,
+					'Segoe UI Emoji',
+					'Segoe UI Symbol',
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Sans CJK JP';
+			}
+			.pdf:lang(zh-CN) .sans {
+				font-family:
+					Inter,
+					ui-sans-serif,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI Variable Display',
+					'Segoe UI',
+					Helvetica,
+					'Apple Color Emoji',
+					'Noto Sans Arabic',
+					'Noto Sans Hebrew',
+					Arial,
+					sans-serif,
+					'Segoe UI Emoji',
+					'Segoe UI Symbol',
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Sans CJK SC';
+			}
+			.pdf:lang(zh-TW) .sans {
+				font-family:
+					Inter,
+					ui-sans-serif,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI Variable Display',
+					'Segoe UI',
+					Helvetica,
+					'Apple Color Emoji',
+					'Noto Sans Arabic',
+					'Noto Sans Hebrew',
+					Arial,
+					sans-serif,
+					'Segoe UI Emoji',
+					'Segoe UI Symbol',
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Sans CJK TC';
+			}
+			.pdf:lang(ko-KR) .sans {
+				font-family:
+					Inter,
+					ui-sans-serif,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI Variable Display',
+					'Segoe UI',
+					Helvetica,
+					'Apple Color Emoji',
+					'Noto Sans Arabic',
+					'Noto Sans Hebrew',
+					Arial,
+					sans-serif,
+					'Segoe UI Emoji',
+					'Segoe UI Symbol',
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Sans CJK KR';
+			}
+			.pdf .code {
+				font-family:
+					Source Code Pro,
+					'SFMono-Regular',
+					Menlo,
+					Consolas,
+					'PT Mono',
+					'Liberation Mono',
+					Courier,
+					monospace,
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Sans Mono CJK JP';
+			}
+			.pdf:lang(zh-CN) .code {
+				font-family:
+					Source Code Pro,
+					'SFMono-Regular',
+					Menlo,
+					Consolas,
+					'PT Mono',
+					'Liberation Mono',
+					Courier,
+					monospace,
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Sans Mono CJK SC';
+			}
+			.pdf:lang(zh-TW) .code {
+				font-family:
+					Source Code Pro,
+					'SFMono-Regular',
+					Menlo,
+					Consolas,
+					'PT Mono',
+					'Liberation Mono',
+					Courier,
+					monospace,
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Sans Mono CJK TC';
+			}
+			.pdf:lang(ko-KR) .code {
+				font-family:
+					Source Code Pro,
+					'SFMono-Regular',
+					Menlo,
+					Consolas,
+					'PT Mono',
+					'Liberation Mono',
+					Courier,
+					monospace,
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Sans Mono CJK KR';
+			}
+			.pdf .serif {
+				font-family:
+					PT Serif,
+					Lyon-Text,
+					Georgia,
+					ui-serif,
+					serif,
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Serif CJK JP';
+			}
+			.pdf:lang(zh-CN) .serif {
+				font-family:
+					PT Serif,
+					Lyon-Text,
+					Georgia,
+					ui-serif,
+					serif,
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Serif CJK SC';
+			}
+			.pdf:lang(zh-TW) .serif {
+				font-family:
+					PT Serif,
+					Lyon-Text,
+					Georgia,
+					ui-serif,
+					serif,
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Serif CJK TC';
+			}
+			.pdf:lang(ko-KR) .serif {
+				font-family:
+					PT Serif,
+					Lyon-Text,
+					Georgia,
+					ui-serif,
+					serif,
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Serif CJK KR';
+			}
+			.pdf .mono {
+				font-family:
+					PT Mono,
+					iawriter-mono,
+					Nitti,
+					Menlo,
+					Courier,
+					monospace,
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Sans Mono CJK JP';
+			}
+			.pdf:lang(zh-CN) .mono {
+				font-family:
+					PT Mono,
+					iawriter-mono,
+					Nitti,
+					Menlo,
+					Courier,
+					monospace,
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Sans Mono CJK SC';
+			}
+			.pdf:lang(zh-TW) .mono {
+				font-family:
+					PT Mono,
+					iawriter-mono,
+					Nitti,
+					Menlo,
+					Courier,
+					monospace,
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Sans Mono CJK TC';
+			}
+			.pdf:lang(ko-KR) .mono {
+				font-family:
+					PT Mono,
+					iawriter-mono,
+					Nitti,
+					Menlo,
+					Courier,
+					monospace,
+					'Twemoji',
+					'Noto Color Emoji',
+					'Noto Sans Mono CJK KR';
+			}
+			.highlight-default {
+				color: rgba(44, 44, 43, 1);
+			}
+			.highlight-gray {
+				color: rgba(125, 122, 117, 1);
+				fill: rgba(125, 122, 117, 1);
+			}
+			.highlight-brown {
+				color: rgba(159, 118, 90, 1);
+				fill: rgba(159, 118, 90, 1);
+			}
+			.highlight-orange {
+				color: rgba(210, 123, 45, 1);
+				fill: rgba(210, 123, 45, 1);
+			}
+			.highlight-yellow {
+				color: rgba(203, 148, 52, 1);
+				fill: rgba(203, 148, 52, 1);
+			}
+			.highlight-teal {
+				color: rgba(80, 148, 110, 1);
+				fill: rgba(80, 148, 110, 1);
+			}
+			.highlight-blue {
+				color: rgba(56, 125, 201, 1);
+				fill: rgba(56, 125, 201, 1);
+			}
+			.highlight-purple {
+				color: rgba(154, 107, 180, 1);
+				fill: rgba(154, 107, 180, 1);
+			}
+			.highlight-pink {
+				color: rgba(193, 76, 138, 1);
+				fill: rgba(193, 76, 138, 1);
+			}
+			.highlight-red {
+				color: rgba(207, 81, 72, 1);
+				fill: rgba(207, 81, 72, 1);
+			}
+			.highlight-default_background {
+				color: rgba(44, 44, 43, 1);
+			}
+			.highlight-gray_background {
+				background: rgba(42, 28, 0, 0.07);
+			}
+			.highlight-brown_background {
+				background: rgba(139, 46, 0, 0.086);
+			}
+			.highlight-orange_background {
+				background: rgba(224, 101, 1, 0.129);
+			}
+			.highlight-yellow_background {
+				background: rgba(211, 168, 0, 0.137);
+			}
+			.highlight-teal_background {
+				background: rgba(0, 100, 45, 0.09);
+			}
+			.highlight-blue_background {
+				background: rgba(0, 124, 215, 0.094);
+			}
+			.highlight-purple_background {
+				background: rgba(102, 0, 178, 0.078);
+			}
+			.highlight-pink_background {
+				background: rgba(197, 0, 93, 0.086);
+			}
+			.highlight-red_background {
+				background: rgba(223, 22, 0, 0.094);
+			}
+			.block-color-default {
+				color: inherit;
+				fill: inherit;
+			}
+			.block-color-gray {
+				color: rgba(125, 122, 117, 1);
+				fill: rgba(125, 122, 117, 1);
+			}
+			.block-color-brown {
+				color: rgba(159, 118, 90, 1);
+				fill: rgba(159, 118, 90, 1);
+			}
+			.block-color-orange {
+				color: rgba(210, 123, 45, 1);
+				fill: rgba(210, 123, 45, 1);
+			}
+			.block-color-yellow {
+				color: rgba(203, 148, 52, 1);
+				fill: rgba(203, 148, 52, 1);
+			}
+			.block-color-teal {
+				color: rgba(80, 148, 110, 1);
+				fill: rgba(80, 148, 110, 1);
+			}
+			.block-color-blue {
+				color: rgba(56, 125, 201, 1);
+				fill: rgba(56, 125, 201, 1);
+			}
+			.block-color-purple {
+				color: rgba(154, 107, 180, 1);
+				fill: rgba(154, 107, 180, 1);
+			}
+			.block-color-pink {
+				color: rgba(193, 76, 138, 1);
+				fill: rgba(193, 76, 138, 1);
+			}
+			.block-color-red {
+				color: rgba(207, 81, 72, 1);
+				fill: rgba(207, 81, 72, 1);
+			}
+			.block-color-default_background {
+				color: inherit;
+				fill: inherit;
+			}
+			.block-color-gray_background {
+				background: rgba(240, 239, 237, 1);
+			}
+			.block-color-brown_background {
+				background: rgba(245, 237, 233, 1);
+			}
+			.block-color-orange_background {
+				background: rgba(251, 235, 222, 1);
+			}
+			.block-color-yellow_background {
+				background: rgba(249, 243, 220, 1);
+			}
+			.block-color-teal_background {
+				background: rgba(232, 241, 236, 1);
+			}
+			.block-color-blue_background {
+				background: rgba(229, 242, 252, 1);
+			}
+			.block-color-purple_background {
+				background: rgba(243, 235, 249, 1);
+			}
+			.block-color-pink_background {
+				background: rgba(250, 233, 241, 1);
+			}
+			.block-color-red_background {
+				background: rgba(252, 233, 231, 1);
+			}
+			.select-value-color-default {
+				background-color: rgba(42, 28, 0, 0.07);
+			}
+			.select-value-color-gray {
+				background-color: rgba(28, 19, 1, 0.11);
+			}
+			.select-value-color-brown {
+				background-color: rgba(127, 51, 0, 0.156);
+			}
+			.select-value-color-orange {
+				background-color: rgba(196, 88, 0, 0.203);
+			}
+			.select-value-color-yellow {
+				background-color: rgba(209, 156, 0, 0.282);
+			}
+			.select-value-color-green {
+				background-color: rgba(0, 96, 38, 0.156);
+			}
+			.select-value-color-blue {
+				background-color: rgba(0, 118, 217, 0.203);
+			}
+			.select-value-color-purple {
+				background-color: rgba(92, 0, 163, 0.141);
+			}
+			.select-value-color-pink {
+				background-color: rgba(183, 0, 78, 0.152);
+			}
+			.select-value-color-red {
+				background-color: rgba(206, 24, 0, 0.164);
+			}
+
+			.checkbox {
+				display: inline-flex;
+				vertical-align: text-bottom;
+				width: 16;
+				height: 16;
+				background-size: 16px;
+				margin-left: 2px;
+				margin-right: 5px;
+			}
+
+			.checkbox-on {
+				background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E');
+			}
+
+			.checkbox-off {
+				background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E');
+			}
+		</style>
+	</head>
+	<body>
+		<article id="32c2ff1b-c21f-8020-b95c-f523d2ea3c83" class="page sans">
+			<header>
+				<img
+					class="page-cover-image"
+					src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?ixlib=rb-4.1.0&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"
+					style="object-position: center 15.490000000000004%"
+				/>
+				<div class="page-header-icon page-header-icon-with-cover">
+					<img class="icon" src="Work%20Dashboard/267939444.jpeg" />
+				</div>
+				<h1 class="page-title" dir="auto">Work Dashboard</h1>
+				<p class="page-description" dir="auto"></p>
+			</header>
+			<div class="page-body">
+				<div style="display: contents" dir="auto">
+					<h3 id="1ec8ca04-75d6-49ca-ae22-0f80971751ec" class="">Thing to Note:</h3>
+				</div>
+				<div style="display: contents" dir="auto">
+					<ul id="f2199921-0bdd-4df3-934d-b7e4151376f8" class="bulleted-list">
+						<li style="list-style-type: disc"></li>
+					</ul>
+				</div>
+				<div style="display: contents" dir="auto">
+					<hr id="f5c5fc71-1542-41eb-85d2-57686d12f9a8" />
+				</div>
+				<div style="display: contents" dir="auto">
+					<h3 id="b10cca96-8b72-4275-8c21-250f7a180465" class="">Quick links</h3>
+				</div>
+				<div style="display: contents" dir="auto">
+					<ul id="b41c376f-4fce-4c3c-b455-4ac7f56cf0a0" class="bulleted-list">
+						<li style="list-style-type: disc">
+							Engineering
+							<div style="display: contents" dir="auto">
+								<ul id="09110c21-18dd-48fc-a99d-ca811893184a" class="bulleted-list">
+									<li style="list-style-type: circle">
+										<a href="https://chat360-jira.atlassian.net/browse/AA"
+											>Check assigned tickets (JIRA)</a
+										>
+									</li>
+								</ul>
+							</div>
+							<div style="display: contents" dir="auto">
+								<ul id="db56e688-fa42-44b5-b717-8de8ed30bc45" class="bulleted-list">
+									<li style="list-style-type: circle">
+										<a href="https://github.com/sumanel/chat360-agents">Review PRs (GitHub)</a>
+									</li>
+								</ul>
+							</div>
+							<div style="display: contents" dir="auto">
+								<ul id="89792134-4c23-4ac5-8285-0b48721d5a4f" class="bulleted-list">
+									<li style="list-style-type: circle">
+										<a href="https://staging.chat360.io/">Open staging</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div style="display: contents" dir="auto">
+					<ul id="d13ddd94-8577-4a86-8377-459b05d25608" class="bulleted-list">
+						<li style="list-style-type: disc">
+							Meetings
+							<div style="display: contents" dir="auto">
+								<ul id="f20bd5a4-cd77-4272-939d-714f64e260b4" class="bulleted-list">
+									<li style="list-style-type: circle">
+										<a href="https://meet.google.com/iar-fyds-rib">Start scrum call</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div style="display: contents" dir="auto">
+					<ul id="32e2ff1b-c21f-80e6-be1a-d7d8cc20906b" class="bulleted-list">
+						<li style="list-style-type: disc">
+							Admin
+							<div style="display: contents" dir="auto">
+								<ul id="01d857fb-e8a5-4416-a26c-a9a4553f8ec9" class="bulleted-list">
+									<li style="list-style-type: circle">
+										<a href="https://mail.google.com/mail/u/0/">Open mail</a>
+									</li>
+								</ul>
+							</div>
+							<div style="display: contents" dir="auto">
+								<ul id="1de40613-f9d5-4fba-a9d3-1c9285be8595" class="bulleted-list">
+									<li style="list-style-type: circle">
+										<a href="https://chat360.keka.com/#/home/dashboard">Open Keka</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div style="display: contents" dir="auto">
+					<ul id="32e2ff1b-c21f-80e3-b172-ccb6330258dd" class="bulleted-list">
+						<li style="list-style-type: disc">
+							AI / Docs
+							<div style="display: contents" dir="auto">
+								<ul id="725a0ea9-3d3d-4f80-8153-e1eb44c92f7b" class="bulleted-list">
+									<li style="list-style-type: circle">
+										<a href="http://localhost:3000/">OpenWebUI</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div style="display: contents" dir="auto">
+					<hr id="62688c40-a042-4e66-99ee-f67abfabbd08" />
+				</div>
+				<div style="display: contents" dir="auto">
+					<h3 id="6afe6b53-a8a1-41cc-835f-727441036133" class="">Tasks</h3>
+				</div>
+				<div style="display: contents" dir="ltr">
+					<div id="32c2ff1b-c21f-80bf-86b6-e27332057bd6" class="collection-content">
+						<h4 class="collection-title">To Do List</h4>
+						<div class="collection-content-wrapper">
+							<table class="collection-content">
+								<thead>
+									<tr>
+										<th>
+											<span class="icon property-icon"
+												><img
+													src="https://www.notion.so/icons/checkmark-square_gray.svg"
+													style="width: 14px; height: 14px; display: block"
+											/></span>
+										</th>
+										<th>
+											<span class="icon property-icon"
+												><img
+													src="https://www.notion.so/icons/calendar_gray.svg"
+													style="width: 14px; height: 14px; display: block" /></span
+											>Date
+										</th>
+										<th>
+											<span class="icon property-icon"
+												><img
+													src="https://www.notion.so/icons/font_gray.svg"
+													style="width: 14px; height: 14px; display: block" /></span
+											>Task
+										</th>
+										<th>
+											<span class="icon property-icon"
+												><img
+													src="https://www.notion.so/icons/list_gray.svg"
+													style="width: 14px; height: 14px; display: block" /></span
+											>Task Type
+										</th>
+										<th>
+											<span class="icon property-icon"
+												><img
+													src="https://www.notion.so/icons/link_gray.svg"
+													style="width: 14px; height: 14px; display: block" /></span
+											>LINK
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr id="32e2ff1b-c21f-806b-acfa-cae6cda64438">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 13, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/KT-on-Setup-32e2ff1bc21f806bacfacae6cda64438?pvs=21"
+												>KT on Setup</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span
+											><span class="selected-value select-value-color-gray">Work</span>
+										</td>
+										<td class="cell-;yWO"></td>
+									</tr>
+									<tr id="32e2ff1b-c21f-8046-8743-ec40ab00e6bb">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 16, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/KT-on-Code-32e2ff1bc21f80468743ec40ab00e6bb?pvs=21"
+												>KT on Code</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span
+											><span class="selected-value select-value-color-gray">Work</span>
+										</td>
+										<td class="cell-;yWO"></td>
+									</tr>
+									<tr id="32d2ff1b-c21f-8042-b91a-f1c2db732e1e">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 17, 2026 → March 18, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Orchestrator-Returns-No-Response-32d2ff1bc21f8042b91af1c2db732e1e?pvs=21"
+												>Orchestrator Returns “No Response”
+											</a>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-354" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-354</a
+											>
+										</td>
+									</tr>
+									<tr id="32d2ff1b-c21f-800b-8c8a-d08fd555e265">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 20, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Image-Recognition-Feature-Learn-more-page-32d2ff1bc21f800b8c8ad08fd555e265?pvs=21"
+												>Image Recognition Feature-Learn more page</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-362" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-362</a
+											>
+										</td>
+									</tr>
+									<tr id="32d2ff1b-c21f-8033-813d-e2930c71275c">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 20, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Update-Usage-Overview-Cards-32d2ff1bc21f8033813de2930c71275c?pvs=21"
+												>Update Usage Overview Cards
+											</a>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-363" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-363</a
+											>
+										</td>
+									</tr>
+									<tr id="32d2ff1b-c21f-80eb-949e-e354c82da546">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 21, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/WriteHere-32d2ff1bc21f80eb949ee354c82da546?pvs=21"
+												>WriteHere</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-green">Personal</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://github.com/principia-ai/WriteHERE" class="url-value"
+												>https://github.com/principia-ai/WriteHERE</a
+											>
+										</td>
+									</tr>
+									<tr id="32d2ff1b-c21f-80e6-a21c-ea5698c62442">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 23, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/OCR-Integration-for-Knowledge-Base-32d2ff1bc21f80e6a21cea5698c62442?pvs=21"
+												>OCR Integration for Knowledge Base</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-115" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-115</a
+											>
+										</td>
+									</tr>
+									<tr id="32d2ff1b-c21f-8034-af5c-d13f96054187">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 23, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/PII-Masking-Framework-32d2ff1bc21f8034af5cd13f96054187?pvs=21"
+												>PII Masking Framework</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-374" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-374</a
+											>
+										</td>
+									</tr>
+									<tr id="32d2ff1b-c21f-80a6-9a5f-ecc791cc7e97">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 23, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Modifier-Name-Prompt-Appears-Multiple-Times-32d2ff1bc21f80a69a5fecc791cc7e97?pvs=21"
+												> Modifier Name Prompt Appears Multiple Times</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-375" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-375</a
+											>
+										</td>
+									</tr>
+									<tr id="32d2ff1b-c21f-80dc-b762-d05b84596ccd">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 24, 2026 → March 25, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Data-Capture-1-32d2ff1bc21f80dcb762d05b84596ccd?pvs=21"
+												>Data Capture 1</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-384" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-384</a
+											>
+										</td>
+									</tr>
+									<tr id="32f2ff1b-c21f-80a3-800c-dbdabffbbaf3">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 26, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Add-ocr_enabled-flag-in-Knowledgebase-APIs-and-upload-flow-32f2ff1bc21f80a3800cdbdabffbbaf3?pvs=21"
+												>Add ocr_enabled flag in Knowledgebase APIs and upload flow</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-145" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-145</a
+											>
+										</td>
+									</tr>
+									<tr id="32f2ff1b-c21f-80e8-8a49-c7758cd9dfcf">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 26, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Search-functionality-not-working-in-Assets-feature-32f2ff1bc21f80e88a49c7758cd9dfcf?pvs=21"
+												> Search functionality not working in Assets feature</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-390" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-390</a
+											>
+										</td>
+									</tr>
+									<tr id="3302ff1b-c21f-8093-8a15-c9035335e4f9">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 27, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Data-Capture-Prod-Issue-3302ff1bc21f80938a15c9035335e4f9?pvs=21"
+												>Data Capture Prod Issue</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-384" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-384</a
+											>
+										</td>
+									</tr>
+									<tr id="32f2ff1b-c21f-800a-bc6a-efcb96abaadf">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 27, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Semantic-KB-answer-not-provided-correctly-for-spreadsheet-based-query-32f2ff1bc21f800abc6aefcb96abaadf?pvs=21"
+												>Semantic KB answer not provided correctly for spreadsheet-based query</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-156" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-156</a
+											>
+										</td>
+									</tr>
+									<tr id="32f2ff1b-c21f-802f-ba1b-f5781ecb172b">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 28, 2026 → March 29, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Doc-Ock-32f2ff1bc21f802fba1bf5781ecb172b?pvs=21"
+												>Doc Ock</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-green">Personal</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://github.com/kgoel59/doc-ock" class="url-value"
+												>https://github.com/kgoel59/doc-ock</a
+											>
+										</td>
+									</tr>
+									<tr id="3332ff1b-c21f-806c-bcfe-fe7cc7009549">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 30, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Search-functionality-not-working-in-Assets-feature-2-3332ff1bc21f806cbcfefe7cc7009549?pvs=21"
+												> Search functionality not working in Assets feature - 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-390" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-390</a
+											>
+										</td>
+									</tr>
+									<tr id="3332ff1b-c21f-8031-b62d-cbb78e2ede02">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 30, 2026 → March 31, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/OCR-Testing-3332ff1bc21f8031b62dcbb78e2ede02?pvs=21"
+												>OCR Testing</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-115" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-115</a
+											>
+										</td>
+									</tr>
+									<tr id="3302ff1b-c21f-80df-a7fa-d728c0175484">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 30, 2026 → March 31, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Data-Capture-2-3302ff1bc21f80dfa7fad728c0175484?pvs=21"
+												>Data Capture 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-384" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-384</a
+											>
+										</td>
+									</tr>
+									<tr id="3342ff1b-c21f-8017-bcae-d46acd4c840d">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>March 31, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Wash-Clothes-3342ff1bc21f8017bcaed46acd4c840d?pvs=21"
+												>Wash Clothes</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span
+											><span class="selected-value select-value-color-green">Personal</span>
+										</td>
+										<td class="cell-;yWO"></td>
+									</tr>
+									<tr id="3352ff1b-c21f-800d-956e-f23b7cb387b6">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 1, 2026 → April 4, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Audit-Trail-Logs-Not-Reflecting-Correct-Changes-3352ff1bc21f800d956ef23b7cb387b6?pvs=21"
+												>Audit Trail Logs Not Reflecting Correct Changes</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-407" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-407</a
+											>
+										</td>
+									</tr>
+									<tr id="3342ff1b-c21f-8036-8f48-e289b6c07706">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 1, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Take-Charger-from-Omkar-3342ff1bc21f80368f48e289b6c07706?pvs=21"
+												>Take Charger from Omkar</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span>
+										</td>
+										<td class="cell-;yWO"></td>
+									</tr>
+									<tr id="3342ff1b-c21f-80b2-a619-da8af06ab12f">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 1, 2026 → April 4, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/OCR-Issue-2-3342ff1bc21f80b2a619da8af06ab12f?pvs=21"
+												>OCR Issue 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-115" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-115</a
+											>
+										</td>
+									</tr>
+									<tr id="3362ff1b-c21f-80de-bb3c-d387e30f08ba">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 2, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Sent-Keka-regularise-after-confirming-3362ff1bc21f80debb3cd387e30f08ba?pvs=21"
+												>Sent Keka regularise after confirming</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span>
+										</td>
+										<td class="cell-;yWO"></td>
+									</tr>
+									<tr id="3382ff1b-c21f-80a0-8196-f1205bf7e9b0">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 4, 2026 → April 7, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Create-a-tool-for-one-click-setup-3382ff1bc21f80a08196f1205bf7e9b0?pvs=21"
+												>Create a tool for one click setup</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-green">Personal</span>
+										</td>
+										<td class="cell-;yWO"></td>
+									</tr>
+									<tr id="33a2ff1b-c21f-804d-bc9d-c01b2c8e14b4">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 6, 2026 → April 8, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Add-fields-to-Data-Capture-33a2ff1bc21f804dbc9dc01b2c8e14b4?pvs=21"
+												>Add fields to Data Capture</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-416" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-416</a
+											>
+										</td>
+									</tr>
+									<tr id="33a2ff1b-c21f-8009-906c-e8740492a233">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 6, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/OCR-Testing-33a2ff1bc21f8009906ce8740492a233?pvs=21"
+												>OCR Testing</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span>
+										</td>
+										<td class="cell-;yWO"></td>
+									</tr>
+									<tr id="3382ff1b-c21f-802d-8d13-c21bf673a169">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 6, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Dynamic-Tool-Integration-in-UI-3382ff1bc21f802d8d13c21bf673a169?pvs=21"
+												>Dynamic Tool Integration in UI</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-446" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-446</a
+											>
+										</td>
+									</tr>
+									<tr id="33d2ff1b-c21f-80a0-9c46-d44b34994179">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 7, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/BE-Provide-Currency-Conversion-Support-for-Dashboard-Total-Cost-33d2ff1bc21f80a09c46d44b34994179?pvs=21"
+												>BE- Provide Currency Conversion Support for Dashboard Total Cost</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-420" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-420</a
+											>
+										</td>
+									</tr>
+									<tr id="33b2ff1b-c21f-80a0-b0f2-e36678d89a96">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 7, 2026 → April 8, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Change-agent_status-to-active-33b2ff1bc21f80a0b0f2e36678d89a96?pvs=21"
+												>Change agent_status to active</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-407" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-407</a
+											>
+										</td>
+									</tr>
+									<tr id="33b2ff1b-c21f-80af-91d1-fdb2577f0b9f">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 7, 2026 → April 8, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Tool-Capture-Fix-33b2ff1bc21f80af91d1fdb2577f0b9f?pvs=21"
+												>Tool Capture Fix</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-422" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-422</a
+											>
+										</td>
+									</tr>
+									<tr id="3382ff1b-c21f-8082-a88a-c87c01271d3d">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 8, 2026 → April 9, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Test-Semantic-3382ff1bc21f8082a88ac87c01271d3d?pvs=21"
+												>Test Semantic</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-156" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-156</a
+											>
+										</td>
+									</tr>
+									<tr id="33d2ff1b-c21f-8078-9639-d4eba3e85843">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 9, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Create-PRs-for-Prod-33d2ff1bc21f80789639d4eba3e85843?pvs=21"
+												>Create PRs for Prod</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span
+											><span class="selected-value select-value-color-gray">Work</span>
+										</td>
+										<td class="cell-;yWO"></td>
+									</tr>
+									<tr id="33b2ff1b-c21f-809e-a178-e605df9b25f9">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 9, 2026</time></td>
+										<td class="cell-title">
+											<a href="https://www.notion.so/OCR-3-33b2ff1bc21f809ea178e605df9b25f9?pvs=21"
+												>OCR 3</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span
+											><span class="selected-value select-value-color-gray">Work</span>
+										</td>
+										<td class="cell-;yWO">
+											<a
+												href="https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing"
+												class="url-value"
+												>https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing</a
+											>
+										</td>
+									</tr>
+									<tr id="33e2ff1b-c21f-802d-a748-d5ff0de4d455">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 10, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Prod-Issue-33e2ff1bc21f802da748d5ff0de4d455?pvs=21"
+												>Prod Issue</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-363" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-363</a
+											>
+										</td>
+									</tr>
+									<tr id="33e2ff1b-c21f-80d2-bacb-fd72b0c00bce">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 13, 2026 → April 14, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Tool-Trace-2-33e2ff1bc21f80d2bacbfd72b0c00bce?pvs=21"
+												>Tool Trace 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-422" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-422</a
+											>
+										</td>
+									</tr>
+									<tr id="33e2ff1b-c21f-80b0-b18f-dedd3bd0fce5">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 13, 2026 → April 17, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Agentic-Cache-Issue-33e2ff1bc21f80b0b18fdedd3bd0fce5?pvs=21"
+												>Agentic Cache Issue</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-172" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-172</a
+											>
+										</td>
+									</tr>
+									<tr id="3452ff1b-c21f-80f4-9758-f1c5b584eae8">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 14, 2026 → April 15, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Integration-API-3452ff1bc21f80f49758f1c5b584eae8?pvs=21"
+												>Integration API</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-446" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-446</a
+											>
+										</td>
+									</tr>
+									<tr id="3452ff1b-c21f-8014-9c59-f21c7b295926">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 15, 2026 → April 16, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Currency-Conversion-3452ff1bc21f80149c59f21c7b295926?pvs=21"
+												>Currency Conversion</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-420" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-420</a
+											>
+										</td>
+									</tr>
+									<tr id="33e2ff1b-c21f-8062-baed-ef7022c95b49">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 15, 2026 → April 16, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/AI-Assistant-Dashboard-Metrics-API-33e2ff1bc21f8062baedef7022c95b49?pvs=21"
+												>AI Assistant Dashboard Metrics API</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-424" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-424</a
+											>
+										</td>
+									</tr>
+									<tr id="3452ff1b-c21f-8036-8950-f3d87b5479d8">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 16, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Prod-Issue-3452ff1bc21f80368950f3d87b5479d8?pvs=21"
+												>Prod Issue</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-172" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-172</a
+											>
+										</td>
+									</tr>
+									<tr id="3452ff1b-c21f-804e-8a56-ffe33f3b144a">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 16, 2026 → April 17, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Global-Variable-3452ff1bc21f804e8a56ffe33f3b144a?pvs=21"
+												>Global Variable</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-452" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-452</a
+											>
+										</td>
+									</tr>
+									<tr id="3452ff1b-c21f-80ff-81e3-c36055d5d8bd">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 17, 2026 → April 17, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/AI-Assistant-Dashboard-Metrics-API-2-3452ff1bc21f80ff81e3c36055d5d8bd?pvs=21"
+												>AI Assistant Dashboard Metrics API 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-424" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-424</a
+											>
+										</td>
+									</tr>
+									<tr id="3482ff1b-c21f-8030-a227-cc43c7d58ec4">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 18, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/GPT-Setup-3482ff1bc21f8030a227cc43c7d58ec4?pvs=21"
+												>GPT Setup</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-green">Personal</span>
+										</td>
+										<td class="cell-;yWO"><a href="OpenWebUI" class="url-value">OpenWebUI</a></td>
+									</tr>
+									<tr id="3482ff1b-c21f-8010-af56-d68260f88321">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 20, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Intgration-API-3482ff1bc21f8010af56d68260f88321?pvs=21"
+												>Intgration API</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-446" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-446</a
+											>
+										</td>
+									</tr>
+									<tr id="3452ff1b-c21f-806d-a563-c659903b4e37">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 20, 2026 → April 21, 2026</time></td>
+										<td class="cell-title">
+											<a href="https://www.notion.so/OCR-4-3452ff1bc21f806da563c659903b4e37?pvs=21"
+												>OCR 4</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-115" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-115</a
+											>
+										</td>
+									</tr>
+									<tr id="3482ff1b-c21f-8041-8361-f790e1593ea9">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 21, 2026 → April 22, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Enable-Status-for-Delete-1-3482ff1bc21f80418361f790e1593ea9?pvs=21"
+												>Enable Status for Delete - 1</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-463" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-463</a
+											>
+										</td>
+									</tr>
+									<tr id="3492ff1b-c21f-8000-b528-f9a15703dd00">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 22, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Update-Metric-for-3rd-Card-3492ff1bc21f8000b528f9a15703dd00?pvs=21"
+												>Update Metric for 3rd Card</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-466" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-466</a
+											>
+										</td>
+									</tr>
+									<tr id="34a2ff1b-c21f-80a4-aaac-d9dd88f7f6ec">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 23, 2026 → April 24, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Campaign-Automation-1-1-34a2ff1bc21f80a4aaacd9dd88f7f6ec?pvs=21"
+												>Campaign Automation - 1 - 1</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-478" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-478</a
+											>
+										</td>
+									</tr>
+									<tr id="3562ff1b-c21f-8057-9828-f1eb3a5f734a">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>April 27, 2026 → April 29, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Campaign-Automation-2-3562ff1bc21f80579828f1eb3a5f734a?pvs=21"
+												>Campaign Automation - 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-478" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-478</a
+											>
+										</td>
+									</tr>
+									<tr id="3562ff1b-c21f-80e8-9d59-fdfe764a938d">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>May 4, 2026 → May 5, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Semantic-Sheet-Upload-3562ff1bc21f80e89d59fdfe764a938d?pvs=21"
+												>Semantic Sheet Upload</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-470" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-470</a
+											>
+										</td>
+									</tr>
+									<tr id="34f2ff1b-c21f-805e-915b-d4b17194ae43">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>May 4, 2026 → May 5, 2026</time></td>
+										<td class="cell-title">
+											<a href="https://www.notion.so/OCR-5-34f2ff1bc21f805e915bd4b17194ae43?pvs=21"
+												>OCR - 5</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-115" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-115</a
+											>
+										</td>
+									</tr>
+									<tr id="3452ff1b-c21f-80f3-8409-c809d8c1b38b">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>May 5, 2026 → May 7, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Prod-PR-3452ff1bc21f80f38409c809d8c1b38b?pvs=21"
+												>Prod PR</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span
+											><span class="selected-value select-value-color-gray">Work</span>
+										</td>
+										<td class="cell-;yWO"></td>
+									</tr>
+									<tr id="3582ff1b-c21f-807c-bee7-c3ec834da93a">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>May 6, 2026 → May 8, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Add-a-retry-filter-to-fix-wrong-status-code-in-fallback-3582ff1bc21f807cbee7c3ec834da93a?pvs=21"
+											>
+												Add a retry/filter to fix wrong status code in fallback</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span
+											><span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-496" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-496</a
+											>
+										</td>
+									</tr>
+									<tr id="3582ff1b-c21f-80ab-969a-e31677a0e585">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>May 6, 2026 → May 7, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Campaigns-API-Fix-3582ff1bc21f80ab969ae31677a0e585?pvs=21"
+												>Campaigns API Fix</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-478" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-478</a
+											>
+										</td>
+									</tr>
+									<tr id="35e2ff1b-c21f-805e-8174-f2723e958baa">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>May 11, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Set-up-Backend-Repo-35e2ff1bc21f805e8174f2723e958baa?pvs=21"
+												>Set up Backend Repo</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span>
+										</td>
+										<td class="cell-;yWO"></td>
+									</tr>
+									<tr id="35e2ff1b-c21f-80af-aca5-d0cd13b296d7">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>May 12, 2026 → May 12, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Stage-Assistant-Preview-Displays-Image-URLs-Instead-of-Rendering-Images-1-35e2ff1bc21f80afaca5d0cd13b296d7?pvs=21"
+												>[Stage] Assistant Preview Displays Image URLs Instead of Rendering Images -
+												1</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-504" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-504</a
+											>
+										</td>
+									</tr>
+									<tr id="35e2ff1b-c21f-800e-8940-f1f91beda215">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>May 12, 2026 → May 12, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Move-Pinecone-to-Qdrant-1-35e2ff1bc21f800e8940f1f91beda215?pvs=21"
+												>Move Pinecone to Qdrant - 1</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-508" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-508</a
+											>
+										</td>
+									</tr>
+									<tr id="3602ff1b-c21f-8062-84aa-d949d80db88f">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>May 13, 2026</time></td>
+										<td class="cell-title">
+											<a href="https://www.notion.so/Wfh-3602ff1bc21f806284aad949d80db88f?pvs=21"
+												>Wfh</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-green">Personal</span>
+										</td>
+										<td class="cell-;yWO"></td>
+									</tr>
+									<tr id="3602ff1b-c21f-802a-b2a6-e964748141f5">
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+										<td class="cell-i|W&gt;"><time>May 13, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Global-vars-2-3602ff1bc21f802ab2a6e964748141f5?pvs=21"
+												>Global vars - 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-;yWO">
+											<a href="https://chat360-jira.atlassian.net/browse/AA-452" class="url-value"
+												>https://chat360-jira.atlassian.net/browse/AA-452</a
+											>
+										</td>
+									</tr>
+									<tr id="3602ff1b-c21f-80ab-bf32-f4983c19a4a9">
+										<td class="cell-M~M@"><div class="checkbox checkbox-off"></div></td>
+										<td class="cell-i|W&gt;"><time>May 14, 2026</time></td>
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Move-Pinecone-to-Qdrant-2-3602ff1bc21f80abbf32f4983c19a4a9?pvs=21"
+												>Move Pinecone to Qdrant - 2</a
+											>
+										</td>
+										<td class="cell-JICc"></td>
+										<td class="cell-;yWO"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<br /><br />
+					</div>
+				</div>
+				<div style="display: contents" dir="auto">
+					<h3 id="b8e06cf3-3aee-4c0b-b6b2-6fa92026000d" class="">Calendar</h3>
+				</div>
+				<div style="display: contents" dir="ltr">
+					<div id="32d2ff1b-c21f-8080-9eec-ca8e18cb0aaf" class="collection-content">
+						<h4 class="collection-title">To Do List</h4>
+						<div class="collection-content-wrapper">
+							<table class="collection-content">
+								<thead>
+									<tr>
+										<th>
+											<span class="icon property-icon"
+												><img
+													src="https://www.notion.so/icons/font_gray.svg"
+													style="width: 14px; height: 14px; display: block" /></span
+											>Task
+										</th>
+										<th>
+											<span class="icon property-icon"
+												><img
+													src="https://www.notion.so/icons/list_gray.svg"
+													style="width: 14px; height: 14px; display: block" /></span
+											>Task Type
+										</th>
+										<th>
+											<span class="icon property-icon"
+												><img
+													src="https://www.notion.so/icons/checkmark-square_gray.svg"
+													style="width: 14px; height: 14px; display: block"
+											/></span>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr id="32e2ff1b-c21f-806b-acfa-cae6cda64438">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/KT-on-Setup-32e2ff1bc21f806bacfacae6cda64438?pvs=21"
+												>KT on Setup</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span
+											><span class="selected-value select-value-color-gray">Work</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3342ff1b-c21f-8017-bcae-d46acd4c840d">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Wash-Clothes-3342ff1bc21f8017bcaed46acd4c840d?pvs=21"
+												>Wash Clothes</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span
+											><span class="selected-value select-value-color-green">Personal</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3342ff1b-c21f-80b2-a619-da8af06ab12f">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/OCR-Issue-2-3342ff1bc21f80b2a619da8af06ab12f?pvs=21"
+												>OCR Issue 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="33a2ff1b-c21f-8009-906c-e8740492a233">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/OCR-Testing-33a2ff1bc21f8009906ce8740492a233?pvs=21"
+												>OCR Testing</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="33b2ff1b-c21f-80af-91d1-fdb2577f0b9f">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Tool-Capture-Fix-33b2ff1bc21f80af91d1fdb2577f0b9f?pvs=21"
+												>Tool Capture Fix</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="33b2ff1b-c21f-80a0-b0f2-e36678d89a96">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Change-agent_status-to-active-33b2ff1bc21f80a0b0f2e36678d89a96?pvs=21"
+												>Change agent_status to active</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="33b2ff1b-c21f-809e-a178-e605df9b25f9">
+										<td class="cell-title">
+											<a href="https://www.notion.so/OCR-3-33b2ff1bc21f809ea178e605df9b25f9?pvs=21"
+												>OCR 3</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span
+											><span class="selected-value select-value-color-gray">Work</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="33d2ff1b-c21f-8078-9639-d4eba3e85843">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Create-PRs-for-Prod-33d2ff1bc21f80789639d4eba3e85843?pvs=21"
+												>Create PRs for Prod</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span
+											><span class="selected-value select-value-color-gray">Work</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3452ff1b-c21f-806d-a563-c659903b4e37">
+										<td class="cell-title">
+											<a href="https://www.notion.so/OCR-4-3452ff1bc21f806da563c659903b4e37?pvs=21"
+												>OCR 4</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3452ff1b-c21f-804e-8a56-ffe33f3b144a">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Global-Variable-3452ff1bc21f804e8a56ffe33f3b144a?pvs=21"
+												>Global Variable</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3452ff1b-c21f-80f4-9758-f1c5b584eae8">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Integration-API-3452ff1bc21f80f49758f1c5b584eae8?pvs=21"
+												>Integration API</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3452ff1b-c21f-8014-9c59-f21c7b295926">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Currency-Conversion-3452ff1bc21f80149c59f21c7b295926?pvs=21"
+												>Currency Conversion</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3452ff1b-c21f-80f3-8409-c809d8c1b38b">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Prod-PR-3452ff1bc21f80f38409c809d8c1b38b?pvs=21"
+												>Prod PR</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span
+											><span class="selected-value select-value-color-gray">Work</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3482ff1b-c21f-8030-a227-cc43c7d58ec4">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/GPT-Setup-3482ff1bc21f8030a227cc43c7d58ec4?pvs=21"
+												>GPT Setup</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-green">Personal</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3482ff1b-c21f-8041-8361-f790e1593ea9">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Enable-Status-for-Delete-1-3482ff1bc21f80418361f790e1593ea9?pvs=21"
+												>Enable Status for Delete - 1</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3482ff1b-c21f-8010-af56-d68260f88321">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Intgration-API-3482ff1bc21f8010af56d68260f88321?pvs=21"
+												>Intgration API</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3492ff1b-c21f-8000-b528-f9a15703dd00">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Update-Metric-for-3rd-Card-3492ff1bc21f8000b528f9a15703dd00?pvs=21"
+												>Update Metric for 3rd Card</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="34a2ff1b-c21f-80a4-aaac-d9dd88f7f6ec">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Campaign-Automation-1-1-34a2ff1bc21f80a4aaacd9dd88f7f6ec?pvs=21"
+												>Campaign Automation - 1 - 1</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="34f2ff1b-c21f-805e-915b-d4b17194ae43">
+										<td class="cell-title">
+											<a href="https://www.notion.so/OCR-5-34f2ff1bc21f805e915bd4b17194ae43?pvs=21"
+												>OCR - 5</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3582ff1b-c21f-80ab-969a-e31677a0e585">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Campaigns-API-Fix-3582ff1bc21f80ab969ae31677a0e585?pvs=21"
+												>Campaigns API Fix</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3582ff1b-c21f-807c-bee7-c3ec834da93a">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Add-a-retry-filter-to-fix-wrong-status-code-in-fallback-3582ff1bc21f807cbee7c3ec834da93a?pvs=21"
+											>
+												Add a retry/filter to fix wrong status code in fallback</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span
+											><span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="35e2ff1b-c21f-805e-8174-f2723e958baa">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Set-up-Backend-Repo-35e2ff1bc21f805e8174f2723e958baa?pvs=21"
+												>Set up Backend Repo</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="35e2ff1b-c21f-800e-8940-f1f91beda215">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Move-Pinecone-to-Qdrant-1-35e2ff1bc21f800e8940f1f91beda215?pvs=21"
+												>Move Pinecone to Qdrant - 1</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="35e2ff1b-c21f-80af-aca5-d0cd13b296d7">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Stage-Assistant-Preview-Displays-Image-URLs-Instead-of-Rendering-Images-1-35e2ff1bc21f80afaca5d0cd13b296d7?pvs=21"
+												>[Stage] Assistant Preview Displays Image URLs Instead of Rendering Images -
+												1</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3602ff1b-c21f-802a-b2a6-e964748141f5">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Global-vars-2-3602ff1bc21f802ab2a6e964748141f5?pvs=21"
+												>Global vars - 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3602ff1b-c21f-80ab-bf32-f4983c19a4a9">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Move-Pinecone-to-Qdrant-2-3602ff1bc21f80abbf32f4983c19a4a9?pvs=21"
+												>Move Pinecone to Qdrant - 2</a
+											>
+										</td>
+										<td class="cell-JICc"></td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-off"></div></td>
+									</tr>
+									<tr id="3602ff1b-c21f-8062-84aa-d949d80db88f">
+										<td class="cell-title">
+											<a href="https://www.notion.so/Wfh-3602ff1bc21f806284aad949d80db88f?pvs=21"
+												>Wfh</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-green">Personal</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32d2ff1b-c21f-80dc-b762-d05b84596ccd">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Data-Capture-1-32d2ff1bc21f80dcb762d05b84596ccd?pvs=21"
+												>Data Capture 1</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32d2ff1b-c21f-8042-b91a-f1c2db732e1e">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Orchestrator-Returns-No-Response-32d2ff1bc21f8042b91af1c2db732e1e?pvs=21"
+												>Orchestrator Returns “No Response”
+											</a>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32d2ff1b-c21f-8033-813d-e2930c71275c">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Update-Usage-Overview-Cards-32d2ff1bc21f8033813de2930c71275c?pvs=21"
+												>Update Usage Overview Cards
+											</a>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32d2ff1b-c21f-800b-8c8a-d08fd555e265">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Image-Recognition-Feature-Learn-more-page-32d2ff1bc21f800b8c8ad08fd555e265?pvs=21"
+												>Image Recognition Feature-Learn more page</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32d2ff1b-c21f-80eb-949e-e354c82da546">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/WriteHere-32d2ff1bc21f80eb949ee354c82da546?pvs=21"
+												>WriteHere</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-green">Personal</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32d2ff1b-c21f-80a6-9a5f-ecc791cc7e97">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Modifier-Name-Prompt-Appears-Multiple-Times-32d2ff1bc21f80a69a5fecc791cc7e97?pvs=21"
+												> Modifier Name Prompt Appears Multiple Times</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32d2ff1b-c21f-8034-af5c-d13f96054187">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/PII-Masking-Framework-32d2ff1bc21f8034af5cd13f96054187?pvs=21"
+												>PII Masking Framework</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32d2ff1b-c21f-80e6-a21c-ea5698c62442">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/OCR-Integration-for-Knowledge-Base-32d2ff1bc21f80e6a21cea5698c62442?pvs=21"
+												>OCR Integration for Knowledge Base</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32e2ff1b-c21f-8046-8743-ec40ab00e6bb">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/KT-on-Code-32e2ff1bc21f80468743ec40ab00e6bb?pvs=21"
+												>KT on Code</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span
+											><span class="selected-value select-value-color-gray">Work</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32f2ff1b-c21f-800a-bc6a-efcb96abaadf">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Semantic-KB-answer-not-provided-correctly-for-spreadsheet-based-query-32f2ff1bc21f800abc6aefcb96abaadf?pvs=21"
+												>Semantic KB answer not provided correctly for spreadsheet-based query</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32f2ff1b-c21f-802f-ba1b-f5781ecb172b">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Doc-Ock-32f2ff1bc21f802fba1bf5781ecb172b?pvs=21"
+												>Doc Ock</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-green">Personal</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32f2ff1b-c21f-80e8-8a49-c7758cd9dfcf">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Search-functionality-not-working-in-Assets-feature-32f2ff1bc21f80e88a49c7758cd9dfcf?pvs=21"
+												> Search functionality not working in Assets feature</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="32f2ff1b-c21f-80a3-800c-dbdabffbbaf3">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Add-ocr_enabled-flag-in-Knowledgebase-APIs-and-upload-flow-32f2ff1bc21f80a3800cdbdabffbbaf3?pvs=21"
+												>Add ocr_enabled flag in Knowledgebase APIs and upload flow</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3302ff1b-c21f-8093-8a15-c9035335e4f9">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Data-Capture-Prod-Issue-3302ff1bc21f80938a15c9035335e4f9?pvs=21"
+												>Data Capture Prod Issue</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3302ff1b-c21f-80df-a7fa-d728c0175484">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Data-Capture-2-3302ff1bc21f80dfa7fad728c0175484?pvs=21"
+												>Data Capture 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3332ff1b-c21f-8031-b62d-cbb78e2ede02">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/OCR-Testing-3332ff1bc21f8031b62dcbb78e2ede02?pvs=21"
+												>OCR Testing</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3332ff1b-c21f-806c-bcfe-fe7cc7009549">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Search-functionality-not-working-in-Assets-feature-2-3332ff1bc21f806cbcfefe7cc7009549?pvs=21"
+												> Search functionality not working in Assets feature - 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3342ff1b-c21f-8036-8f48-e289b6c07706">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Take-Charger-from-Omkar-3342ff1bc21f80368f48e289b6c07706?pvs=21"
+												>Take Charger from Omkar</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3352ff1b-c21f-800d-956e-f23b7cb387b6">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Audit-Trail-Logs-Not-Reflecting-Correct-Changes-3352ff1bc21f800d956ef23b7cb387b6?pvs=21"
+												>Audit Trail Logs Not Reflecting Correct Changes</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3362ff1b-c21f-80de-bb3c-d387e30f08ba">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Sent-Keka-regularise-after-confirming-3362ff1bc21f80debb3cd387e30f08ba?pvs=21"
+												>Sent Keka regularise after confirming</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3382ff1b-c21f-8082-a88a-c87c01271d3d">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Test-Semantic-3382ff1bc21f8082a88ac87c01271d3d?pvs=21"
+												>Test Semantic</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3382ff1b-c21f-80a0-8196-f1205bf7e9b0">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Create-a-tool-for-one-click-setup-3382ff1bc21f80a08196f1205bf7e9b0?pvs=21"
+												>Create a tool for one click setup</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-green">Personal</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3382ff1b-c21f-802d-8d13-c21bf673a169">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Dynamic-Tool-Integration-in-UI-3382ff1bc21f802d8d13c21bf673a169?pvs=21"
+												>Dynamic Tool Integration in UI</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-red">Chore</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="33a2ff1b-c21f-804d-bc9d-c01b2c8e14b4">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Add-fields-to-Data-Capture-33a2ff1bc21f804dbc9dc01b2c8e14b4?pvs=21"
+												>Add fields to Data Capture</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="33d2ff1b-c21f-80a0-9c46-d44b34994179">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/BE-Provide-Currency-Conversion-Support-for-Dashboard-Total-Cost-33d2ff1bc21f80a09c46d44b34994179?pvs=21"
+												>BE- Provide Currency Conversion Support for Dashboard Total Cost</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="33e2ff1b-c21f-80b0-b18f-dedd3bd0fce5">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Agentic-Cache-Issue-33e2ff1bc21f80b0b18fdedd3bd0fce5?pvs=21"
+												>Agentic Cache Issue</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="33e2ff1b-c21f-8062-baed-ef7022c95b49">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/AI-Assistant-Dashboard-Metrics-API-33e2ff1bc21f8062baedef7022c95b49?pvs=21"
+												>AI Assistant Dashboard Metrics API</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="33e2ff1b-c21f-802d-a748-d5ff0de4d455">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Prod-Issue-33e2ff1bc21f802da748d5ff0de4d455?pvs=21"
+												>Prod Issue</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="33e2ff1b-c21f-80d2-bacb-fd72b0c00bce">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Tool-Trace-2-33e2ff1bc21f80d2bacbfd72b0c00bce?pvs=21"
+												>Tool Trace 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3452ff1b-c21f-8036-8950-f3d87b5479d8">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Prod-Issue-3452ff1bc21f80368950f3d87b5479d8?pvs=21"
+												>Prod Issue</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3452ff1b-c21f-80ff-81e3-c36055d5d8bd">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/AI-Assistant-Dashboard-Metrics-API-2-3452ff1bc21f80ff81e3c36055d5d8bd?pvs=21"
+												>AI Assistant Dashboard Metrics API 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3562ff1b-c21f-8057-9828-f1eb3a5f734a">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Campaign-Automation-2-3562ff1bc21f80579828f1eb3a5f734a?pvs=21"
+												>Campaign Automation - 2</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-blue">Development</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+									<tr id="3562ff1b-c21f-80e8-9d59-fdfe764a938d">
+										<td class="cell-title">
+											<a
+												href="https://www.notion.so/Semantic-Sheet-Upload-3562ff1bc21f80e89d59fdfe764a938d?pvs=21"
+												>Semantic Sheet Upload</a
+											>
+										</td>
+										<td class="cell-JICc">
+											<span class="selected-value select-value-color-purple">Issue</span>
+										</td>
+										<td class="cell-M~M@"><div class="checkbox checkbox-on"></div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<br /><br />
+					</div>
+				</div>
+				<div style="display: contents" dir="auto">
+					<h3 id="36a05f4a-1bb3-4095-a94a-75f2e7eedee0" class="">Review cadence</h3>
+				</div>
+				<div style="display: contents" dir="auto">
+					<ul id="76574b51-88cc-48ed-a1fc-a5a4249e602f" class="bulleted-list">
+						<li style="list-style-type: disc">Daily: update notes section</li>
+					</ul>
+				</div>
+				<div style="display: contents" dir="auto">
+					<ul id="b8fe7fa8-f8e5-418f-94d0-56e099f96a4d" class="bulleted-list">
+						<li style="list-style-type: disc">Weekly: review backlog + plan next week</li>
+					</ul>
+				</div>
+				<div style="display: contents" dir="auto">
+					<p id="3562ff1b-c21f-807a-b9d3-ffd38c7cdd26" class=""></p>
+				</div>
+			</div>
+		</article>
+		<span class="sans" style="font-size: 14px; padding-top: 2em"></span>
+	</body>
+</html>
