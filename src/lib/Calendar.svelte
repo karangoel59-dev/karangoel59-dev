@@ -104,11 +104,10 @@
 
 <style>
 	:root {
-		--grid-border: 1px solid #e0e0e0;
+		--grid-border: 1px solid #e5e7eb;
 	}
 	.calendar {
-		max-width: 900px;
-		margin: 2rem auto;
+		width: 100%;
 		font-family:
 			-apple-system,
 			BlinkMacSystemFont,
