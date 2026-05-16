@@ -32,19 +32,19 @@ function processContent(originalContent: string) {
 
 	const task = parsed['task'];
 	const date = parsed['date'];
+	const taskType = parsed['task type'] || '';
 
 	if (!task) throw new Error('Missing mandatory field: Task');
-	if (!date) throw new Error('Missing mandatory field: Date');
+	if (!date && task.toLowerCase() !== 'things to note' && task.toLowerCase() !== 'quick links' && taskType.toLowerCase() !== 'quick links') throw new Error('Missing mandatory field: Date');
 
 	const link = parsed['link'] || '';
-	const taskType = parsed['task type'] || '';
 	const status = parsed['status'] || 'No';
 
 	// standard yaml format
 	const newFrontmatter = [
 		'---',
 		`Task: '${task.replace(/'/g, "\\'")}'`,
-		`Date: '${date.replace(/'/g, "\\'")}'`,
+		`Date: '${(date || '').replace(/'/g, "\\'")}'`,
 		`LINK: '${link.replace(/'/g, "\\'")}'`,
 		`Task Type: '${taskType.replace(/'/g, "\\'")}'`,
 		`Status: '${status.replace(/'/g, "\\'")}'`,
@@ -100,12 +100,6 @@ export async function POST({ request }) {
 		// Create directory if it doesn't exist
 		if (!fs.existsSync(uploadsDir)) {
 			fs.mkdirSync(uploadsDir, { recursive: true });
-		} else {
-			// Clear existing uploads to reset the state
-			const existingFiles = fs.readdirSync(uploadsDir);
-			for (const file of existingFiles) {
-				fs.unlinkSync(path.join(uploadsDir, file));
-			}
 		}
 
 		for (const file of processedFiles) {

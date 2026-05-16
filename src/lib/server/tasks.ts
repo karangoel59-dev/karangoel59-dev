@@ -96,7 +96,8 @@ export async function getTask(encodedTaskName: string): Promise<Task | null> {
 		});
 
 		if (matchedFile) {
-			const content = fs.readFileSync(matchedFile.file_path, 'utf-8');
+			const rawContent = fs.readFileSync(matchedFile.file_path, 'utf-8');
+			const content = rawContent.replace(/^---\n[\s\S]*?\n---\n/, '');
 			const metadata = matchedFile.metadata || {};
 
 			return {
