@@ -57,7 +57,7 @@
 	<button
 		onclick={() => fileInput?.click()}
 		disabled={isUploading}
-		class="text-sm px-3 py-1.5 rounded-md bg-blue-50 text-blue-600 hover:bg-blue-100 dark:bg-blue-900/30 dark:text-blue-400 dark:hover:bg-blue-900/50 transition-colors border border-blue-200 dark:border-blue-800 disabled:opacity-50"
+		class="rounded-md border border-blue-200 bg-blue-50 px-3 py-1.5 text-sm text-blue-600 transition-colors hover:bg-blue-100 disabled:opacity-50 dark:border-blue-800 dark:bg-blue-900/30 dark:text-blue-400 dark:hover:bg-blue-900/50"
 	>
 		{isUploading ? 'Uploading...' : 'Upload Tasks'}
 	</button>

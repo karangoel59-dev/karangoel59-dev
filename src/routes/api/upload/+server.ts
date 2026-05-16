@@ -42,7 +42,9 @@ function processContent(originalContent: string, defaultTaskName: string) {
 			date ? `Date: "${date}"` : '',
 			link ? `LINK: "${link}"` : '',
 			taskType ? `Task Type: "${taskType}"` : ''
-		].filter(Boolean).join('\n');
+		]
+			.filter(Boolean)
+			.join('\n');
 	}
 
 	// Clean up body and extract status
@@ -70,7 +72,11 @@ function processContent(originalContent: string, defaultTaskName: string) {
 	}
 
 	// Clean up multiple leading empty lines
-	while (cleanedLines.length > 0 && cleanedLines[0].trim() === '' && !cleanedLines[0].startsWith('#')) {
+	while (
+		cleanedLines.length > 0 &&
+		cleanedLines[0].trim() === '' &&
+		!cleanedLines[0].startsWith('#')
+	) {
 		if (cleanedLines.length > 1 && cleanedLines[1].startsWith('#')) {
 			break;
 		}
@@ -112,14 +118,17 @@ export async function POST({ request }) {
 
 			const rawText = await file.text();
 			const sanitizedName = path.basename(file.webkitRelativePath || file.name);
-			const defaultTaskName = sanitizedName.replace(/\.md$/, '').replace(/ [a-f0-9]{32}$/, '').trim();
-			
+			const defaultTaskName = sanitizedName
+				.replace(/\.md$/, '')
+				.replace(/ [a-f0-9]{32}$/, '')
+				.trim();
+
 			const processedContent = processContent(rawText, defaultTaskName);
 
 			fs.writeFileSync(path.join(uploadsDir, sanitizedName), processedContent, 'utf-8');
 			savedCount++;
 		}
-		
+
 		// Force MarkdownDB to re-index the newly added files
 		await refreshTasks();
 
