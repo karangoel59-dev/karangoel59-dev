@@ -6,9 +6,16 @@ export const load: PageServerLoad = async ({ params }) => {
 	try {
 		const task = await getTask(params.taskName);
 		if (task) {
+			// Strip frontmatter from content
+			const contentWithoutFrontmatter = task.content.replace(/^---[\s\S]*?---\n*/, '');
+
 			return {
 				taskName: task.Task,
-				content: task.content
+				date: task.Date,
+				type: task.Type,
+				link: task.LINK,
+				status: task.Status,
+				content: contentWithoutFrontmatter
 			};
 		}
 
