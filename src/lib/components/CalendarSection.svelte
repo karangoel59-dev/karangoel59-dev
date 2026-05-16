@@ -106,7 +106,7 @@
 </div>
 
 {#if currentView === 'gantt'}
-	<div class="h-[500px]">
+	<div class="h-[calc(100vh-180px)] min-h-[500px]">
 		<Willow>
 			<Gantt tasks={ganttData.tasks} links={ganttData.links} />
 		</Willow>

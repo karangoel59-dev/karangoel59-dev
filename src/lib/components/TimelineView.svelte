@@ -84,7 +84,7 @@
 			timeGridWeek: 'Week',
 			listWeek: 'List'
 		},
-		height: '500px'
+		height: 'calc(100vh - 180px)'
 	});
 
 	$effect(() => {
@@ -92,7 +92,7 @@
 	});
 </script>
 
-<div class="calendar-wrapper min-h-[500px]">
+<div class="calendar-wrapper min-h-[500px] h-[calc(100vh-180px)]">
 	{#if mounted}
 		<Calendar plugins={[DayGrid, TimeGrid, List]} {options} />
 	{/if}
