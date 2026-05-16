@@ -1,7 +1,10 @@
+---
+Task: "Set up Backend Repo"
+Date: "May 11, 2026"
+Task Type: "Chore"
+Status: "Yes"
+---
 # Set up Backend Repo
 
-: Yes
-Date: May 11, 2026
-Task Type: Chore
 
 Found a vunrability!

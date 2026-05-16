@@ -1,9 +1,12 @@
+---
+Task: "Data Capture 1"
+Date: "March 24, 2026 → March 25, 2026"
+LINK: "https://chat360-jira.atlassian.net/browse/AA-384"
+Task Type: "Issue"
+Status: "Yes"
+---
 # Data Capture 1
 
-: Yes
-Date: March 24, 2026 → March 25, 2026
-LINK: https://chat360-jira.atlassian.net/browse/AA-384
-Task Type: Issue
 
 References:
 

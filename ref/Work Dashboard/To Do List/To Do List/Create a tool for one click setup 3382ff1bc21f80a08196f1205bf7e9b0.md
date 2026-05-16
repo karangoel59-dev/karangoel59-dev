@@ -1,8 +1,11 @@
+---
+Task: "Create a tool for one click setup"
+Date: "April 4, 2026 → April 7, 2026"
+Task Type: "Personal"
+Status: "Yes"
+---
 # Create a tool for one click setup
 
-: Yes
-Date: April 4, 2026 → April 7, 2026
-Task Type: Personal
 
 Tool name - iron-man (a nvm like tool for workspace)
 

@@ -1,9 +1,12 @@
+---
+Task: "Prod Issue"
+Date: "April 10, 2026"
+LINK: "https://chat360-jira.atlassian.net/browse/AA-363"
+Task Type: "Issue"
+Status: "Yes"
+---
 # Prod Issue
 
-: Yes
-Date: April 10, 2026
-LINK: https://chat360-jira.atlassian.net/browse/AA-363
-Task Type: Issue
 
 Took whole day
 

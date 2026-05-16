@@ -1,7 +1,7 @@
 import { getAllTasks } from '$lib/server/tasks';
 
-export function load() {
+export async function load() {
 	return {
-		tasks: getAllTasks()
+		tasks: await getAllTasks()
 	};
 }

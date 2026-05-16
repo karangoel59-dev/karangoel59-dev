@@ -1,9 +1,12 @@
+---
+Task: "OCR Issue 2"
+Date: "April 1, 2026 → April 4, 2026"
+LINK: "https://chat360-jira.atlassian.net/browse/AA-115"
+Task Type: "Development"
+Status: "Yes"
+---
 # OCR Issue 2
 
-: Yes
-Date: April 1, 2026 → April 4, 2026
-LINK: https://chat360-jira.atlassian.net/browse/AA-115
-Task Type: Development
 
 - Create a Queue in Celery
 - Check for Paddle OCR optimisation

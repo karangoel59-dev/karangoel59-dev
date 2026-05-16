@@ -1,47 +1,20 @@
 import { error } from '@sveltejs/kit';
-import fs from 'fs';
-import path from 'path';
+import { getTask } from '$lib/server/tasks';
 import type { PageServerLoad } from './$types';
 
-export const load: PageServerLoad = ({ params }) => {
-	const taskName = params.taskName;
-	const refDir = path.resolve('ref/Work Dashboard/To Do List/To Do List');
-
+export const load: PageServerLoad = async ({ params }) => {
 	try {
-		const files = fs.readdirSync(refDir);
-		const decodedTaskName = decodeURIComponent(taskName).trim();
-		const cleanTaskName = decodedTaskName.replace(/\u00a0/g, ' ').trim();
-
-		let matchedFile = files.find((file) => {
-			if (!file.endsWith('.md')) return false;
-			const normalizedFileName = file.replace(/\.md$/, '').trim();
-			// Remove the trailing ID from filename which is typically a space followed by a 32-char hex string
-			const nameWithoutId = normalizedFileName.replace(/ [a-f0-9]{32}$/, '').trim();
-
-			return nameWithoutId === cleanTaskName || normalizedFileName.startsWith(cleanTaskName);
-		});
-
-		if (!matchedFile) {
-			// fallback: simple contains match
-			matchedFile = files.find((file) => file.includes(cleanTaskName));
-		}
-
-		if (matchedFile) {
-			// FIX: Changed targetDir to refDir
-			const content = fs.readFileSync(path.join(refDir, matchedFile), 'utf-8');
+		const task = await getTask(params.taskName);
+		if (task) {
 			return {
-				taskName: cleanTaskName,
-				content
+				taskName: task.Task,
+				content: task.content
 			};
 		}
 
-		// SvelteKit's error() function must be thrown
 		error(404, 'Task not found');
-		
 	} catch (e) {
 		console.error(e);
-		// Note: error() is thrown automatically if it's a SvelteKit error, 
-		// but standard JS errors should be caught and thrown as HTTP errors.
 		error(404, 'Task not found');
 	}
 };

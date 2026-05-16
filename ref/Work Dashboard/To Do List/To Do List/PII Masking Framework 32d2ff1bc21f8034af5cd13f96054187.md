@@ -1,9 +1,12 @@
+---
+Task: "PII Masking Framework"
+Date: "March 23, 2026"
+LINK: "https://chat360-jira.atlassian.net/browse/AA-374"
+Task Type: "Development"
+Status: "Yes"
+---
 # PII Masking Framework
 
-: Yes
-Date: March 23, 2026
-LINK: https://chat360-jira.atlassian.net/browse/AA-374
-Task Type: Development
 
 ### Plan to implement p2 masking
 

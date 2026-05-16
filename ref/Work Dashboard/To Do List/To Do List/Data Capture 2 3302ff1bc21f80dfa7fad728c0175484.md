@@ -1,9 +1,12 @@
+---
+Task: "Data Capture 2"
+Date: "March 30, 2026 → March 31, 2026"
+LINK: "https://chat360-jira.atlassian.net/browse/AA-384"
+Task Type: "Development"
+Status: "Yes"
+---
 # Data Capture 2
 
-: Yes
-Date: March 30, 2026 → March 31, 2026
-LINK: https://chat360-jira.atlassian.net/browse/AA-384
-Task Type: Development
 
 [https://staging.chat360.io/builder/774e932c-5d72-405c-9122-1b6219a3fc3e](https://staging.chat360.io/builder/774e932c-5d72-405c-9122-1b6219a3fc3e)
 

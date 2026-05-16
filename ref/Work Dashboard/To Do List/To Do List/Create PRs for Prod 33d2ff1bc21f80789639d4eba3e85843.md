@@ -1,8 +1,11 @@
+---
+Task: "Create PRs for Prod"
+Date: "April 9, 2026"
+Task Type: "Chore, Work"
+Status: "Yes"
+---
 # Create PRs for Prod
 
-: Yes
-Date: April 9, 2026
-Task Type: Chore, Work
 
 [https://github.com/sumanel/chat360-agents/pull/918](https://github.com/sumanel/chat360-agents/pull/918)
 
