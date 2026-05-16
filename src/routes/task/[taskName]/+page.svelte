@@ -14,7 +14,7 @@
 <div class="min-h-screen bg-white font-sans text-[#37352f] pb-24">
 	<!-- Navbar / Breadcrumb -->
 	<nav class="sticky top-0 z-10 flex items-center bg-white/80 px-12 py-4 backdrop-blur-sm border-b border-gray-100">
-		<a href="/" class="text-gray-500 hover:text-gray-900 font-medium text-sm transition-colors">
+		<a href="/logs" class="text-gray-500 hover:text-gray-900 font-medium text-sm transition-colors">
 			&larr; Back to Dashboard
 		</a>
 	</nav>
