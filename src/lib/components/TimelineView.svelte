@@ -55,11 +55,14 @@
 			const { event } = info;
 			const { extendedProps } = event;
 			const checked = extendedProps.completed ? 'checked' : '';
-			
+
 			const types = getTypes(extendedProps.taskType);
-			const typeHtml = types.map((type: string) => 
-				`<span class="${getPillColor(type)}" style="padding: 2px 4px; border-radius: 4px; font-size: 10px; font-weight: 500; line-height: 1;">${type}</span>`
-			).join('');
+			const typeHtml = types
+				.map(
+					(type: string) =>
+						`<span class="${getPillColor(type)}" style="padding: 2px 4px; border-radius: 4px; font-size: 10px; font-weight: 500; line-height: 1;">${type}</span>`
+				)
+				.join('');
 
 			return {
 				html: `
@@ -92,7 +95,7 @@
 	});
 </script>
 
-<div class="calendar-wrapper min-h-[500px] h-[calc(100vh-180px)]">
+<div class="calendar-wrapper h-[calc(100vh-180px)] min-h-[500px]">
 	{#if mounted}
 		<Calendar plugins={[DayGrid, TimeGrid, List]} {options} />
 	{/if}
@@ -111,6 +114,18 @@
 		--ec-button-active-bg-color: #e5e7eb;
 		--ec-button-active-border-color: #d1d5db;
 		--ec-button-active-text-color: #111827;
+	}
+	:global(html.dark .ec) {
+		--ec-bg-color: #111827;
+		--ec-text-color: #f3f4f6;
+		--ec-border-color: #374151;
+		--ec-button-bg-color: #374151;
+		--ec-button-border-color: #4b5563;
+		--ec-button-text-color: #e5e7eb;
+		--ec-button-active-bg-color: #4b5563;
+		--ec-button-active-border-color: #6b7280;
+		--ec-button-active-text-color: #ffffff;
+		--ec-today-bg-color: rgba(59, 130, 246, 0.15);
 	}
 	:global(.ec-toolbar) {
 		margin-bottom: 1rem;

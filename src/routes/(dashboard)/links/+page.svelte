@@ -20,8 +20,7 @@
 				<li>
 					<a
 						href="https://github.com/sumanel/chat360-agents"
-						class="underline underline-offset-2 opacity-80 hover:opacity-100"
-						>Review PRs (GitHub)</a
+						class="underline underline-offset-2 opacity-80 hover:opacity-100">Review PRs (GitHub)</a
 					>
 				</li>
 				<li>

@@ -75,9 +75,7 @@ The assistant must:
 
 - Acknowledge the admission query politely and professionally
 - Trigger Status Code: 331 to initiate the Admission Flow
-    
-    The response should not proceed with any other flow unless both name and mobile number are captured and acknowledged.
-    
+  The response should not proceed with any other flow unless both name and mobile number are captured and acknowledged.
 
 Status Code: 226
 

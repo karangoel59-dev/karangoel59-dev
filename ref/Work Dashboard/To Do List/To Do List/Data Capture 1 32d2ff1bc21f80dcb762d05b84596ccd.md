@@ -5,7 +5,7 @@ Date: March 24, 2026 → March 25, 2026
 LINK: https://chat360-jira.atlassian.net/browse/AA-384
 Task Type: Issue
 
-References: 
+References:
 
 [https://docs.google.com/document/d/1IxFNcjPTje2abZV6JMppglH3pPqTsSg_srKFcW4hmIw/edit?tab=t.0#heading=h.v1jt5yffl603](https://docs.google.com/document/d/1IxFNcjPTje2abZV6JMppglH3pPqTsSg_srKFcW4hmIw/edit?tab=t.0#heading=h.v1jt5yffl603)
 
@@ -31,8 +31,8 @@ References:
 
 - Create a **new API on the agentic platform** to expose captured data
 - Integrate this API within the bot flow to:
-    - Fetch captured data from the agentic platform
-    - Update bot-side data accordingly
+  - Fetch captured data from the agentic platform
+  - Update bot-side data accordingly
 
 ---
 

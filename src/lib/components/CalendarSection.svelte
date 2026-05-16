@@ -1,10 +1,21 @@
 <script lang="ts">
-	import { Gantt, Willow } from '@svar-ui/svelte-gantt';
+	import { Gantt, Willow, WillowDark } from '@svar-ui/svelte-gantt';
 	import TimelineView from './TimelineView.svelte';
+	import { onMount } from 'svelte';
 
 	let { tasks = [] } = $props();
 
 	let currentView = $state('calendar'); // 'gantt' | 'calendar'
+	let isDark = $state(false);
+
+	onMount(() => {
+		const observer = new MutationObserver(() => {
+			isDark = document.documentElement.classList.contains('dark');
+		});
+		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+		isDark = document.documentElement.classList.contains('dark');
+		return () => observer.disconnect();
+	});
 
 	const ganttData = $derived.by(() => {
 		const validTasks = tasks
@@ -26,7 +37,11 @@
 					originalIndex: index,
 					startDate,
 					endDate,
-					duration: Math.max(1, Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) + (parts.length > 1 ? 1 : 0))
+					duration: Math.max(
+						1,
+						Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) +
+							(parts.length > 1 ? 1 : 0)
+					)
 				};
 			})
 			.filter((e: any): e is NonNullable<typeof e> => e !== null);
@@ -60,7 +75,7 @@
 		for (const [link, groupTasks] of groups.entries()) {
 			if (groupTasks.length > 1) {
 				groupTasks.sort((a: any, b: any) => a.startDate.getTime() - b.startDate.getTime());
-				
+
 				let prevId: number | null = null;
 				groupTasks.forEach((task: any) => {
 					const currentId = nextId++;
@@ -70,7 +85,7 @@
 						start: task.startDate,
 						duration: task.duration
 					});
-					
+
 					if (prevId !== null) {
 						linksResult.push({
 							id: nextLinkId++,
@@ -89,15 +104,20 @@
 </script>
 
 <div class="mt-8 mb-4 flex items-center justify-between">
-	<div class="flex space-x-1 rounded-lg bg-gray-100 p-1">
+	<div class="flex space-x-1 rounded-lg bg-gray-100 p-1 dark:bg-gray-800">
 		<button
-			class="px-3 py-1.5 text-sm font-medium rounded-md transition-colors {currentView === 'calendar' ? 'bg-white shadow-sm text-gray-900' : 'text-gray-500 hover:text-gray-700'}"
+			class="rounded-md px-3 py-1.5 text-sm font-medium transition-colors {currentView ===
+			'calendar'
+				? 'bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-gray-100'
+				: 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'}"
 			onclick={() => (currentView = 'calendar')}
 		>
 			Calendar
 		</button>
 		<button
-			class="px-3 py-1.5 text-sm font-medium rounded-md transition-colors {currentView === 'gantt' ? 'bg-white shadow-sm text-gray-900' : 'text-gray-500 hover:text-gray-700'}"
+			class="rounded-md px-3 py-1.5 text-sm font-medium transition-colors {currentView === 'gantt'
+				? 'bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-gray-100'
+				: 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'}"
 			onclick={() => (currentView = 'gantt')}
 		>
 			Gantt
@@ -107,11 +127,16 @@
 
 {#if currentView === 'gantt'}
 	<div class="h-[calc(100vh-180px)] min-h-[500px]">
-		<Willow>
-			<Gantt tasks={ganttData.tasks} links={ganttData.links} />
-		</Willow>
+		{#if isDark}
+			<WillowDark>
+				<Gantt tasks={ganttData.tasks} links={ganttData.links} />
+			</WillowDark>
+		{:else}
+			<Willow>
+				<Gantt tasks={ganttData.tasks} links={ganttData.links} />
+			</Willow>
+		{/if}
 	</div>
 {:else}
 	<TimelineView {tasks} />
 {/if}
-

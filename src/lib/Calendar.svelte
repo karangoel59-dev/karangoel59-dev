@@ -85,9 +85,8 @@
 
 					<div
 						class="event"
-						style="grid-column: {startDayOfWeek +
-							1} / span {span}; grid-row: {weekIndex + 1}; background-color: {event.color ??
-							'#007bff'}; color: {event.textColor ?? 'white'}"
+						style="grid-column: {startDayOfWeek + 1} / span {span}; grid-row: {weekIndex +
+							1}; background-color: {event.color ?? '#007bff'}; color: {event.textColor ?? 'white'}"
 						class:event-start={isSameDay(segmentStart, event.startDate)}
 						class:event-end={isSameDay(segmentEnd, event.endDate)}
 					>
@@ -109,16 +108,8 @@
 	.calendar {
 		width: 100%;
 		font-family:
-			-apple-system,
-			BlinkMacSystemFont,
-			'Segoe UI',
-			Roboto,
-			Oxygen,
-			Ubuntu,
-			Cantarell,
-			'Open Sans',
-			'Helvetica Neue',
-			sans-serif;
+			-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+			'Helvetica Neue', sans-serif;
 	}
 	.calendar-header {
 		display: flex;

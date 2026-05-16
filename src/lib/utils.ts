@@ -79,7 +79,10 @@ export function getDatesFromRange(dateStr: string) {
 
 export function getEventColors(typeString: string): { background: string; text: string } {
 	if (!typeString) return { background: '#64748b', text: '#ffffff' }; // slate-500
-	const types = typeString.split(',').map((t) => t.trim()).filter(Boolean);
+	const types = typeString
+		.split(',')
+		.map((t) => t.trim())
+		.filter(Boolean);
 	if (types.length === 0) return { background: '#64748b', text: '#ffffff' };
 	const mainType = types[0].toLowerCase();
 	switch (mainType) {
