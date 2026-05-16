@@ -4,10 +4,10 @@
 	let { children } = $props();
 	
 	const navItems = [
+		{ name: 'Links', path: '/links' },
+		{ name: 'Notes', path: '/notes' },
 		{ name: 'Logs', path: '/logs' },
-		{ name: 'Calendar', path: '/calendar' },
-		{ name: 'Things to Note', path: '/notes' },
-		{ name: 'Quick Links', path: '/links' }
+		{ name: 'Calendar', path: '/calendar' },	
 	];
 </script>
 
@@ -26,27 +26,9 @@
 		</div>
 	</nav>
 
-	<!-- Cover Image -->
-	<div class="relative h-[30vh] w-full overflow-hidden">
-		<img
-			src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb"
-			alt="Cover"
-			class="h-full w-full object-cover object-[center_15%]"
-		/>
-	</div>
+
 
 	<main class="mx-auto max-w-[900px] px-12 pb-24">
-		<!-- Icon and Title -->
-		<div class="-mt-[3rem] mb-4 relative z-10">
-			<img
-				src="/icon.jpeg"
-				alt="Icon"
-				class="inline-block h-[78px] w-[78px] rounded bg-white object-cover shadow-sm"
-			/>
-		</div>
-		
-		<h1 class="mb-8 text-[40px] leading-tight font-bold">Work Dashboard</h1>
-
 		<!-- Page Content -->
 		<div class="space-y-4 text-base leading-relaxed">
 			{@render children()}

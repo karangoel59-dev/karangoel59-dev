@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>Logs - Work Dashboard</title>
+	<title>Logs</title>
 </svelte:head>
 
 <TodoList {tasks} />

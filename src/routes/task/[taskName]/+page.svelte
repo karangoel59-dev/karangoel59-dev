@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>{data.taskName} - Work Dashboard</title>
+	<title>{data.taskName}</title>
 </svelte:head>
 
 <div class="min-h-screen bg-white font-sans text-[#37352f] pb-24">

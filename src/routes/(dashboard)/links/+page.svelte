@@ -2,11 +2,10 @@
 </script>
 
 <svelte:head>
-	<title>Quick Links - Work Dashboard</title>
+	<title>Quick Links</title>
 </svelte:head>
 
 <div>
-	<h3 class="mb-4 text-xl font-semibold">Quick links</h3>
 	<ul class="list-disc space-y-1 pl-5">
 		<li>
 			Engineering

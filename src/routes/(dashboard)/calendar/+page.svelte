@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>Calendar - Work Dashboard</title>
+	<title>Calendar</title>
 </svelte:head>
 
 <CalendarSection {tasks} />

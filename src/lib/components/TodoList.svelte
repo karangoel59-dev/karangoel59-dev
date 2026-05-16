@@ -4,9 +4,8 @@
 	let { tasks = [] } = $props();
 </script>
 
-<h3 class="mt-8 mb-4 text-xl font-semibold">To Do List</h3>
 
-<div class="mb-8 overflow-x-auto">
+<div class="mb-8 pt-4 overflow-x-auto">
 	<table class="w-full border-collapse border-y border-gray-200 text-sm">
 		<thead>
 			<tr class="border-b border-gray-200 text-left text-gray-500">
