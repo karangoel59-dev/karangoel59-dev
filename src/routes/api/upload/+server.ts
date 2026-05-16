@@ -3,91 +3,61 @@ import fs from 'fs';
 import path from 'path';
 import { refreshTasks } from '$lib/server/tasks';
 
-function processContent(originalContent: string, defaultTaskName: string) {
-	let content = originalContent;
-	let frontmatter = '';
-	let body = content;
+function processContent(originalContent: string) {
+	const fmMatch = originalContent.match(/^---\n([\s\S]*?)\n---/);
+	if (!fmMatch) {
+		throw new Error('Missing or invalid YAML frontmatter');
+	}
 
-	const fmMatch = content.match(/^---\n([\s\S]*?)\n---\n/);
-	if (fmMatch) {
-		frontmatter = fmMatch[1].trim();
-		body = content.slice(fmMatch[0].length);
-	} else {
-		// Extract from body if no frontmatter
-		const lines = content.split('\n');
-		let taskName = '';
-		let date = '';
-		let link = '';
-		let taskType = '';
+	const frontmatterStr = fmMatch[1];
+	const body = originalContent.slice(fmMatch[0].length);
 
-		for (let i = 0; i < Math.min(lines.length, 20); i++) {
-			const line = lines[i].trim();
-			if (line.startsWith('# ')) {
-				if (!taskName) taskName = line.replace(/^#\s*/, '').trim();
-			} else if (line.startsWith('Date:')) {
-				date = line.replace(/^Date:\s*/, '').trim();
-			} else if (line.startsWith('LINK:')) {
-				link = line.replace(/^LINK:\s*/, '').trim();
-			} else if (line.startsWith('Task Type:')) {
-				taskType = line.replace(/^Task Type:\s*/, '').trim();
+	const parsed: Record<string, string> = {};
+	const lines = frontmatterStr.split('\n');
+	for (const line of lines) {
+		const colonIdx = line.indexOf(':');
+		if (colonIdx !== -1) {
+			const key = line.slice(0, colonIdx).trim().toLowerCase();
+			let value = line.slice(colonIdx + 1).trim();
+			// strip surrounding quotes if any
+			if (
+				(value.startsWith("'") && value.endsWith("'")) ||
+				(value.startsWith('"') && value.endsWith('"'))
+			) {
+				value = value.slice(1, -1);
 			}
+			parsed[key] = value;
 		}
-
-		if (!taskName) {
-			taskName = defaultTaskName;
-		}
-
-		frontmatter = [
-			`Task: "${taskName.replace(/"/g, '\\"')}"`,
-			date ? `Date: "${date}"` : '',
-			link ? `LINK: "${link}"` : '',
-			taskType ? `Task Type: "${taskType}"` : ''
-		]
-			.filter(Boolean)
-			.join('\n');
 	}
 
-	// Clean up body and extract status
-	let status = '';
-	const bodyLines = body.split('\n');
-	const cleanedLines = [];
+	const task = parsed['task'];
+	const date = parsed['date'];
 
-	for (let i = 0; i < bodyLines.length; i++) {
-		const line = bodyLines[i];
+	if (!task) throw new Error('Missing mandatory field: Task');
+	if (!date) throw new Error('Missing mandatory field: Date');
 
-		if (i < 30) {
-			if (/^:\s*(Yes|No|yes|no)/i.test(line)) {
-				status = line.replace(/^:\s*/, '').trim();
-				continue;
-			}
-			if (!fmMatch) {
-				// Strip metadata text if we just generated frontmatter
-				if (/^Date:/i.test(line)) continue;
-				if (/^LINK:/i.test(line)) continue;
-				if (/^Task Type:/i.test(line)) continue;
-			}
-		}
+	const link = parsed['link'] || '';
+	const taskType = parsed['task type'] || '';
+	const status = parsed['status'] || 'No';
 
-		cleanedLines.push(line);
+	// standard yaml format
+	const newFrontmatter = [
+		'---',
+		`Task: '${task.replace(/'/g, "\\'")}'`,
+		`Date: '${date.replace(/'/g, "\\'")}'`,
+		`LINK: '${link.replace(/'/g, "\\'")}'`,
+		`Task Type: '${taskType.replace(/'/g, "\\'")}'`,
+		`Status: '${status.replace(/'/g, "\\'")}'`,
+		'---'
+	].join('\n');
+
+	// Clean up body (remove leading blank lines)
+	let cleanedBody = body;
+	while (cleanedBody.startsWith('\n')) {
+		cleanedBody = cleanedBody.slice(1);
 	}
 
-	// Clean up multiple leading empty lines
-	while (
-		cleanedLines.length > 0 &&
-		cleanedLines[0].trim() === '' &&
-		!cleanedLines[0].startsWith('#')
-	) {
-		if (cleanedLines.length > 1 && cleanedLines[1].startsWith('#')) {
-			break;
-		}
-		cleanedLines.shift();
-	}
-
-	if (status && !frontmatter.includes('Status:')) {
-		frontmatter += `\nStatus: "${status}"`;
-	}
-
-	return `---\n${frontmatter}\n---\n${cleanedLines.join('\n')}`;
+	return `${newFrontmatter}\n${cleanedBody}`;
 }
 
 export async function POST({ request }) {
@@ -101,6 +71,32 @@ export async function POST({ request }) {
 
 		const uploadsDir = path.resolve('data/uploads');
 
+		// Validate all files first
+		const processedFiles: { name: string; content: string }[] = [];
+		const errors: string[] = [];
+
+		for (const file of files) {
+			if (!file.name.endsWith('.md')) continue;
+
+			const rawText = await file.text();
+			const sanitizedName = path.basename(file.webkitRelativePath || file.name);
+
+			try {
+				const processedContent = processContent(rawText);
+				processedFiles.push({ name: sanitizedName, content: processedContent });
+			} catch (err) {
+				const msg = err instanceof Error ? err.message : String(err);
+				errors.push(`${file.name}: ${msg}`);
+			}
+		}
+
+		if (errors.length > 0) {
+			return json(
+				{ error: 'Invalid files detected. Please ensure standard YAML format.', details: errors },
+				{ status: 400 }
+			);
+		}
+
 		// Create directory if it doesn't exist
 		if (!fs.existsSync(uploadsDir)) {
 			fs.mkdirSync(uploadsDir, { recursive: true });
@@ -112,27 +108,14 @@ export async function POST({ request }) {
 			}
 		}
 
-		let savedCount = 0;
-		for (const file of files) {
-			if (!file.name.endsWith('.md')) continue;
-
-			const rawText = await file.text();
-			const sanitizedName = path.basename(file.webkitRelativePath || file.name);
-			const defaultTaskName = sanitizedName
-				.replace(/\.md$/, '')
-				.replace(/ [a-f0-9]{32}$/, '')
-				.trim();
-
-			const processedContent = processContent(rawText, defaultTaskName);
-
-			fs.writeFileSync(path.join(uploadsDir, sanitizedName), processedContent, 'utf-8');
-			savedCount++;
+		for (const file of processedFiles) {
+			fs.writeFileSync(path.join(uploadsDir, file.name), file.content, 'utf-8');
 		}
 
 		// Force MarkdownDB to re-index the newly added files
 		await refreshTasks();
 
-		return json({ success: true, count: savedCount });
+		return json({ success: true, count: processedFiles.length });
 	} catch (e) {
 		console.error('Upload error:', e);
 		return json({ error: 'Failed to process upload' }, { status: 500 });

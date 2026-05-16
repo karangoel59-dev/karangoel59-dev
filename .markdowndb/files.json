@@ -56,34 +56,6 @@
     "tasks": []
   },
   {
-    "_id": "f8aed0a68e558646b627d7684ab981b03b14f3ea",
-    "file_path": "data/uploads/Add a retry filter to fix wrong status code in fal 3582ff1bc21f807cbee7c3ec834da93a.md",
-    "extension": "md",
-    "url_path": "Add%20a%20retry%20filter%20to%20fix%20wrong%20status%20code%20in%20fal%203582ff1bc21f807cbee7c3ec834da93a",
-    "filetype": null,
-    "metadata": {
-      "Task": "Add a retry/filter to fix wrong status code in fallback",
-      "Date": "May 6, 2026 → May 8, 2026",
-      "LINK": "https://chat360-jira.atlassian.net/browse/AA-496",
-      "Task Type": "Development, Issue",
-      "Status": "Yes",
-      "tags": [],
-      "tasks": []
-    },
-    "tags": [],
-    "links": [
-      {
-        "from": "Add a retry filter to fix wrong status code in fal 3582ff1bc21f807cbee7c3ec834da93a.md",
-        "to": "https://chat360-jira.atlassian.net/browse/AA-496",
-        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-496",
-        "text": "https://chat360-jira.atlassian.net/browse/AA-496",
-        "embed": false,
-        "internal": false
-      }
-    ],
-    "tasks": []
-  },
-  {
     "_id": "864869ee61e73852619ca6bbcdd08954b015e637",
     "file_path": "data/uploads/Add fields to Data Capture 33a2ff1bc21f804dbc9dc01b2c8e14b4.md",
     "extension": "md",
@@ -344,6 +316,7 @@
     "metadata": {
       "Task": "Create PRs for Prod",
       "Date": "April 9, 2026",
+      "LINK": "",
       "Task Type": "Chore, Work",
       "Status": "Yes",
       "tags": [],
@@ -411,6 +384,7 @@
     "metadata": {
       "Task": "Create a tool for one click setup",
       "Date": "April 4, 2026 → April 7, 2026",
+      "LINK": "",
       "Task Type": "Personal",
       "Status": "Yes",
       "tags": [],
@@ -896,6 +870,7 @@
     "metadata": {
       "Task": "KT on Code",
       "Date": "March 16, 2026",
+      "LINK": "",
       "Task Type": "Chore, Work",
       "Status": "Yes",
       "tags": [],
@@ -914,6 +889,7 @@
     "metadata": {
       "Task": "KT on Setup",
       "Date": "March 13, 2026",
+      "LINK": "",
       "Task Type": "Chore, Work",
       "Status": "Yes",
       "tags": [],
@@ -988,6 +964,8 @@
     "metadata": {
       "Task": "Move Pinecone to Qdrant - 2",
       "Date": "May 14, 2026",
+      "LINK": "",
+      "Task Type": "",
       "Status": "No",
       "tags": [],
       "tasks": []
@@ -1181,6 +1159,7 @@
     "metadata": {
       "Task": "OCR Testing",
       "Date": "April 6, 2026",
+      "LINK": "",
       "Task Type": "Chore",
       "Status": "Yes",
       "tags": [],
@@ -1242,30 +1221,6 @@
         "text": "https://chat360-jira.atlassian.net/browse/AA-374",
         "embed": false,
         "internal": false
-      }
-    ],
-    "tasks": []
-  },
-  {
-    "_id": "5c97488e283e72f59b804b5d57aa6c039c2d95b3",
-    "file_path": "data/uploads/Paddle Results 3352ff1bc21f806ca4e0ce3eceff2ddc.md",
-    "extension": "md",
-    "url_path": "Paddle%20Results%203352ff1bc21f806ca4e0ce3eceff2ddc",
-    "filetype": null,
-    "metadata": {
-      "Task": "Paddle Results",
-      "tags": [],
-      "tasks": []
-    },
-    "tags": [],
-    "links": [
-      {
-        "from": "Paddle Results 3352ff1bc21f806ca4e0ce3eceff2ddc.md",
-        "to": "Paddle%20Results/_OCR_Service_Code_Review_.pdf",
-        "toRaw": "Paddle%20Results/_OCR_Service_Code_Review_.pdf",
-        "text": "_OCR Service Code Review .pdf",
-        "embed": false,
-        "internal": true
       }
     ],
     "tasks": []
@@ -1335,6 +1290,7 @@
     "metadata": {
       "Task": "Prod PR",
       "Date": "May 5, 2026 → May 7, 2026",
+      "LINK": "",
       "Task Type": "Chore, Work",
       "Status": "Yes",
       "tags": [],
@@ -1578,6 +1534,7 @@
     "metadata": {
       "Task": "Sent Keka regularise after confirming",
       "Date": "April 2, 2026",
+      "LINK": "",
       "Task Type": "Chore",
       "Status": "Yes",
       "tags": [],
@@ -1596,6 +1553,7 @@
     "metadata": {
       "Task": "Set up Backend Repo",
       "Date": "May 11, 2026",
+      "LINK": "",
       "Task Type": "Chore",
       "Status": "Yes",
       "tags": [],
@@ -1614,6 +1572,7 @@
     "metadata": {
       "Task": "Take Charger from Omkar",
       "Date": "April 1, 2026",
+      "LINK": "",
       "Task Type": "Chore",
       "Status": "Yes",
       "tags": [],
@@ -1772,6 +1731,7 @@
     "metadata": {
       "Task": "Wash Clothes",
       "Date": "March 31, 2026",
+      "LINK": "",
       "Task Type": "Chore, Personal",
       "Status": "Yes",
       "tags": [],
@@ -1790,6 +1750,7 @@
     "metadata": {
       "Task": "Wfh",
       "Date": "May 13, 2026",
+      "LINK": "",
       "Task Type": "Personal",
       "Status": "Yes",
       "tags": [],

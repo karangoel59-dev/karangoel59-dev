@@ -30,15 +30,20 @@
 				// Invalidate all load functions to re-fetch tasks
 				await invalidateAll();
 			} else {
-				console.error('Upload failed');
-				alert('Upload failed.');
+				const result = await response.json();
+				console.error('Upload failed', result);
+				if (result.error && result.details) {
+					alert(`Upload failed: ${result.error}\n\n${result.details.join('\n')}`);
+				} else {
+					alert(`Upload failed: ${result.error || 'Unknown error'}`);
+				}
 			}
 		} catch (error) {
 			console.error('Upload error:', error);
 			alert('An error occurred during upload.');
 		} finally {
 			isUploading = false;
-			// Reset the file input so the same folder can be uploaded again if needed
+			// Reset the file input so the same files can be uploaded again if needed
 			if (fileInput) fileInput.value = '';
 		}
 	}
@@ -47,7 +52,6 @@
 <div class="flex items-center gap-2">
 	<input
 		type="file"
-		webkitdirectory
 		multiple
 		accept=".md"
 		class="hidden"

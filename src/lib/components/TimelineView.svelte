@@ -20,9 +20,10 @@
 				}
 
 				const parts = task.Date.split('→').map((s: string) => s.trim());
-				const startDate = new Date(parts[0] + 'T12:00:00');
-				const endDate =
-					parts.length > 1 ? new Date(parts[1] + 'T12:00:00') : new Date(parts[0] + 'T12:00:00');
+				const startDate = new Date(`${parts[0]} 12:00:00`);
+				const endDate = parts.length > 1 
+					? new Date(`${parts[1]} 12:00:00`) 
+					: new Date(`${parts[0]} 12:00:00`);
 
 				if (isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
 					return null;
@@ -41,8 +42,8 @@
 					allDay: true,
 					backgroundColor: '#3b82f6', // blue-500
 					extendedProps: {
-						taskType: task['Task Type'] || '',
-						completed: task[' '] === 'Yes'
+						taskType: task['Type'] || '',
+						completed: task['Status'] === 'Yes'
 					}
 				};
 			})

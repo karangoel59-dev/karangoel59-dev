@@ -33,7 +33,7 @@
 					<td class="border-x border-gray-200 px-3 py-2 text-center dark:border-gray-700">
 						<input
 							type="checkbox"
-							checked={task[' '] === 'Yes'}
+							checked={task['Status'] === 'Yes'}
 							class="h-4 w-4 cursor-not-allowed rounded border-gray-300 text-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700"
 							readonly
 						/>
@@ -68,7 +68,7 @@
 					</td>
 					<td class="border-x border-gray-200 px-3 py-2 dark:border-gray-700">
 						<div class="flex flex-wrap gap-1">
-							{#each getTypes(task['Task Type']) as type}
+							{#each getTypes(task['Type']) as type}
 								<span
 									class="inline-flex items-center rounded px-2 py-0.5 text-xs font-medium {getPillColor(
 										type
