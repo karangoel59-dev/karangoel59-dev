@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+	import FolderUpload from '$lib/components/FolderUpload.svelte';
 
 	let { children } = $props();
 
@@ -33,7 +34,8 @@
 				</a>
 			{/each}
 		</div>
-		<div class="ml-4 flex items-center">
+		<div class="ml-4 flex items-center gap-4">
+			<FolderUpload />
 			<ThemeToggle />
 		</div>
 	</nav>

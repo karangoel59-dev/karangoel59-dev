@@ -1,8 +1,9 @@
 import { error } from '@sveltejs/kit';
 import fs from 'fs';
 import path from 'path';
+import type { PageServerLoad } from './$types';
 
-export function load({ params }) {
+export const load: PageServerLoad = ({ params }) => {
 	const taskName = params.taskName;
 	const refDir = path.resolve('ref/Work Dashboard/To Do List/To Do List');
 
@@ -26,6 +27,7 @@ export function load({ params }) {
 		}
 
 		if (matchedFile) {
+			// FIX: Changed targetDir to refDir
 			const content = fs.readFileSync(path.join(refDir, matchedFile), 'utf-8');
 			return {
 				taskName: cleanTaskName,
@@ -33,9 +35,13 @@ export function load({ params }) {
 			};
 		}
 
-		throw error(404, 'Task not found');
+		// SvelteKit's error() function must be thrown
+		error(404, 'Task not found');
+		
 	} catch (e) {
 		console.error(e);
-		throw error(404, 'Task not found');
+		// Note: error() is thrown automatically if it's a SvelteKit error, 
+		// but standard JS errors should be caught and thrown as HTTP errors.
+		error(404, 'Task not found');
 	}
-}
+};

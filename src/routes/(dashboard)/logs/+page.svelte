@@ -1,6 +1,10 @@
 <script lang="ts">
-	import tasks from '$lib/tasks.json';
+	import type { PageData } from './$types';
 	import TodoList from '$lib/components/TodoList.svelte';
+	
+	let { data }: { data: PageData } = $props();
+	
+	let tasks = $derived(data.tasks);
 </script>
 
 <svelte:head>
