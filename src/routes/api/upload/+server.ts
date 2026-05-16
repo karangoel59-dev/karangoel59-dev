@@ -35,7 +35,13 @@ function processContent(originalContent: string) {
 	const taskType = parsed['task type'] || '';
 
 	if (!task) throw new Error('Missing mandatory field: Task');
-	if (!date && task.toLowerCase() !== 'things to note' && task.toLowerCase() !== 'quick links' && taskType.toLowerCase() !== 'quick links') throw new Error('Missing mandatory field: Date');
+	if (
+		!date &&
+		task.toLowerCase() !== 'things to note' &&
+		task.toLowerCase() !== 'quick links' &&
+		taskType.toLowerCase() !== 'quick links'
+	)
+		throw new Error('Missing mandatory field: Date');
 
 	const link = parsed['link'] || '';
 	const status = parsed['status'] || 'No';

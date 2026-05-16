@@ -1,20 +1,88 @@
 const colorPalette = [
-	{ pill: 'bg-pink-100 text-pink-700', box: 'bg-pink-50 hover:bg-pink-100 border-pink-200 text-pink-900', eventBg: '#ec4899', eventText: '#ffffff' },
-	{ pill: 'bg-indigo-100 text-indigo-700', box: 'bg-indigo-50 hover:bg-indigo-100 border-indigo-200 text-indigo-900', eventBg: '#6366f1', eventText: '#ffffff' },
-	{ pill: 'bg-teal-100 text-teal-700', box: 'bg-teal-50 hover:bg-teal-100 border-teal-200 text-teal-900', eventBg: '#14b8a6', eventText: '#ffffff' },
-	{ pill: 'bg-orange-100 text-orange-700', box: 'bg-orange-50 hover:bg-orange-100 border-orange-200 text-orange-900', eventBg: '#f97316', eventText: '#ffffff' },
-	{ pill: 'bg-cyan-100 text-cyan-700', box: 'bg-cyan-50 hover:bg-cyan-100 border-cyan-200 text-cyan-900', eventBg: '#06b6d4', eventText: '#ffffff' },
-	{ pill: 'bg-green-100 text-green-700', box: 'bg-green-50 hover:bg-green-100 border-green-200 text-green-900', eventBg: '#22c55e', eventText: '#ffffff' },
-	{ pill: 'bg-emerald-100 text-emerald-700', box: 'bg-emerald-50 hover:bg-emerald-100 border-emerald-200 text-emerald-900', eventBg: '#10b981', eventText: '#ffffff' },
-	{ pill: 'bg-rose-100 text-rose-700', box: 'bg-rose-50 hover:bg-rose-100 border-rose-200 text-rose-900', eventBg: '#f43f5e', eventText: '#ffffff' }
+	{
+		pill: 'bg-pink-100 text-pink-700',
+		box: 'bg-pink-50 hover:bg-pink-100 border-pink-200 text-pink-900',
+		eventBg: '#ec4899',
+		eventText: '#ffffff'
+	},
+	{
+		pill: 'bg-indigo-100 text-indigo-700',
+		box: 'bg-indigo-50 hover:bg-indigo-100 border-indigo-200 text-indigo-900',
+		eventBg: '#6366f1',
+		eventText: '#ffffff'
+	},
+	{
+		pill: 'bg-teal-100 text-teal-700',
+		box: 'bg-teal-50 hover:bg-teal-100 border-teal-200 text-teal-900',
+		eventBg: '#14b8a6',
+		eventText: '#ffffff'
+	},
+	{
+		pill: 'bg-orange-100 text-orange-700',
+		box: 'bg-orange-50 hover:bg-orange-100 border-orange-200 text-orange-900',
+		eventBg: '#f97316',
+		eventText: '#ffffff'
+	},
+	{
+		pill: 'bg-cyan-100 text-cyan-700',
+		box: 'bg-cyan-50 hover:bg-cyan-100 border-cyan-200 text-cyan-900',
+		eventBg: '#06b6d4',
+		eventText: '#ffffff'
+	},
+	{
+		pill: 'bg-green-100 text-green-700',
+		box: 'bg-green-50 hover:bg-green-100 border-green-200 text-green-900',
+		eventBg: '#22c55e',
+		eventText: '#ffffff'
+	},
+	{
+		pill: 'bg-emerald-100 text-emerald-700',
+		box: 'bg-emerald-50 hover:bg-emerald-100 border-emerald-200 text-emerald-900',
+		eventBg: '#10b981',
+		eventText: '#ffffff'
+	},
+	{
+		pill: 'bg-rose-100 text-rose-700',
+		box: 'bg-rose-50 hover:bg-rose-100 border-rose-200 text-rose-900',
+		eventBg: '#f43f5e',
+		eventText: '#ffffff'
+	}
 ];
 
-const specificColors: Record<string, { pill: string; box: string; eventBg: string; eventText: string }> = {
-	issue: { pill: 'bg-purple-100 text-purple-700', box: 'bg-purple-50 hover:bg-purple-100 border-purple-200 text-purple-900', eventBg: '#a855f7', eventText: '#ffffff' },
-	development: { pill: 'bg-blue-100 text-blue-700', box: 'bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-900', eventBg: '#3b82f6', eventText: '#ffffff' },
-	chore: { pill: 'bg-red-100 text-red-700', box: 'bg-red-50 hover:bg-red-100 border-red-200 text-red-900', eventBg: '#ef4444', eventText: '#ffffff' },
-	personal: { pill: 'bg-gray-100 text-gray-700', box: 'bg-gray-50 hover:bg-gray-100 border-gray-200 text-gray-900', eventBg: '#6b7280', eventText: '#ffffff' },
-	work: { pill: 'bg-yellow-100 text-yellow-700', box: 'bg-yellow-50 hover:bg-yellow-100 border-yellow-200 text-yellow-900', eventBg: '#eab308', eventText: '#1f2937' }
+const specificColors: Record<
+	string,
+	{ pill: string; box: string; eventBg: string; eventText: string }
+> = {
+	issue: {
+		pill: 'bg-purple-100 text-purple-700',
+		box: 'bg-purple-50 hover:bg-purple-100 border-purple-200 text-purple-900',
+		eventBg: '#a855f7',
+		eventText: '#ffffff'
+	},
+	development: {
+		pill: 'bg-blue-100 text-blue-700',
+		box: 'bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-900',
+		eventBg: '#3b82f6',
+		eventText: '#ffffff'
+	},
+	chore: {
+		pill: 'bg-red-100 text-red-700',
+		box: 'bg-red-50 hover:bg-red-100 border-red-200 text-red-900',
+		eventBg: '#ef4444',
+		eventText: '#ffffff'
+	},
+	personal: {
+		pill: 'bg-gray-100 text-gray-700',
+		box: 'bg-gray-50 hover:bg-gray-100 border-gray-200 text-gray-900',
+		eventBg: '#6b7280',
+		eventText: '#ffffff'
+	},
+	work: {
+		pill: 'bg-yellow-100 text-yellow-700',
+		box: 'bg-yellow-50 hover:bg-yellow-100 border-yellow-200 text-yellow-900',
+		eventBg: '#eab308',
+		eventText: '#1f2937'
+	}
 };
 
 function getStringHash(str: string): number {

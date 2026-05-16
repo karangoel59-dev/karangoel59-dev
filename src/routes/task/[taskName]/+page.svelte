@@ -49,7 +49,9 @@
 				{#if data.status}
 					<div class="flex items-center gap-2">
 						<span class="text-sm font-medium text-gray-500 dark:text-gray-400">Status</span>
-						<span class="inline-flex items-center rounded-md bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+						<span
+							class="inline-flex items-center rounded-md bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-800 dark:text-gray-200"
+						>
 							{data.status}
 						</span>
 					</div>
@@ -61,7 +63,11 @@
 						<span class="text-sm font-medium text-gray-500 dark:text-gray-400">Type</span>
 						<div class="flex gap-2">
 							{#each getTypes(data.type) as type}
-								<span class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-medium {getPillColor(type)}">
+								<span
+									class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-medium {getPillColor(
+										type
+									)}"
+								>
 									{type}
 								</span>
 							{/each}
