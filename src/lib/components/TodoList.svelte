@@ -29,7 +29,9 @@
 						/>
 					</td>
 					<td class="border-x border-gray-200 px-3 py-2 font-medium">
-						{task.Task}
+						<a href={`/task/${encodeURIComponent(task.Task)}`} class="hover:underline hover:text-blue-600 transition-colors">
+							{task.Task}
+						</a>
 					</td>
 					<td class="border-x border-gray-200 px-3 py-2 whitespace-nowrap text-gray-500">
 						{task.Date}

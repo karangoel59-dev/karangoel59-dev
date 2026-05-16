@@ -1,62 +1,62 @@
-﻿Task," ",Date,LINK,Task Type
-Data Capture 1,Yes,"March 24, 2026 → March 25, 2026",https://chat360-jira.atlassian.net/browse/AA-384,Issue
-"Orchestrator Returns “No Response” ",Yes,"March 17, 2026 → March 18, 2026",https://chat360-jira.atlassian.net/browse/AA-354,Issue
-"Update Usage Overview Cards ",Yes,"March 20, 2026",https://chat360-jira.atlassian.net/browse/AA-363,Development
-Image Recognition Feature-Learn more page,Yes,"March 20, 2026",https://chat360-jira.atlassian.net/browse/AA-362,Issue
-WriteHere,Yes,"March 21, 2026",https://github.com/principia-ai/WriteHERE,Personal
- Modifier Name Prompt Appears Multiple Times,Yes,"March 23, 2026",https://chat360-jira.atlassian.net/browse/AA-375,Development
-PII Masking Framework,Yes,"March 23, 2026",https://chat360-jira.atlassian.net/browse/AA-374,Development
-OCR Integration for Knowledge Base,Yes,"March 23, 2026",https://chat360-jira.atlassian.net/browse/AA-115,Issue
-KT on Setup,Yes,"March 13, 2026",,"Chore, Work"
-KT on Code,Yes,"March 16, 2026",,"Chore, Work"
-Semantic KB answer not provided correctly for spreadsheet-based query,Yes,"March 27, 2026",https://chat360-jira.atlassian.net/browse/AA-156,Issue
-Doc Ock,Yes,"March 28, 2026 → March 29, 2026",https://github.com/kgoel59/doc-ock,Personal
- Search functionality not working in Assets feature,Yes,"March 26, 2026",https://chat360-jira.atlassian.net/browse/AA-390,Development
-Add ocr_enabled flag in Knowledgebase APIs and upload flow,Yes,"March 26, 2026",https://chat360-jira.atlassian.net/browse/AA-145,Issue
-Data Capture Prod Issue,Yes,"March 27, 2026",https://chat360-jira.atlassian.net/browse/AA-384,Issue
-Data Capture 2,Yes,"March 30, 2026 → March 31, 2026",https://chat360-jira.atlassian.net/browse/AA-384,Development
-OCR Testing,Yes,"March 30, 2026 → March 31, 2026",https://chat360-jira.atlassian.net/browse/AA-115,Issue
- Search functionality not working in Assets feature - 2,Yes,"March 30, 2026",https://chat360-jira.atlassian.net/browse/AA-390,Issue
-Wash Clothes,Yes,"March 31, 2026",,"Chore, Personal"
-OCR Issue 2,Yes,"April 1, 2026 → April 4, 2026",https://chat360-jira.atlassian.net/browse/AA-115,Development
-Take Charger from Omkar,Yes,"April 1, 2026",,Chore
-Audit Trail Logs Not Reflecting Correct Changes,Yes,"April 1, 2026 → April 4, 2026",https://chat360-jira.atlassian.net/browse/AA-407,Issue
-Sent Keka regularise after confirming,Yes,"April 2, 2026",,Chore
-Test Semantic,Yes,"April 8, 2026 → April 9, 2026",https://chat360-jira.atlassian.net/browse/AA-156,Issue
-Create a tool for one click setup,Yes,"April 4, 2026 → April 7, 2026",,Personal
-Dynamic Tool Integration in UI,Yes,"April 6, 2026",https://chat360-jira.atlassian.net/browse/AA-446,Chore
-OCR Testing,Yes,"April 6, 2026",,Chore
-Add fields to Data Capture,Yes,"April 6, 2026 → April 8, 2026",https://chat360-jira.atlassian.net/browse/AA-416,Development
-Tool Capture Fix,Yes,"April 7, 2026 → April 8, 2026",https://chat360-jira.atlassian.net/browse/AA-422,Issue
-Change agent_status to active,Yes,"April 7, 2026 → April 8, 2026",https://chat360-jira.atlassian.net/browse/AA-407,Issue
-OCR 3,Yes,"April 9, 2026",https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing,"Chore, Work"
-BE- Provide Currency Conversion Support for Dashboard Total Cost,Yes,"April 7, 2026",https://chat360-jira.atlassian.net/browse/AA-420,Development
-Create PRs for Prod,Yes,"April 9, 2026",,"Chore, Work"
-Agentic Cache Issue,Yes,"April 13, 2026 → April 17, 2026",https://chat360-jira.atlassian.net/browse/AA-172,Development
-AI Assistant Dashboard Metrics API,Yes,"April 15, 2026 → April 16, 2026",https://chat360-jira.atlassian.net/browse/AA-424,Development
-Prod Issue,Yes,"April 10, 2026",https://chat360-jira.atlassian.net/browse/AA-363,Issue
-Tool Trace 2,Yes,"April 13, 2026 → April 14, 2026",https://chat360-jira.atlassian.net/browse/AA-422,Development
-OCR 4,Yes,"April 20, 2026 → April 21, 2026",https://chat360-jira.atlassian.net/browse/AA-115,Development
-Global Variable,Yes,"April 16, 2026 → April 17, 2026",https://chat360-jira.atlassian.net/browse/AA-452,Development
-Integration API,Yes,"April 14, 2026 → April 15, 2026",https://chat360-jira.atlassian.net/browse/AA-446,Development
-Currency Conversion,Yes,"April 15, 2026 → April 16, 2026",https://chat360-jira.atlassian.net/browse/AA-420,Development
-Prod Issue,Yes,"April 16, 2026",https://chat360-jira.atlassian.net/browse/AA-172,Issue
-AI Assistant Dashboard Metrics API 2,Yes,"April 17, 2026 → April 17, 2026",https://chat360-jira.atlassian.net/browse/AA-424,Issue
-Prod PR,Yes,"May 5, 2026 → May 7, 2026",,"Chore, Work"
-GPT Setup,Yes,"April 18, 2026",OpenWebUI,Personal
-Enable Status for Delete - 1,Yes,"April 21, 2026 → April 22, 2026",https://chat360-jira.atlassian.net/browse/AA-463,Development
-Intgration API,Yes,"April 20, 2026",https://chat360-jira.atlassian.net/browse/AA-446,Development
-Update Metric for 3rd Card,Yes,"April 22, 2026",https://chat360-jira.atlassian.net/browse/AA-466,Development
-Campaign Automation - 1 - 1,Yes,"April 23, 2026 → April 24, 2026",https://chat360-jira.atlassian.net/browse/AA-478,Development
-OCR - 5,Yes,"May 4, 2026 → May 5, 2026",https://chat360-jira.atlassian.net/browse/AA-115,Issue
-Campaign Automation - 2,Yes,"April 27, 2026 → April 29, 2026",https://chat360-jira.atlassian.net/browse/AA-478,Development
-Semantic Sheet Upload,Yes,"May 4, 2026 → May 5, 2026",https://chat360-jira.atlassian.net/browse/AA-470,Issue
-Campaigns API Fix,Yes,"May 6, 2026 → May 7, 2026",https://chat360-jira.atlassian.net/browse/AA-478,Issue
-"
-Add a retry/filter to fix wrong status code in fallback",Yes,"May 6, 2026 → May 8, 2026",https://chat360-jira.atlassian.net/browse/AA-496,"Development, Issue"
-Set up Backend Repo,Yes,"May 11, 2026",,Chore
-Move Pinecone to Qdrant - 1,Yes,"May 12, 2026 → May 12, 2026",https://chat360-jira.atlassian.net/browse/AA-508,Development
-[Stage] Assistant Preview Displays Image URLs Instead of Rendering Images - 1,Yes,"May 12, 2026 → May 12, 2026",https://chat360-jira.atlassian.net/browse/AA-504,Issue
-Global vars - 2,Yes,"May 13, 2026",https://chat360-jira.atlassian.net/browse/AA-452,Issue
-Move Pinecone to Qdrant - 2,No,"May 14, 2026",,
-Wfh,Yes,"May 13, 2026",,Personal
+﻿" ",Date,Task,Task Type,LINK
+Yes,"March 13, 2026",KT on Setup,"Chore, Work",
+Yes,"March 16, 2026",KT on Code,"Chore, Work",
+Yes,"March 17, 2026 → March 18, 2026","Orchestrator Returns “No Response” ",Issue,https://chat360-jira.atlassian.net/browse/AA-354
+Yes,"March 20, 2026",Image Recognition Feature-Learn more page,Issue,https://chat360-jira.atlassian.net/browse/AA-362
+Yes,"March 20, 2026","Update Usage Overview Cards ",Development,https://chat360-jira.atlassian.net/browse/AA-363
+Yes,"March 21, 2026",WriteHere,Personal,https://github.com/principia-ai/WriteHERE
+Yes,"March 23, 2026",OCR Integration for Knowledge Base,Issue,https://chat360-jira.atlassian.net/browse/AA-115
+Yes,"March 23, 2026",PII Masking Framework,Development,https://chat360-jira.atlassian.net/browse/AA-374
+Yes,"March 23, 2026", Modifier Name Prompt Appears Multiple Times,Development,https://chat360-jira.atlassian.net/browse/AA-375
+Yes,"March 24, 2026 → March 25, 2026",Data Capture 1,Issue,https://chat360-jira.atlassian.net/browse/AA-384
+Yes,"March 26, 2026",Add ocr_enabled flag in Knowledgebase APIs and upload flow,Issue,https://chat360-jira.atlassian.net/browse/AA-145
+Yes,"March 26, 2026", Search functionality not working in Assets feature,Development,https://chat360-jira.atlassian.net/browse/AA-390
+Yes,"March 27, 2026",Data Capture Prod Issue,Issue,https://chat360-jira.atlassian.net/browse/AA-384
+Yes,"March 27, 2026",Semantic KB answer not provided correctly for spreadsheet-based query,Issue,https://chat360-jira.atlassian.net/browse/AA-156
+Yes,"March 28, 2026 → March 29, 2026",Doc Ock,Personal,https://github.com/kgoel59/doc-ock
+Yes,"March 30, 2026", Search functionality not working in Assets feature - 2,Issue,https://chat360-jira.atlassian.net/browse/AA-390
+Yes,"March 30, 2026 → March 31, 2026",OCR Testing,Issue,https://chat360-jira.atlassian.net/browse/AA-115
+Yes,"March 30, 2026 → March 31, 2026",Data Capture 2,Development,https://chat360-jira.atlassian.net/browse/AA-384
+Yes,"March 31, 2026",Wash Clothes,"Chore, Personal",
+Yes,"April 1, 2026 → April 4, 2026",Audit Trail Logs Not Reflecting Correct Changes,Issue,https://chat360-jira.atlassian.net/browse/AA-407
+Yes,"April 1, 2026",Take Charger from Omkar,Chore,
+Yes,"April 1, 2026 → April 4, 2026",OCR Issue 2,Development,https://chat360-jira.atlassian.net/browse/AA-115
+Yes,"April 2, 2026",Sent Keka regularise after confirming,Chore,
+Yes,"April 4, 2026 → April 7, 2026",Create a tool for one click setup,Personal,
+Yes,"April 6, 2026 → April 8, 2026",Add fields to Data Capture,Development,https://chat360-jira.atlassian.net/browse/AA-416
+Yes,"April 6, 2026",OCR Testing,Chore,
+Yes,"April 6, 2026",Dynamic Tool Integration in UI,Chore,https://chat360-jira.atlassian.net/browse/AA-446
+Yes,"April 7, 2026",BE- Provide Currency Conversion Support for Dashboard Total Cost,Development,https://chat360-jira.atlassian.net/browse/AA-420
+Yes,"April 7, 2026 → April 8, 2026",Change agent_status to active,Issue,https://chat360-jira.atlassian.net/browse/AA-407
+Yes,"April 7, 2026 → April 8, 2026",Tool Capture Fix,Issue,https://chat360-jira.atlassian.net/browse/AA-422
+Yes,"April 8, 2026 → April 9, 2026",Test Semantic,Issue,https://chat360-jira.atlassian.net/browse/AA-156
+Yes,"April 9, 2026",Create PRs for Prod,"Chore, Work",
+Yes,"April 9, 2026",OCR 3,"Chore, Work",https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing
+Yes,"April 10, 2026",Prod Issue,Issue,https://chat360-jira.atlassian.net/browse/AA-363
+Yes,"April 13, 2026 → April 14, 2026",Tool Trace 2,Development,https://chat360-jira.atlassian.net/browse/AA-422
+Yes,"April 13, 2026 → April 17, 2026",Agentic Cache Issue,Development,https://chat360-jira.atlassian.net/browse/AA-172
+Yes,"April 14, 2026 → April 15, 2026",Integration API,Development,https://chat360-jira.atlassian.net/browse/AA-446
+Yes,"April 15, 2026 → April 16, 2026",Currency Conversion,Development,https://chat360-jira.atlassian.net/browse/AA-420
+Yes,"April 15, 2026 → April 16, 2026",AI Assistant Dashboard Metrics API,Development,https://chat360-jira.atlassian.net/browse/AA-424
+Yes,"April 16, 2026",Prod Issue,Issue,https://chat360-jira.atlassian.net/browse/AA-172
+Yes,"April 16, 2026 → April 17, 2026",Global Variable,Development,https://chat360-jira.atlassian.net/browse/AA-452
+Yes,"April 17, 2026 → April 17, 2026",AI Assistant Dashboard Metrics API 2,Issue,https://chat360-jira.atlassian.net/browse/AA-424
+Yes,"April 18, 2026",GPT Setup,Personal,OpenWebUI
+Yes,"April 20, 2026",Intgration API,Development,https://chat360-jira.atlassian.net/browse/AA-446
+Yes,"April 20, 2026 → April 21, 2026",OCR 4,Development,https://chat360-jira.atlassian.net/browse/AA-115
+Yes,"April 21, 2026 → April 22, 2026",Enable Status for Delete - 1,Development,https://chat360-jira.atlassian.net/browse/AA-463
+Yes,"April 22, 2026",Update Metric for 3rd Card,Development,https://chat360-jira.atlassian.net/browse/AA-466
+Yes,"April 23, 2026 → April 24, 2026",Campaign Automation - 1 - 1,Development,https://chat360-jira.atlassian.net/browse/AA-478
+Yes,"April 27, 2026 → April 29, 2026",Campaign Automation - 2,Development,https://chat360-jira.atlassian.net/browse/AA-478
+Yes,"May 4, 2026 → May 5, 2026",Semantic Sheet Upload,Issue,https://chat360-jira.atlassian.net/browse/AA-470
+Yes,"May 4, 2026 → May 5, 2026",OCR - 5,Issue,https://chat360-jira.atlassian.net/browse/AA-115
+Yes,"May 5, 2026 → May 7, 2026",Prod PR,"Chore, Work",
+Yes,"May 6, 2026 → May 8, 2026","
+Add a retry/filter to fix wrong status code in fallback","Development, Issue",https://chat360-jira.atlassian.net/browse/AA-496
+Yes,"May 6, 2026 → May 7, 2026",Campaigns API Fix,Issue,https://chat360-jira.atlassian.net/browse/AA-478
+Yes,"May 11, 2026",Set up Backend Repo,Chore,
+Yes,"May 12, 2026 → May 12, 2026",[Stage] Assistant Preview Displays Image URLs Instead of Rendering Images - 1,Issue,https://chat360-jira.atlassian.net/browse/AA-504
+Yes,"May 12, 2026 → May 12, 2026",Move Pinecone to Qdrant - 1,Development,https://chat360-jira.atlassian.net/browse/AA-508
+Yes,"May 13, 2026",Wfh,Personal,
+Yes,"May 13, 2026",Global vars - 2,Issue,https://chat360-jira.atlassian.net/browse/AA-452
+No,"May 14, 2026",Move Pinecone to Qdrant - 2,,

@@ -1,0 +1,62 @@
+﻿Task,Task Type," "
+KT on Setup,"Chore, Work",Yes
+Wash Clothes,"Chore, Personal",Yes
+OCR Issue 2,Development,Yes
+OCR Testing,Chore,Yes
+Tool Capture Fix,Issue,Yes
+Change agent_status to active,Issue,Yes
+OCR 3,"Chore, Work",Yes
+Create PRs for Prod,"Chore, Work",Yes
+OCR 4,Development,Yes
+Global Variable,Development,Yes
+Integration API,Development,Yes
+Currency Conversion,Development,Yes
+Prod PR,"Chore, Work",Yes
+GPT Setup,Personal,Yes
+Enable Status for Delete - 1,Development,Yes
+Intgration API,Development,Yes
+Update Metric for 3rd Card,Development,Yes
+Campaign Automation - 1 - 1,Development,Yes
+OCR - 5,Issue,Yes
+Campaigns API Fix,Issue,Yes
+"
+Add a retry/filter to fix wrong status code in fallback","Development, Issue",Yes
+Set up Backend Repo,Chore,Yes
+Move Pinecone to Qdrant - 1,Development,Yes
+[Stage] Assistant Preview Displays Image URLs Instead of Rendering Images - 1,Issue,Yes
+Global vars - 2,Issue,Yes
+Move Pinecone to Qdrant - 2,,No
+Wfh,Personal,Yes
+Data Capture 1,Issue,Yes
+"Orchestrator Returns “No Response” ",Issue,Yes
+"Update Usage Overview Cards ",Development,Yes
+Image Recognition Feature-Learn more page,Issue,Yes
+WriteHere,Personal,Yes
+ Modifier Name Prompt Appears Multiple Times,Development,Yes
+PII Masking Framework,Development,Yes
+OCR Integration for Knowledge Base,Issue,Yes
+KT on Code,"Chore, Work",Yes
+Semantic KB answer not provided correctly for spreadsheet-based query,Issue,Yes
+Doc Ock,Personal,Yes
+ Search functionality not working in Assets feature,Development,Yes
+Add ocr_enabled flag in Knowledgebase APIs and upload flow,Issue,Yes
+Data Capture Prod Issue,Issue,Yes
+Data Capture 2,Development,Yes
+OCR Testing,Issue,Yes
+ Search functionality not working in Assets feature - 2,Issue,Yes
+Take Charger from Omkar,Chore,Yes
+Audit Trail Logs Not Reflecting Correct Changes,Issue,Yes
+Sent Keka regularise after confirming,Chore,Yes
+Test Semantic,Issue,Yes
+Create a tool for one click setup,Personal,Yes
+Dynamic Tool Integration in UI,Chore,Yes
+Add fields to Data Capture,Development,Yes
+BE- Provide Currency Conversion Support for Dashboard Total Cost,Development,Yes
+Agentic Cache Issue,Development,Yes
+AI Assistant Dashboard Metrics API,Development,Yes
+Prod Issue,Issue,Yes
+Tool Trace 2,Development,Yes
+Prod Issue,Issue,Yes
+AI Assistant Dashboard Metrics API 2,Issue,Yes
+Campaign Automation - 2,Development,Yes
+Semantic Sheet Upload,Issue,Yes
