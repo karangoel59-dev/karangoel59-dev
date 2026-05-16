@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	// @ts-ignore
 	import { Calendar, DayGrid, TimeGrid, List } from '@event-calendar/core';
+	import { getTypes, getPillColor } from '$lib/utils';
 
 	let { tasks = [] } = $props();
 
@@ -38,6 +39,10 @@
 					title: task.Task,
 					allDay: true,
 					backgroundColor: '#3b82f6', // blue-500
+					extendedProps: {
+						taskType: task['Task Type'] || '',
+						completed: task[' '] === 'Yes'
+					}
 				};
 			})
 			.filter((e: any): e is NonNullable<typeof e> => e !== null)
@@ -46,6 +51,28 @@
 	let options = $state({
 		view: 'dayGridMonth',
 		events: [] as any[],
+		eventContent: (info: any) => {
+			const { event } = info;
+			const { extendedProps } = event;
+			const checked = extendedProps.completed ? 'checked' : '';
+			
+			const types = getTypes(extendedProps.taskType);
+			const typeHtml = types.map((type: string) => 
+				`<span class="${getPillColor(type)}" style="padding: 2px 4px; border-radius: 4px; font-size: 10px; font-weight: 500; line-height: 1;">${type}</span>`
+			).join('');
+
+			return {
+				html: `
+					<div style="display: flex; flex-direction: column; padding: 4px; gap: 4px; white-space: normal;">
+						<div style="display: flex; align-items: flex-start; gap: 6px;">
+							<input type="checkbox" ${checked} disabled style="margin-top: 2px; flex-shrink: 0; pointer-events: none;" />
+							<span style="word-break: break-word; line-height: 1.25;">${event.title}</span>
+						</div>
+						${types.length > 0 ? `<div style="display: flex; flex-wrap: wrap; gap: 4px; margin-left: 20px;">${typeHtml}</div>` : ''}
+					</div>
+				`
+			};
+		},
 		headerToolbar: {
 			start: 'prev,next today',
 			center: 'title',
