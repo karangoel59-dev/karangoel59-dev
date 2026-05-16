@@ -1,7 +1,10 @@
 <script lang="ts">
 	import { Gantt, Willow } from '@svar-ui/svelte-gantt';
+	import TimelineView from './TimelineView.svelte';
 
 	let { tasks = [] } = $props();
+
+	let currentView = $state('calendar'); // 'gantt' | 'calendar'
 
 	const ganttTasks = $derived(
 		tasks
@@ -32,9 +35,31 @@
 	);
 </script>
 
-<h3 class="mt-8 mb-4 text-xl font-semibold">Calendar View</h3>
-<div class="h-[500px]">
-	<Willow>
-		<Gantt tasks={ganttTasks} links={[]} />
-	</Willow>
+<div class="mt-8 mb-4 flex items-center justify-between">
+	<h3 class="text-xl font-semibold">Calendar View</h3>
+	<div class="flex space-x-1 rounded-lg bg-gray-100 p-1">
+		<button
+			class="px-3 py-1.5 text-sm font-medium rounded-md transition-colors {currentView === 'calendar' ? 'bg-white shadow-sm text-gray-900' : 'text-gray-500 hover:text-gray-700'}"
+			onclick={() => (currentView = 'calendar')}
+		>
+			Calendar
+		</button>
+		<button
+			class="px-3 py-1.5 text-sm font-medium rounded-md transition-colors {currentView === 'gantt' ? 'bg-white shadow-sm text-gray-900' : 'text-gray-500 hover:text-gray-700'}"
+			onclick={() => (currentView = 'gantt')}
+		>
+			Gantt
+		</button>
+	</div>
 </div>
+
+{#if currentView === 'gantt'}
+	<div class="h-[500px]">
+		<Willow>
+			<Gantt tasks={ganttTasks} links={[]} />
+		</Willow>
+	</div>
+{:else}
+	<TimelineView {tasks} />
+{/if}
+

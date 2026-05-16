@@ -37,6 +37,11 @@
 		"vite": "^8.0.7"
 	},
 	"dependencies": {
+		"@event-calendar/core": "^5.7.0",
+		"@schedule-x/calendar": "^3.7.3",
+		"@schedule-x/events-service": "^4.6.0",
+		"@schedule-x/svelte": "^3.0.0",
+		"@schedule-x/theme-default": "^4.6.0",
 		"@svar-ui/svelte-gantt": "^2.6.2",
 		"@tailwindcss/typography": "^0.5.19",
 		"date-fns": "^4.1.0",
