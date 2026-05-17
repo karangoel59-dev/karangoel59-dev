@@ -1,6 +1,10 @@
-import { getTask } from '$lib/server/tasks';
+import { getTask, getClient } from '$lib/server/tasks';
 import { error } from '@sveltejs/kit';
 import { getAIInsight } from '$lib/server/aiCommentator';
+
+// Simple in-memory cache for AI responses
+let cachedInsight: { data: any; timestamp: number } | null = null;
+const CACHE_TTL = 1000 * 60 * 60; // Cache for 1 hour
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
@@ -14,9 +18,28 @@ export async function load() {
             To: t.To
         }));
 
+        // Fetch additional context from MarkdownDB
+        const client = await getClient();
+        const journalEntries = await client.getFiles();
+
+        const now = Date.now();
+        
+        // Check if we have a valid cached response
+        if (!cachedInsight || (now - cachedInsight.timestamp) > CACHE_TTL) {
+            // Pass the links along with journal and database metadata to the AI commentator
+            const insight = await getAIInsight('quick-links', {
+                links,
+                context: {
+                    journal: journalEntries.map(f => f.metadata),
+                }
+            });
+
+            cachedInsight = { data: insight, timestamp: now };
+        }
+
         return { 
             links,
-            aiComment: getAIInsight('quick-links', links)
+            aiComment: cachedInsight.data
         };
     } catch (e) {
         console.error(e);

@@ -5,7 +5,7 @@ import fs from 'fs';
 let mddbClient: MarkdownDB | null = null;
 let clientPromise: Promise<MarkdownDB> | null = null;
 
-async function getClient() {
+export async function getClient() {
 	if (!clientPromise) {
 		clientPromise = (async () => {
 			mddbClient = new MarkdownDB({

@@ -11,8 +11,9 @@ export async function getAIInsight(type: CommentType, data: any): Promise<string
 
 	switch (type) {
 		case 'quick-links':
-			prompt = `Analyze this collection of my bookmarks/links: ${JSON.stringify(data)}. 
-			Summarize what this collection is primarily about and what my current work focus seems to be.`;
+			prompt = `Analyze my collection of bookmarks/links: ${JSON.stringify(data.links)}. 
+			Also evaluate my recent journal metadata: ${JSON.stringify(data.context?.journal || [])}. 
+			Provide an overall insight into my work patterns: mention how many unique days I've worked, my most active areas/topics, and how the links support this focus.`;
 			break;
 		case 'journal':
 			prompt = `Review my journal tasks: ${JSON.stringify(data)}. 
@@ -39,11 +40,11 @@ export async function getAIInsight(type: CommentType, data: any): Promise<string
 				messages: [
 					{ 
 						role: 'system', 
-						content: 'You are an Intelligent Workflow Commentator. Provide concise, high-value insights (under 60 words) based on the provided user data.' 
+						content: 'You are an Intelligent Workflow Commentator. Provide concise, high-value insights (under 100 words) based on the provided user data.' 
 					},
 					{ role: 'user', content: prompt }
 				],
-				max_tokens: 150,
+				max_tokens: 250,
 				temperature: 0.7
 			})
 		});

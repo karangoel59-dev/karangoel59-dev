@@ -18,12 +18,12 @@
 		<div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-indigo-600 text-white shadow-md">
 			<Sparkles size={18} />
 		</div>
-		<div class="flex-1 text-sm leading-relaxed text-indigo-900 dark:text-indigo-200">
-			<header class="mb-1 font-semibold uppercase tracking-wider text-indigo-600/80 dark:text-indigo-400">AI Insight</header>
+		<div class="flex-1 leading-relaxed text-indigo-900 dark:text-indigo-200">
+			<header class="mb-1 text-xs font-semibold uppercase tracking-wider text-indigo-600/80 dark:text-indigo-400">AI Insight</header>
 			{#if loading}
-				<p class="animate-pulse italic">Scanning your workflow...</p>
+				<p class="text-sm animate-pulse italic">Scanning your workflow...</p>
 			{:else}
-				<p in:fade>{comment}</p>
+				<p class="text-lg font-medium" in:fade>{comment}</p>
 			{/if}
 		</div>
 	</div>
