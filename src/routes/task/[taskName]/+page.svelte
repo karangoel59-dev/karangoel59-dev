@@ -6,8 +6,47 @@
 
 	let { data } = $props();
 
+	let targetLanguage = $state('en');
+	let isTranslating = $state(false);
+	let currentTranslatedContent = $state<string | null>(null);
+
+	$effect(() => {
+		// Reset translation when navigating between different tasks
+		if (data.content) {
+			currentTranslatedContent = null;
+			targetLanguage = 'en';
+		}
+	});
+
 	// Parse markdown content safely
-	let htmlContent = $derived(marked.parse(data.content));
+	let htmlContent = $derived(marked.parse(currentTranslatedContent ?? data.content));
+
+	async function translateText() {
+		if (targetLanguage === 'en') {
+			currentTranslatedContent = null;
+			return;
+		}
+
+		isTranslating = true;
+		try {
+			// Replace with your actual translation API endpoint
+			const response = await fetch('/api/translate', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ text: data.content, targetLanguage })
+			});
+			if (response.ok) {
+				const result = await response.json();
+				currentTranslatedContent = result.translatedText;
+			} else {
+				console.error('Translation failed');
+			}
+		} catch (error) {
+			console.error('Error translating text:', error);
+		} finally {
+			isTranslating = false;
+		}
+	}
 </script>
 
 <svelte:head>
@@ -93,6 +132,31 @@
 						</span>
 					</div>
 				{/if}
+			</div>
+
+			<!-- Translation controls -->
+			<div class="mt-4 flex items-center gap-4 border-t border-gray-100 pt-4 dark:border-gray-800">
+				<span class="text-sm font-medium text-gray-500 dark:text-gray-400">Translate to:</span>
+				<select
+					bind:value={targetLanguage}
+					class="rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200"
+				>
+					<option value="en">English (Original)</option>
+					<option value="es">Spanish</option>
+					<option value="fr">French</option>
+					<option value="de">German</option>
+					<option value="zh">Chinese</option>
+					<option value="ja">Japanese</option>
+					<option value="hi">Hindi</option>
+					<option value="sa">Sanskrit</option>
+				</select>
+				<button
+					onclick={translateText}
+					disabled={isTranslating}
+					class="rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700 disabled:opacity-50 dark:bg-blue-500 dark:hover:bg-blue-600"
+				>
+					{isTranslating ? 'Translating...' : 'Translate'}
+				</button>
 			</div>
 		</div>
 

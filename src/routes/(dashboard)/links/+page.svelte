@@ -46,7 +46,7 @@
 		</div>
 	</div>
 
-	<aside class="pt-4 text-8xl leading-tight font-black lg:w-[60%]">
+	<aside class="pt-4 leading-tight font-black lg:w-[60%]">
 		{#await data.aiComment}
 			<AICommentator loading={true} />
 		{:then comment}

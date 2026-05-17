@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Sparkles } from '@lucide/svelte';
+	import { marked } from 'marked';
 	import { fade, slide } from 'svelte/transition';
 
 	/**
@@ -8,6 +9,8 @@
 	 * @property {boolean} [loading] - Whether the AI is "thinking"
 	 */
 	let { comment = '', loading = false }: { comment?: string; loading?: boolean } = $props();
+
+	const htmlComment = $derived(marked.parse(comment));
 </script>
 
 {#if comment || loading}
@@ -29,7 +32,10 @@
 			{#if loading}
 				<p class="animate-pulse text-sm italic">Scanning your workflow...</p>
 			{:else}
-				<p class="text-lg font-medium" in:fade>{comment}</p>
+				<article class="prose max-w-none dark:prose-invert" in:fade>
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+					{@html htmlComment}
+				</article>
 			{/if}
 		</div>
 	</div>
