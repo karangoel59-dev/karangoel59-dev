@@ -42,6 +42,20 @@ export async function refreshTasks() {
 	}
 }
 
+export async function clearTasks() {
+	if (mddbClient) {
+		try {
+			mddbClient._destroyDb();
+		} catch (e) {
+			console.error('Error destroying mddb db:', e);
+		}
+		mddbClient = null;
+	}
+	if (fs.existsSync('markdown.db')) {
+		fs.unlinkSync('markdown.db');
+	}
+}
+
 export interface TaskItem {
 	Task: string;
 	Date: string;
@@ -70,7 +84,6 @@ export async function getAllTasks(): Promise<TaskItem[]> {
 			};
 		});
 	} catch (e) {
-		console.error('Error fetching tasks via MarkdownDB:', e);
 		return [];
 	}
 }
