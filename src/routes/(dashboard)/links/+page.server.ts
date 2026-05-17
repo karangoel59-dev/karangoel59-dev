@@ -20,8 +20,13 @@ export async function load({ cookies }) {
 		}));
 
 		// Fetch additional context from MarkdownDB
-		const client = await getClient();
-		const journalEntries = await client.getFiles();
+		let journalEntries: any[] = [];
+		try {
+			const client = await getClient();
+			journalEntries = await client.getFiles();
+		} catch (err) {
+			console.warn('Could not fetch journal entries from mddb:', err);
+		}
 
 		const now = Date.now();
 
