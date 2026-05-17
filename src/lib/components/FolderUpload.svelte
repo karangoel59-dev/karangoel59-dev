@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { invalidateAll } from '$app/navigation';
+	import { FolderUp, RefreshCw, X } from '@lucide/svelte';
 
 	// Svelte 5 runes for reactive state
 	let isUploading = $state(false);
@@ -187,24 +188,27 @@
 	<button
 		onclick={selectDir}
 		disabled={isUploading || isSyncing || isClearing}
-		class="rounded-md border border-blue-200 bg-blue-50 px-3 py-1.5 text-sm text-blue-600 transition-colors hover:bg-blue-100 disabled:opacity-50 dark:border-blue-800 dark:bg-blue-900/30 dark:text-blue-400 dark:hover:bg-blue-900/50"
+		class="flex items-center gap-1.5 rounded-md border border-blue-200 bg-blue-50 px-3 py-1.5 text-sm text-blue-600 transition-colors hover:bg-blue-100 disabled:opacity-50 dark:border-blue-800 dark:bg-blue-900/30 dark:text-blue-400 dark:hover:bg-blue-900/50"
 	>
+		<FolderUp size={16} />
 		Select Dir
 	</button>
 	
 	<button
 		onclick={syncFiles}
 		disabled={(!directoryHandle && (typeof window !== 'undefined' && 'showDirectoryPicker' in window)) || isUploading || isSyncing || isClearing}
-		class="rounded-md border border-green-200 bg-green-50 px-3 py-1.5 text-sm text-green-600 transition-colors hover:bg-green-100 disabled:opacity-50 dark:border-green-800 dark:bg-green-900/30 dark:text-green-400 dark:hover:bg-green-900/50"
+		class="flex items-center gap-1.5 rounded-md border border-green-200 bg-green-50 px-3 py-1.5 text-sm text-green-600 transition-colors hover:bg-green-100 disabled:opacity-50 dark:border-green-800 dark:bg-green-900/30 dark:text-green-400 dark:hover:bg-green-900/50"
 	>
+		<RefreshCw size={16} class={isSyncing ? 'animate-spin' : ''} />
 		{isSyncing ? 'Syncing...' : 'Sync'}
 	</button>
 	
 	<button
 		onclick={closeDir}
 		disabled={isUploading || isSyncing || isClearing}
-		class="rounded-md border border-red-200 bg-red-50 px-3 py-1.5 text-sm text-red-600 transition-colors hover:bg-red-100 disabled:opacity-50 dark:border-red-800 dark:bg-red-900/30 dark:text-red-400 dark:hover:bg-red-900/50"
+		class="flex items-center gap-1.5 rounded-md border border-red-200 bg-red-50 px-3 py-1.5 text-sm text-red-600 transition-colors hover:bg-red-100 disabled:opacity-50 dark:border-red-800 dark:bg-red-900/30 dark:text-red-400 dark:hover:bg-red-900/50"
 	>
+		<X size={16} />
 		Close
 	</button>
 </div>

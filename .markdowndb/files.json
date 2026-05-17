@@ -1,1942 +1,1942 @@
 [
-	{
-		"_id": "e8ead243b021e370b7202eff88d5864899c49bf7",
-		"file_path": "data/uploads/AI Assistant Dashboard Metrics API 2 3452ff1bc21f80ff81e3c36055d5d8bd.md",
-		"extension": "md",
-		"url_path": "AI%20Assistant%20Dashboard%20Metrics%20API%202%203452ff1bc21f80ff81e3c36055d5d8bd",
-		"filetype": null,
-		"metadata": {
-			"Task": "AI Assistant Dashboard Metrics API 2",
-			"Date": "April 17, 2026 → April 17, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-424",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "AI Assistant Dashboard Metrics API 2 3452ff1bc21f80ff81e3c36055d5d8bd.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-424",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-424",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-424",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "6220c5e6ade784908890c85a381cbfc624af849b",
-		"file_path": "data/uploads/AI Assistant Dashboard Metrics API 33e2ff1bc21f8062baedef7022c95b49.md",
-		"extension": "md",
-		"url_path": "AI%20Assistant%20Dashboard%20Metrics%20API%2033e2ff1bc21f8062baedef7022c95b49",
-		"filetype": null,
-		"metadata": {
-			"Task": "AI Assistant Dashboard Metrics API",
-			"Date": "April 15, 2026 → April 16, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-424",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "AI Assistant Dashboard Metrics API 33e2ff1bc21f8062baedef7022c95b49.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-424",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-424",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-424",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "f8aed0a68e558646b627d7684ab981b03b14f3ea",
-		"file_path": "data/uploads/Add a retry filter to fix wrong status code in fal 3582ff1bc21f807cbee7c3ec834da93a.md",
-		"extension": "md",
-		"url_path": "Add%20a%20retry%20filter%20to%20fix%20wrong%20status%20code%20in%20fal%203582ff1bc21f807cbee7c3ec834da93a",
-		"filetype": null,
-		"metadata": {
-			"Task": "Add a retry/filter to fix wrong status code in fallback",
-			"Date": "May 6, 2026 → May 8, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-496",
-			"Task Type": "Development, Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Add a retry filter to fix wrong status code in fal 3582ff1bc21f807cbee7c3ec834da93a.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-496",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-496",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-496",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "864869ee61e73852619ca6bbcdd08954b015e637",
-		"file_path": "data/uploads/Add fields to Data Capture 33a2ff1bc21f804dbc9dc01b2c8e14b4.md",
-		"extension": "md",
-		"url_path": "Add%20fields%20to%20Data%20Capture%2033a2ff1bc21f804dbc9dc01b2c8e14b4",
-		"filetype": null,
-		"metadata": {
-			"Task": "Add fields to Data Capture",
-			"Date": "April 6, 2026 → April 8, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-416",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Add fields to Data Capture 33a2ff1bc21f804dbc9dc01b2c8e14b4.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-416",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-416",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-416",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "443a6e72b0b3f684b0eceb31d0e2b8291459da5b",
-		"file_path": "data/uploads/Add ocr_enabled flag in Knowledgebase APIs and upl 32f2ff1bc21f80a3800cdbdabffbbaf3.md",
-		"extension": "md",
-		"url_path": "Add%20ocr_enabled%20flag%20in%20Knowledgebase%20APIs%20and%20upl%2032f2ff1bc21f80a3800cdbdabffbbaf3",
-		"filetype": null,
-		"metadata": {
-			"Task": "Add ocr_enabled flag in Knowledgebase APIs and upload flow",
-			"Date": "March 26, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-145",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Add ocr_enabled flag in Knowledgebase APIs and upl 32f2ff1bc21f80a3800cdbdabffbbaf3.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-145",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-145",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-145",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "fd1fc71382cd1ba8c48ed45b168622a7e7116bac",
-		"file_path": "data/uploads/Agentic Cache Issue 33e2ff1bc21f80b0b18fdedd3bd0fce5.md",
-		"extension": "md",
-		"url_path": "Agentic%20Cache%20Issue%2033e2ff1bc21f80b0b18fdedd3bd0fce5",
-		"filetype": null,
-		"metadata": {
-			"Task": "Agentic Cache Issue",
-			"Date": "April 13, 2026 → April 17, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-172",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Agentic Cache Issue 33e2ff1bc21f80b0b18fdedd3bd0fce5.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-172",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-172",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-172",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "a095e11851a6e5de6389a12472b6442d24aa241b",
-		"file_path": "data/uploads/Audit Trail Logs Not Reflecting Correct Changes 3352ff1bc21f800d956ef23b7cb387b6.md",
-		"extension": "md",
-		"url_path": "Audit%20Trail%20Logs%20Not%20Reflecting%20Correct%20Changes%203352ff1bc21f800d956ef23b7cb387b6",
-		"filetype": null,
-		"metadata": {
-			"Task": "Audit Trail Logs Not Reflecting Correct Changes",
-			"Date": "April 1, 2026 → April 4, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-407",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Audit Trail Logs Not Reflecting Correct Changes 3352ff1bc21f800d956ef23b7cb387b6.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-407",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-407",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-407",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "9c80e3bf0f3415daf3c60f15d3f4eeaf769af7ca",
-		"file_path": "data/uploads/BE- Provide Currency Conversion Support for Dashbo 33d2ff1bc21f80a09c46d44b34994179.md",
-		"extension": "md",
-		"url_path": "BE-%20Provide%20Currency%20Conversion%20Support%20for%20Dashbo%2033d2ff1bc21f80a09c46d44b34994179",
-		"filetype": null,
-		"metadata": {
-			"Task": "BE- Provide Currency Conversion Support for Dashboard Total Cost",
-			"Date": "April 7, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-420",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "BE- Provide Currency Conversion Support for Dashbo 33d2ff1bc21f80a09c46d44b34994179.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-420",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-420",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-420",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "b38c62a95c03eb831c23850308d0e5b044859682",
-		"file_path": "data/uploads/Campaign Automation - 1 - 1 34a2ff1bc21f80a4aaacd9dd88f7f6ec.md",
-		"extension": "md",
-		"url_path": "Campaign%20Automation%20-%201%20-%201%2034a2ff1bc21f80a4aaacd9dd88f7f6ec",
-		"filetype": null,
-		"metadata": {
-			"Task": "Campaign Automation - 1 - 1",
-			"Date": "April 23, 2026 → April 24, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-478",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Campaign Automation - 1 - 1 34a2ff1bc21f80a4aaacd9dd88f7f6ec.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-478",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-478",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-478",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "3d7fb0ad803de8ef4c81b02203888cfeeb33d545",
-		"file_path": "data/uploads/Campaign Automation - 2 3562ff1bc21f80579828f1eb3a5f734a.md",
-		"extension": "md",
-		"url_path": "Campaign%20Automation%20-%202%203562ff1bc21f80579828f1eb3a5f734a",
-		"filetype": null,
-		"metadata": {
-			"Task": "Campaign Automation - 2",
-			"Date": "April 27, 2026 → April 29, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-478",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Campaign Automation - 2 3562ff1bc21f80579828f1eb3a5f734a.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-478",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-478",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-478",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "a67ae6de694eefaf0b6e01073be9fe620bd56974",
-		"file_path": "data/uploads/Campaigns API Fix 3582ff1bc21f80ab969ae31677a0e585.md",
-		"extension": "md",
-		"url_path": "Campaigns%20API%20Fix%203582ff1bc21f80ab969ae31677a0e585",
-		"filetype": null,
-		"metadata": {
-			"Task": "Campaigns API Fix",
-			"Date": "May 6, 2026 → May 7, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-478",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Campaigns API Fix 3582ff1bc21f80ab969ae31677a0e585.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-478",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-478",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-478",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "eccce110320e33a835b2c8dbee2876efe40695f3",
-		"file_path": "data/uploads/Change agent_status to active 33b2ff1bc21f80a0b0f2e36678d89a96.md",
-		"extension": "md",
-		"url_path": "Change%20agent_status%20to%20active%2033b2ff1bc21f80a0b0f2e36678d89a96",
-		"filetype": null,
-		"metadata": {
-			"Task": "Change agent_status to active",
-			"Date": "April 7, 2026 → April 8, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-407",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Change agent_status to active 33b2ff1bc21f80a0b0f2e36678d89a96.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-407",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-407",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-407",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "9c6b03d5ca39a692d183e73b102b5511d9f08cb9",
-		"file_path": "data/uploads/Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
-		"extension": "md",
-		"url_path": "Create%20PRs%20for%20Prod%2033d2ff1bc21f80789639d4eba3e85843",
-		"filetype": null,
-		"metadata": {
-			"Task": "Create PRs for Prod",
-			"Date": "April 9, 2026",
-			"LINK": "",
-			"Task Type": "Chore, Work",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/918",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/918",
-				"text": "https://github.com/sumanel/chat360-agents/pull/918",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/940",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/940",
-				"text": "https://github.com/sumanel/chat360-agents/pull/940",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/938",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/938",
-				"text": "https://github.com/sumanel/chat360-agents/pull/938",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/937/",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/937/",
-				"text": "https://github.com/sumanel/chat360-agents/pull/937/",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/939",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/939",
-				"text": "https://github.com/sumanel/chat360-agents/pull/939",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/917",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/917",
-				"text": "https://github.com/sumanel/chat360-agents/pull/917",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "b937574f61ffdd17ecfaff0ab431723c281262a7",
-		"file_path": "data/uploads/Create a tool for one click setup 3382ff1bc21f80a08196f1205bf7e9b0.md",
-		"extension": "md",
-		"url_path": "Create%20a%20tool%20for%20one%20click%20setup%203382ff1bc21f80a08196f1205bf7e9b0",
-		"filetype": null,
-		"metadata": {
-			"Task": "Create a tool for one click setup",
-			"Date": "April 4, 2026 → April 7, 2026",
-			"LINK": "",
-			"Task Type": "Personal",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [],
-		"tasks": []
-	},
-	{
-		"_id": "c0412a9af5d4eb7fad282f9661d348c54bf1844f",
-		"file_path": "data/uploads/Currency Conversion 3452ff1bc21f80149c59f21c7b295926.md",
-		"extension": "md",
-		"url_path": "Currency%20Conversion%203452ff1bc21f80149c59f21c7b295926",
-		"filetype": null,
-		"metadata": {
-			"Task": "Currency Conversion",
-			"Date": "April 15, 2026 → April 16, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-420",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Currency Conversion 3452ff1bc21f80149c59f21c7b295926.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-420",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-420",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-420",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "fc0ce86967dc80bb3201d70d755c8286fe899676",
-		"file_path": "data/uploads/Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
-		"extension": "md",
-		"url_path": "Data%20Capture%201%2032d2ff1bc21f80dcb762d05b84596ccd",
-		"filetype": null,
-		"metadata": {
-			"Task": "Data Capture 1",
-			"Date": "March 24, 2026 → March 25, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-384",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-384",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-384",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-384",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
-				"to": "https://docs.google.com/document/d/1IxFNcjPTje2abZV6JMppglH3pPqTsSg_srKFcW4hmIw/edit?tab=t.0#heading=h.v1jt5yffl603",
-				"toRaw": "https://docs.google.com/document/d/1IxFNcjPTje2abZV6JMppglH3pPqTsSg_srKFcW4hmIw/edit?tab=t.0#heading=h.v1jt5yffl603",
-				"text": "https://docs.google.com/document/d/1IxFNcjPTje2abZV6JMppglH3pPqTsSg_srKFcW4hmIw/edit?tab=t.0#heading=h.v1jt5yffl603",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
-				"to": "https://github.com/sumanel/chat360-agents/blob/stage-v1.1.0/backend/supervisor/webhook.py#L568",
-				"toRaw": "https://github.com/sumanel/chat360-agents/blob/stage-v1.1.0/backend/supervisor/webhook.py#L568",
-				"text": "chat360-agents/backend/supervisor/webhook.py at stage-v1.1.0 · sumanel/chat360-agents",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
-				"to": "http://staging.chat360.io/",
-				"toRaw": "http://staging.chat360.io/",
-				"text": "staging.chat360.io",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
-				"to": "https://staging.chat360.io/web_bot/?h=39557670-1ad3-4159-a043-6f9a69646f5b",
-				"toRaw": "https://staging.chat360.io/web_bot/?h=39557670-1ad3-4159-a043-6f9a69646f5b",
-				"text": "https://staging.chat360.io/web_bot/?h=39557670-1ad3-4159-a043-6f9a69646f5b",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
-				"to": "https://testmsgvarinlivechat.blogspot.com/?m=1\",\"ADMIN_ID_INT\":\"214\",\"bot_id\":\"b63039fb-825e-4bb1-a2ae-85604715faed\",\"CLIENTWIDGETLEADFIELDS\":\"['@name",
-				"toRaw": "https://testmsgvarinlivechat.blogspot.com/?m=1\",\"ADMIN_ID_INT\":\"214\",\"bot_id\":\"b63039fb-825e-4bb1-a2ae-85604715faed\",\"CLIENTWIDGETLEADFIELDS\":\"['@name",
-				"text": "https://testmsgvarinlivechat.blogspot.com/?m=1\",\"ADMIN_ID_INT\":\"214\",\"bot_id\":\"b63039fb-825e-4bb1-a2ae-85604715faed\",\"CLIENTWIDGETLEADFIELDS\":\"['@name",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
-				"to": "http://www.google.com/bot.html",
-				"toRaw": "http://www.google.com/bot.html",
-				"text": "http://www.google.com/bot.html",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
-				"to": "https://testmsgvarinlivechat.blogspot.com/?m=1",
-				"toRaw": "https://testmsgvarinlivechat.blogspot.com/?m=1",
-				"text": "https://testmsgvarinlivechat.blogspot.com/?m=1",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
-				"to": "https://testmsgvarinlivechat.blogspot.com/?m=1",
-				"toRaw": "https://testmsgvarinlivechat.blogspot.com/?m=1",
-				"text": "https://testmsgvarinlivechat.blogspot.com/?m=1",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
-				"to": "https://testmsgvarinlivechat.blogspot.com'}\"}",
-				"toRaw": "https://testmsgvarinlivechat.blogspot.com'}\"}",
-				"text": "https://testmsgvarinlivechat.blogspot.com'}\"}",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "56b10b3399a5997f7c062ab3bf07039331417391",
-		"file_path": "data/uploads/Data Capture 2 3302ff1bc21f80dfa7fad728c0175484.md",
-		"extension": "md",
-		"url_path": "Data%20Capture%202%203302ff1bc21f80dfa7fad728c0175484",
-		"filetype": null,
-		"metadata": {
-			"Task": "Data Capture 2",
-			"Date": "March 30, 2026 → March 31, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-384",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Data Capture 2 3302ff1bc21f80dfa7fad728c0175484.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-384",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-384",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-384",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Data Capture 2 3302ff1bc21f80dfa7fad728c0175484.md",
-				"to": "https://staging.chat360.io/builder/774e932c-5d72-405c-9122-1b6219a3fc3e",
-				"toRaw": "https://staging.chat360.io/builder/774e932c-5d72-405c-9122-1b6219a3fc3e",
-				"text": "https://staging.chat360.io/builder/774e932c-5d72-405c-9122-1b6219a3fc3e",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Data Capture 2 3302ff1bc21f80dfa7fad728c0175484.md",
-				"to": "https://staging.chat360.io/live-chats/f6a9ba83-571a-4b26-91f3-aa75f1af068c",
-				"toRaw": "https://staging.chat360.io/live-chats/f6a9ba83-571a-4b26-91f3-aa75f1af068c",
-				"text": "Chat360 - Live Chat",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Data Capture 2 3302ff1bc21f80dfa7fad728c0175484.md",
-				"to": "Data%20Capture%202/image.png",
-				"toRaw": "Data%20Capture%202/image.png",
-				"text": "image.png",
-				"embed": true,
-				"internal": true
-			},
-			{
-				"from": "Data Capture 2 3302ff1bc21f80dfa7fad728c0175484.md",
-				"to": "Data%20Capture%202/image%201.png",
-				"toRaw": "Data%20Capture%202/image%201.png",
-				"text": "image.png",
-				"embed": true,
-				"internal": true
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "0701bea8000476047e973d279786f0d0c2011dda",
-		"file_path": "data/uploads/Data Capture Prod Issue 3302ff1bc21f80938a15c9035335e4f9.md",
-		"extension": "md",
-		"url_path": "Data%20Capture%20Prod%20Issue%203302ff1bc21f80938a15c9035335e4f9",
-		"filetype": null,
-		"metadata": {
-			"Task": "Data Capture Prod Issue",
-			"Date": "March 27, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-384",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Data Capture Prod Issue 3302ff1bc21f80938a15c9035335e4f9.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-384",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-384",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-384",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "7c463176ef573f425a1040440b0b7a4202832867",
-		"file_path": "data/uploads/Doc Ock 32f2ff1bc21f802fba1bf5781ecb172b.md",
-		"extension": "md",
-		"url_path": "Doc%20Ock%2032f2ff1bc21f802fba1bf5781ecb172b",
-		"filetype": null,
-		"metadata": {
-			"Task": "Doc Ock",
-			"Date": "March 28, 2026 → March 29, 2026",
-			"LINK": "https://github.com/kgoel59/doc-ock",
-			"Task Type": "Personal",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Doc Ock 32f2ff1bc21f802fba1bf5781ecb172b.md",
-				"to": "https://github.com/kgoel59/doc-ock",
-				"toRaw": "https://github.com/kgoel59/doc-ock",
-				"text": "https://github.com/kgoel59/doc-ock",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "13bf00b8a88f4c9932a40d61ef5220e05ed11978",
-		"file_path": "data/uploads/Dynamic Tool Integration in UI 3382ff1bc21f802d8d13c21bf673a169.md",
-		"extension": "md",
-		"url_path": "Dynamic%20Tool%20Integration%20in%20UI%203382ff1bc21f802d8d13c21bf673a169",
-		"filetype": null,
-		"metadata": {
-			"Task": "Dynamic Tool Integration in UI",
-			"Date": "April 6, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-446",
-			"Task Type": "Chore",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Dynamic Tool Integration in UI 3382ff1bc21f802d8d13c21bf673a169.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-446",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-446",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-446",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "c7dd8432cb43564749be517d6c50d6bbf0a4f78e",
-		"file_path": "data/uploads/Enable Status for Delete - 1 3482ff1bc21f80418361f790e1593ea9.md",
-		"extension": "md",
-		"url_path": "Enable%20Status%20for%20Delete%20-%201%203482ff1bc21f80418361f790e1593ea9",
-		"filetype": null,
-		"metadata": {
-			"Task": "Enable Status for Delete - 1",
-			"Date": "April 21, 2026 → April 22, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-463",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Enable Status for Delete - 1 3482ff1bc21f80418361f790e1593ea9.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-463",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-463",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-463",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Enable Status for Delete - 1 3482ff1bc21f80418361f790e1593ea9.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-463",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-463",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-4",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "d4a52bb81fba1542e5632ec4d5eb3fd16dd3023a",
-		"file_path": "data/uploads/GPT Setup 3482ff1bc21f8030a227cc43c7d58ec4.md",
-		"extension": "md",
-		"url_path": "GPT%20Setup%203482ff1bc21f8030a227cc43c7d58ec4",
-		"filetype": null,
-		"metadata": {
-			"Task": "GPT Setup",
-			"Date": "April 18, 2026",
-			"LINK": "OpenWebUI",
-			"Task Type": "Personal",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [],
-		"tasks": []
-	},
-	{
-		"_id": "4da8b0175feb7a89b9889ba42086bcb4c04ca9e2",
-		"file_path": "data/uploads/Global Variable 3452ff1bc21f804e8a56ffe33f3b144a.md",
-		"extension": "md",
-		"url_path": "Global%20Variable%203452ff1bc21f804e8a56ffe33f3b144a",
-		"filetype": null,
-		"metadata": {
-			"Task": "Global Variable",
-			"Date": "April 16, 2026 → April 17, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-452",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Global Variable 3452ff1bc21f804e8a56ffe33f3b144a.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-452",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-452",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-452",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "e665455a7715c27504480efb6ac904c04b663bee",
-		"file_path": "data/uploads/Global vars - 2 3602ff1bc21f802ab2a6e964748141f5.md",
-		"extension": "md",
-		"url_path": "Global%20vars%20-%202%203602ff1bc21f802ab2a6e964748141f5",
-		"filetype": null,
-		"metadata": {
-			"Task": "Global vars - 2",
-			"Date": "May 13, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-452",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Global vars - 2 3602ff1bc21f802ab2a6e964748141f5.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-452",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-452",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-452",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "cc40a2de629ed44d565e279c1c11ab965484c6e3",
-		"file_path": "data/uploads/Image Recognition Feature-Learn more page 32d2ff1bc21f800b8c8ad08fd555e265.md",
-		"extension": "md",
-		"url_path": "Image%20Recognition%20Feature-Learn%20more%20page%2032d2ff1bc21f800b8c8ad08fd555e265",
-		"filetype": null,
-		"metadata": {
-			"Task": "Image Recognition Feature-Learn more page",
-			"Date": "March 20, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-362",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Image Recognition Feature-Learn more page 32d2ff1bc21f800b8c8ad08fd555e265.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-362",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-362",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-362",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "d05e9861e1c1f7234728b4bdee8ef463f60fe648",
-		"file_path": "data/uploads/Integration API 3452ff1bc21f80f49758f1c5b584eae8.md",
-		"extension": "md",
-		"url_path": "Integration%20API%203452ff1bc21f80f49758f1c5b584eae8",
-		"filetype": null,
-		"metadata": {
-			"Task": "Integration API",
-			"Date": "April 14, 2026 → April 15, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-446",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Integration API 3452ff1bc21f80f49758f1c5b584eae8.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-446",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-446",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-446",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "63ef146939e13fe87223a73be187735e54c73d3c",
-		"file_path": "data/uploads/Intgration API 3482ff1bc21f8010af56d68260f88321.md",
-		"extension": "md",
-		"url_path": "Intgration%20API%203482ff1bc21f8010af56d68260f88321",
-		"filetype": null,
-		"metadata": {
-			"Task": "Intgration API",
-			"Date": "April 20, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-446",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Intgration API 3482ff1bc21f8010af56d68260f88321.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-446",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-446",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-446",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "247575d7268f4fcb26a1df6d6cbee047fc4a0a38",
-		"file_path": "data/uploads/KT on Code 32e2ff1bc21f80468743ec40ab00e6bb.md",
-		"extension": "md",
-		"url_path": "KT%20on%20Code%2032e2ff1bc21f80468743ec40ab00e6bb",
-		"filetype": null,
-		"metadata": {
-			"Task": "KT on Code",
-			"Date": "March 16, 2026",
-			"LINK": "",
-			"Task Type": "Chore, Work",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [],
-		"tasks": []
-	},
-	{
-		"_id": "820240816225d46f4b9dbf02117041a363f8003c",
-		"file_path": "data/uploads/KT on Setup 32e2ff1bc21f806bacfacae6cda64438.md",
-		"extension": "md",
-		"url_path": "KT%20on%20Setup%2032e2ff1bc21f806bacfacae6cda64438",
-		"filetype": null,
-		"metadata": {
-			"Task": "KT on Setup",
-			"Date": "March 13, 2026",
-			"LINK": "",
-			"Task Type": "Chore, Work",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [],
-		"tasks": []
-	},
-	{
-		"_id": "75816204d1b0d6f83a7ab7c735f589d2e8ca0f4d",
-		"file_path": "data/uploads/Modifier Name Prompt Appears Multiple Times 32d2ff1bc21f80a69a5fecc791cc7e97.md",
-		"extension": "md",
-		"url_path": "Modifier%20Name%20Prompt%20Appears%20Multiple%20Times%2032d2ff1bc21f80a69a5fecc791cc7e97",
-		"filetype": null,
-		"metadata": {
-			"Task": "Modifier Name Prompt Appears Multiple Times",
-			"Date": "March 23, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-375",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Modifier Name Prompt Appears Multiple Times 32d2ff1bc21f80a69a5fecc791cc7e97.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-375",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-375",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-375",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "1204af915c08ee65df90b9fd67a5d8521c9ad565",
-		"file_path": "data/uploads/Move Pinecone to Qdrant - 1 35e2ff1bc21f800e8940f1f91beda215.md",
-		"extension": "md",
-		"url_path": "Move%20Pinecone%20to%20Qdrant%20-%201%2035e2ff1bc21f800e8940f1f91beda215",
-		"filetype": null,
-		"metadata": {
-			"Task": "Move Pinecone to Qdrant - 1",
-			"Date": "May 12, 2026 → May 12, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-508",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Move Pinecone to Qdrant - 1 35e2ff1bc21f800e8940f1f91beda215.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-508",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-508",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-508",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "4c63a1116d83d18a5c76e3fba84c970312031fc2",
-		"file_path": "data/uploads/Move Pinecone to Qdrant - 2 3602ff1bc21f80abbf32f4983c19a4a9.md",
-		"extension": "md",
-		"url_path": "Move%20Pinecone%20to%20Qdrant%20-%202%203602ff1bc21f80abbf32f4983c19a4a9",
-		"filetype": null,
-		"metadata": {
-			"Task": "Move Pinecone to Qdrant - 2",
-			"Date": "May 14, 2026",
-			"LINK": "",
-			"Task Type": "",
-			"Status": "No",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [],
-		"tasks": []
-	},
-	{
-		"_id": "438a0f09f2ac7a26dda9968865a2223fd3ac03f2",
-		"file_path": "data/uploads/OCR - 5 34f2ff1bc21f805e915bd4b17194ae43.md",
-		"extension": "md",
-		"url_path": "OCR%20-%205%2034f2ff1bc21f805e915bd4b17194ae43",
-		"filetype": null,
-		"metadata": {
-			"Task": "OCR - 5",
-			"Date": "May 4, 2026 → May 5, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "OCR - 5 34f2ff1bc21f805e915bd4b17194ae43.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "0dc1fea0e31893e951099449a1917f10b19e1db9",
-		"file_path": "data/uploads/OCR 3 33b2ff1bc21f809ea178e605df9b25f9.md",
-		"extension": "md",
-		"url_path": "OCR%203%2033b2ff1bc21f809ea178e605df9b25f9",
-		"filetype": null,
-		"metadata": {
-			"Task": "OCR 3",
-			"Date": "April 9, 2026",
-			"LINK": "https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing",
-			"Task Type": "Chore, Work",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "OCR 3 33b2ff1bc21f809ea178e605df9b25f9.md",
-				"to": "https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing",
-				"toRaw": "https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing",
-				"text": "https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "ccf8cb936ae4b97734aa2e3f1a65ad5cfdb4b272",
-		"file_path": "data/uploads/OCR 4 3452ff1bc21f806da563c659903b4e37.md",
-		"extension": "md",
-		"url_path": "OCR%204%203452ff1bc21f806da563c659903b4e37",
-		"filetype": null,
-		"metadata": {
-			"Task": "OCR 4",
-			"Date": "April 20, 2026 → April 21, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "OCR 4 3452ff1bc21f806da563c659903b4e37.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "0d1677f9f31dfece9338442691933408fc133586",
-		"file_path": "data/uploads/OCR Integration for Knowledge Base 32d2ff1bc21f80e6a21cea5698c62442.md",
-		"extension": "md",
-		"url_path": "OCR%20Integration%20for%20Knowledge%20Base%2032d2ff1bc21f80e6a21cea5698c62442",
-		"filetype": null,
-		"metadata": {
-			"Task": "OCR Integration for Knowledge Base",
-			"Date": "March 23, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "OCR Integration for Knowledge Base 32d2ff1bc21f80e6a21cea5698c62442.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "20d1b3bb71ec5adca8b086822810cd5cac81303a",
-		"file_path": "data/uploads/OCR Issue 2 3342ff1bc21f80b2a619da8af06ab12f.md",
-		"extension": "md",
-		"url_path": "OCR%20Issue%202%203342ff1bc21f80b2a619da8af06ab12f",
-		"filetype": null,
-		"metadata": {
-			"Task": "OCR Issue 2",
-			"Date": "April 1, 2026 → April 4, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "OCR Issue 2 3342ff1bc21f80b2a619da8af06ab12f.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "OCR Issue 2 3342ff1bc21f80b2a619da8af06ab12f.md",
-				"to": "OCR%20Issue%202/Paddle%20Results%203352ff1bc21f806ca4e0ce3eceff2ddc.md",
-				"toRaw": "OCR%20Issue%202/Paddle%20Results%203352ff1bc21f806ca4e0ce3eceff2ddc.md",
-				"text": "Paddle Results",
-				"embed": false,
-				"internal": true
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "467ca50f6518c0d80516d057ac27a6b4dcca755e",
-		"file_path": "data/uploads/OCR Testing 3332ff1bc21f8031b62dcbb78e2ede02.md",
-		"extension": "md",
-		"url_path": "OCR%20Testing%203332ff1bc21f8031b62dcbb78e2ede02",
-		"filetype": null,
-		"metadata": {
-			"Task": "OCR Testing",
-			"Date": "March 30, 2026 → March 31, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "OCR Testing 3332ff1bc21f8031b62dcbb78e2ede02.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "8bc510bb775b22867e6d31b42dde3827c1a0516b",
-		"file_path": "data/uploads/OCR Testing 33a2ff1bc21f8009906ce8740492a233.md",
-		"extension": "md",
-		"url_path": "OCR%20Testing%2033a2ff1bc21f8009906ce8740492a233",
-		"filetype": null,
-		"metadata": {
-			"Task": "OCR Testing",
-			"Date": "April 6, 2026",
-			"LINK": "",
-			"Task Type": "Chore",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [],
-		"tasks": []
-	},
-	{
-		"_id": "f85446024b8bcd4a33dfa88946534988987829b6",
-		"file_path": "data/uploads/Orchestrator Returns “No Response” 32d2ff1bc21f8042b91af1c2db732e1e.md",
-		"extension": "md",
-		"url_path": "Orchestrator%20Returns%20%E2%80%9CNo%20Response%E2%80%9D%2032d2ff1bc21f8042b91af1c2db732e1e",
-		"filetype": null,
-		"metadata": {
-			"Task": "Orchestrator Returns “No Response”",
-			"Date": "March 17, 2026 → March 18, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-354",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Orchestrator Returns “No Response” 32d2ff1bc21f8042b91af1c2db732e1e.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-354",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-354",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-354",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "4fe51f2fc0d4250e13d1a56ad0281453756e27e6",
-		"file_path": "data/uploads/PII Masking Framework 32d2ff1bc21f8034af5cd13f96054187.md",
-		"extension": "md",
-		"url_path": "PII%20Masking%20Framework%2032d2ff1bc21f8034af5cd13f96054187",
-		"filetype": null,
-		"metadata": {
-			"Task": "PII Masking Framework",
-			"Date": "March 23, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-374",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "PII Masking Framework 32d2ff1bc21f8034af5cd13f96054187.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-374",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-374",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-374",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "6087617611e6869976bfe9e3fc09f9492de9d0cd",
-		"file_path": "data/uploads/Prod Issue 33e2ff1bc21f802da748d5ff0de4d455.md",
-		"extension": "md",
-		"url_path": "Prod%20Issue%2033e2ff1bc21f802da748d5ff0de4d455",
-		"filetype": null,
-		"metadata": {
-			"Task": "Prod Issue",
-			"Date": "April 10, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-363",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Prod Issue 33e2ff1bc21f802da748d5ff0de4d455.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-363",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-363",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-363",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "66d51c4d3e345d66a94a753b40c74f1f6e558f8f",
-		"file_path": "data/uploads/Prod Issue 3452ff1bc21f80368950f3d87b5479d8.md",
-		"extension": "md",
-		"url_path": "Prod%20Issue%203452ff1bc21f80368950f3d87b5479d8",
-		"filetype": null,
-		"metadata": {
-			"Task": "Prod Issue",
-			"Date": "April 16, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-172",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Prod Issue 3452ff1bc21f80368950f3d87b5479d8.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-172",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-172",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-172",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "97c297ff5f55200b3d728947c4dacbe05f4ef9f5",
-		"file_path": "data/uploads/Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-		"extension": "md",
-		"url_path": "Prod%20PR%203452ff1bc21f80f38409c809d8c1b38b",
-		"filetype": null,
-		"metadata": {
-			"Task": "Prod PR",
-			"Date": "May 5, 2026 → May 7, 2026",
-			"LINK": "",
-			"Task Type": "Chore, Work",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/972",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/972",
-				"text": "https://github.com/sumanel/chat360-agents/pull/972",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-424",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-424",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-424",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/1005",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/1005",
-				"text": "https://github.com/sumanel/chat360-agents/pull/1005",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-452",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-452",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-452",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/1006",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/1006",
-				"text": "https://github.com/sumanel/chat360-agents/pull/1006",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-446",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-446",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-446",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/1012",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/1012",
-				"text": "https://github.com/sumanel/chat360-agents/pull/1012",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-115",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/1009",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/1009",
-				"text": "https://github.com/sumanel/chat360-agents/pull/1009",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-470",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-470",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-470",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/1007",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/1007",
-				"text": "https://github.com/sumanel/chat360-agents/pull/1007",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-466",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-466",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-466",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://github.com/sumanel/chat360-agents/pull/1010/",
-				"toRaw": "https://github.com/sumanel/chat360-agents/pull/1010/",
-				"text": "https://github.com/sumanel/chat360-agents/pull/1010/",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-156",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-156",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-156",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "444630ee72565c0f643d81aa1c4011e5d3dbd6e3",
-		"file_path": "data/uploads/Search functionality not working in Assets feature 32f2ff1bc21f80e88a49c7758cd9dfcf.md",
-		"extension": "md",
-		"url_path": "Search%20functionality%20not%20working%20in%20Assets%20feature%2032f2ff1bc21f80e88a49c7758cd9dfcf",
-		"filetype": null,
-		"metadata": {
-			"Task": "Search functionality not working in Assets feature",
-			"Date": "March 26, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-390",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Search functionality not working in Assets feature 32f2ff1bc21f80e88a49c7758cd9dfcf.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-390",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-390",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-390",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "7fe706b2fca9990b777a3aaf8172364267677076",
-		"file_path": "data/uploads/Search functionality not working in Assets feature 3332ff1bc21f806cbcfefe7cc7009549.md",
-		"extension": "md",
-		"url_path": "Search%20functionality%20not%20working%20in%20Assets%20feature%203332ff1bc21f806cbcfefe7cc7009549",
-		"filetype": null,
-		"metadata": {
-			"Task": "Search functionality not working in Assets feature - 2",
-			"Date": "March 30, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-390",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Search functionality not working in Assets feature 3332ff1bc21f806cbcfefe7cc7009549.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-390",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-390",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-390",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "ab4e0bdf3b541792e004d42ad06f62a4964fd770",
-		"file_path": "data/uploads/Semantic KB answer not provided correctly for spre 32f2ff1bc21f800abc6aefcb96abaadf.md",
-		"extension": "md",
-		"url_path": "Semantic%20KB%20answer%20not%20provided%20correctly%20for%20spre%2032f2ff1bc21f800abc6aefcb96abaadf",
-		"filetype": null,
-		"metadata": {
-			"Task": "Semantic KB answer not provided correctly for spreadsheet-based query",
-			"Date": "March 27, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-156",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Semantic KB answer not provided correctly for spre 32f2ff1bc21f800abc6aefcb96abaadf.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-156",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-156",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-156",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "8c134f4549e78408b081af44d4551a802bba15fe",
-		"file_path": "data/uploads/Semantic Sheet Upload 3562ff1bc21f80e89d59fdfe764a938d.md",
-		"extension": "md",
-		"url_path": "Semantic%20Sheet%20Upload%203562ff1bc21f80e89d59fdfe764a938d",
-		"filetype": null,
-		"metadata": {
-			"Task": "Semantic Sheet Upload",
-			"Date": "May 4, 2026 → May 5, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-470",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Semantic Sheet Upload 3562ff1bc21f80e89d59fdfe764a938d.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-470",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-470",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-470",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "b3f0ded273e2a1ef4d154f84e84640ff1f327547",
-		"file_path": "data/uploads/Sent Keka regularise after confirming 3362ff1bc21f80debb3cd387e30f08ba.md",
-		"extension": "md",
-		"url_path": "Sent%20Keka%20regularise%20after%20confirming%203362ff1bc21f80debb3cd387e30f08ba",
-		"filetype": null,
-		"metadata": {
-			"Task": "Sent Keka regularise after confirming",
-			"Date": "April 2, 2026",
-			"LINK": "",
-			"Task Type": "Chore",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [],
-		"tasks": []
-	},
-	{
-		"_id": "e185f66e7b6296e5622103332f355f968fee7f06",
-		"file_path": "data/uploads/Set up Backend Repo 35e2ff1bc21f805e8174f2723e958baa.md",
-		"extension": "md",
-		"url_path": "Set%20up%20Backend%20Repo%2035e2ff1bc21f805e8174f2723e958baa",
-		"filetype": null,
-		"metadata": {
-			"Task": "Set up Backend Repo",
-			"Date": "May 11, 2026",
-			"LINK": "",
-			"Task Type": "Chore",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [],
-		"tasks": []
-	},
-	{
-		"_id": "9edfef7bf5de36d69f40331ab062f943dce537f5",
-		"file_path": "data/uploads/Take Charger from Omkar 3342ff1bc21f80368f48e289b6c07706.md",
-		"extension": "md",
-		"url_path": "Take%20Charger%20from%20Omkar%203342ff1bc21f80368f48e289b6c07706",
-		"filetype": null,
-		"metadata": {
-			"Task": "Take Charger from Omkar",
-			"Date": "April 1, 2026",
-			"LINK": "",
-			"Task Type": "Chore",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [],
-		"tasks": []
-	},
-	{
-		"_id": "afb0ba68b0a80de09b0783c3b6ccde211be66713",
-		"file_path": "data/uploads/Test Semantic 3382ff1bc21f8082a88ac87c01271d3d.md",
-		"extension": "md",
-		"url_path": "Test%20Semantic%203382ff1bc21f8082a88ac87c01271d3d",
-		"filetype": null,
-		"metadata": {
-			"Task": "Test Semantic",
-			"Date": "April 8, 2026 → April 9, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-156",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Test Semantic 3382ff1bc21f8082a88ac87c01271d3d.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-156",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-156",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-156",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "fcad4a1940e51878465c85bdcdecbbe7aba2a9db",
-		"file_path": "data/uploads/Tool Capture Fix 33b2ff1bc21f80af91d1fdb2577f0b9f.md",
-		"extension": "md",
-		"url_path": "Tool%20Capture%20Fix%2033b2ff1bc21f80af91d1fdb2577f0b9f",
-		"filetype": null,
-		"metadata": {
-			"Task": "Tool Capture Fix",
-			"Date": "April 7, 2026 → April 8, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-422",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Tool Capture Fix 33b2ff1bc21f80af91d1fdb2577f0b9f.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-422",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-422",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-422",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "99fb514fe61564f511c1727e9c24aba4f7f08112",
-		"file_path": "data/uploads/Tool Trace 2 33e2ff1bc21f80d2bacbfd72b0c00bce.md",
-		"extension": "md",
-		"url_path": "Tool%20Trace%202%2033e2ff1bc21f80d2bacbfd72b0c00bce",
-		"filetype": null,
-		"metadata": {
-			"Task": "Tool Trace 2",
-			"Date": "April 13, 2026 → April 14, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-422",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Tool Trace 2 33e2ff1bc21f80d2bacbfd72b0c00bce.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-422",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-422",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-422",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "f7496657c7f773998e1cac25a7338a7c0f4f6587",
-		"file_path": "data/uploads/Update Metric for 3rd Card 3492ff1bc21f8000b528f9a15703dd00.md",
-		"extension": "md",
-		"url_path": "Update%20Metric%20for%203rd%20Card%203492ff1bc21f8000b528f9a15703dd00",
-		"filetype": null,
-		"metadata": {
-			"Task": "Update Metric for 3rd Card",
-			"Date": "April 22, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-466",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Update Metric for 3rd Card 3492ff1bc21f8000b528f9a15703dd00.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-466",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-466",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-466",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "63ac34db46f847c31914d9c1cdc7d036436a6372",
-		"file_path": "data/uploads/Update Usage Overview Cards 32d2ff1bc21f8033813de2930c71275c.md",
-		"extension": "md",
-		"url_path": "Update%20Usage%20Overview%20Cards%2032d2ff1bc21f8033813de2930c71275c",
-		"filetype": null,
-		"metadata": {
-			"Task": "Update Usage Overview Cards",
-			"Date": "March 20, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-363",
-			"Task Type": "Development",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "Update Usage Overview Cards 32d2ff1bc21f8033813de2930c71275c.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-363",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-363",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-363",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "0c1f666f224866fe83af94cad7730056c258aee6",
-		"file_path": "data/uploads/Wash Clothes 3342ff1bc21f8017bcaed46acd4c840d.md",
-		"extension": "md",
-		"url_path": "Wash%20Clothes%203342ff1bc21f8017bcaed46acd4c840d",
-		"filetype": null,
-		"metadata": {
-			"Task": "Wash Clothes",
-			"Date": "March 31, 2026",
-			"LINK": "",
-			"Task Type": "Chore, Personal",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [],
-		"tasks": []
-	},
-	{
-		"_id": "a90bbeccf738aeb2a0b1af82b71447aead352e7d",
-		"file_path": "data/uploads/Wfh 3602ff1bc21f806284aad949d80db88f.md",
-		"extension": "md",
-		"url_path": "Wfh%203602ff1bc21f806284aad949d80db88f",
-		"filetype": null,
-		"metadata": {
-			"Task": "Wfh",
-			"Date": "May 13, 2026",
-			"LINK": "",
-			"Task Type": "Personal",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [],
-		"tasks": []
-	},
-	{
-		"_id": "0ac335baab99388db849f644a06d08de1117fa08",
-		"file_path": "data/uploads/WriteHere 32d2ff1bc21f80eb949ee354c82da546.md",
-		"extension": "md",
-		"url_path": "WriteHere%2032d2ff1bc21f80eb949ee354c82da546",
-		"filetype": null,
-		"metadata": {
-			"Task": "WriteHere",
-			"Date": "March 21, 2026",
-			"LINK": "https://github.com/principia-ai/WriteHERE",
-			"Task Type": "Personal",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "WriteHere 32d2ff1bc21f80eb949ee354c82da546.md",
-				"to": "https://github.com/principia-ai/WriteHERE",
-				"toRaw": "https://github.com/principia-ai/WriteHERE",
-				"text": "https://github.com/principia-ai/WriteHERE",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "11e7d34d9c58b38acdc2fe0d86f10a66b6be6e23",
-		"file_path": "data/uploads/[Stage] Assistant Preview Displays Image URLs Inst 35e2ff1bc21f80afaca5d0cd13b296d7.md",
-		"extension": "md",
-		"url_path": "%5BStage%5D%20Assistant%20Preview%20Displays%20Image%20URLs%20Inst%2035e2ff1bc21f80afaca5d0cd13b296d7",
-		"filetype": null,
-		"metadata": {
-			"Task": "[Stage] Assistant Preview Displays Image URLs Instead of Rendering Images - 1",
-			"Date": "May 12, 2026 → May 12, 2026",
-			"LINK": "https://chat360-jira.atlassian.net/browse/AA-504",
-			"Task Type": "Issue",
-			"Status": "Yes",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "[Stage] Assistant Preview Displays Image URLs Inst 35e2ff1bc21f80afaca5d0cd13b296d7.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA-504",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA-504",
-				"text": "https://chat360-jira.atlassian.net/browse/AA-504",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "13efc59ff795bceb9cca00fa55d10e39e9a09412",
-		"file_path": "data/uploads/test-2.md",
-		"extension": "md",
-		"url_path": "test-2",
-		"filetype": null,
-		"metadata": {
-			"Task": "Quick links",
-			"Date": "May 16, 2026",
-			"LINK": "",
-			"Task Type": "",
-			"Status": "No",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [
-			{
-				"from": "test-2.md",
-				"to": "https://chat360-jira.atlassian.net/browse/AA",
-				"toRaw": "https://chat360-jira.atlassian.net/browse/AA",
-				"text": "Check assigned tickets (JIRA)",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "test-2.md",
-				"to": "https://github.com/sumanel/chat360-agents",
-				"toRaw": "https://github.com/sumanel/chat360-agents",
-				"text": "Review PRs (GitHub)",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "test-2.md",
-				"to": "https://staging.chat360.io/",
-				"toRaw": "https://staging.chat360.io/",
-				"text": "Open staging",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "test-2.md",
-				"to": "https://meet.google.com/iar-fyds-rib",
-				"toRaw": "https://meet.google.com/iar-fyds-rib",
-				"text": "Start scrum call",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "test-2.md",
-				"to": "https://mail.google.com/mail/u/0/",
-				"toRaw": "https://mail.google.com/mail/u/0/",
-				"text": "Open mail",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "test-2.md",
-				"to": "https://chat360.keka.com/#/home/dashboard",
-				"toRaw": "https://chat360.keka.com/#/home/dashboard",
-				"text": "Open Keka",
-				"embed": false,
-				"internal": false
-			},
-			{
-				"from": "test-2.md",
-				"to": "http://localhost:3000/",
-				"toRaw": "http://localhost:3000/",
-				"text": "OpenWebUI",
-				"embed": false,
-				"internal": false
-			}
-		],
-		"tasks": []
-	},
-	{
-		"_id": "e192bb1a18afdb8d546a8a7f9d813e97e9e23eea",
-		"file_path": "data/uploads/test.md",
-		"extension": "md",
-		"url_path": "test",
-		"filetype": null,
-		"metadata": {
-			"Task": "Things To Note",
-			"Date": "May 16, 2026",
-			"LINK": "",
-			"Task Type": "",
-			"Status": "No",
-			"tags": [],
-			"tasks": []
-		},
-		"tags": [],
-		"links": [],
-		"tasks": []
-	}
+  {
+    "_id": "e8ead243b021e370b7202eff88d5864899c49bf7",
+    "file_path": "data/uploads/AI Assistant Dashboard Metrics API 2 3452ff1bc21f80ff81e3c36055d5d8bd.md",
+    "extension": "md",
+    "url_path": "AI%20Assistant%20Dashboard%20Metrics%20API%202%203452ff1bc21f80ff81e3c36055d5d8bd",
+    "filetype": null,
+    "metadata": {
+      "Task": "AI Assistant Dashboard Metrics API 2",
+      "Date": "April 17, 2026 → April 17, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-424",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "AI Assistant Dashboard Metrics API 2 3452ff1bc21f80ff81e3c36055d5d8bd.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-424",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-424",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-424",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "6220c5e6ade784908890c85a381cbfc624af849b",
+    "file_path": "data/uploads/AI Assistant Dashboard Metrics API 33e2ff1bc21f8062baedef7022c95b49.md",
+    "extension": "md",
+    "url_path": "AI%20Assistant%20Dashboard%20Metrics%20API%2033e2ff1bc21f8062baedef7022c95b49",
+    "filetype": null,
+    "metadata": {
+      "Task": "AI Assistant Dashboard Metrics API",
+      "Date": "April 15, 2026 → April 16, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-424",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "AI Assistant Dashboard Metrics API 33e2ff1bc21f8062baedef7022c95b49.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-424",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-424",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-424",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "f8aed0a68e558646b627d7684ab981b03b14f3ea",
+    "file_path": "data/uploads/Add a retry filter to fix wrong status code in fal 3582ff1bc21f807cbee7c3ec834da93a.md",
+    "extension": "md",
+    "url_path": "Add%20a%20retry%20filter%20to%20fix%20wrong%20status%20code%20in%20fal%203582ff1bc21f807cbee7c3ec834da93a",
+    "filetype": null,
+    "metadata": {
+      "Task": "Add a retry/filter to fix wrong status code in fallback",
+      "Date": "May 6, 2026 → May 8, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-496",
+      "Task Type": "Development, Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Add a retry filter to fix wrong status code in fal 3582ff1bc21f807cbee7c3ec834da93a.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-496",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-496",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-496",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "864869ee61e73852619ca6bbcdd08954b015e637",
+    "file_path": "data/uploads/Add fields to Data Capture 33a2ff1bc21f804dbc9dc01b2c8e14b4.md",
+    "extension": "md",
+    "url_path": "Add%20fields%20to%20Data%20Capture%2033a2ff1bc21f804dbc9dc01b2c8e14b4",
+    "filetype": null,
+    "metadata": {
+      "Task": "Add fields to Data Capture",
+      "Date": "April 6, 2026 → April 8, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-416",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Add fields to Data Capture 33a2ff1bc21f804dbc9dc01b2c8e14b4.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-416",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-416",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-416",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "443a6e72b0b3f684b0eceb31d0e2b8291459da5b",
+    "file_path": "data/uploads/Add ocr_enabled flag in Knowledgebase APIs and upl 32f2ff1bc21f80a3800cdbdabffbbaf3.md",
+    "extension": "md",
+    "url_path": "Add%20ocr_enabled%20flag%20in%20Knowledgebase%20APIs%20and%20upl%2032f2ff1bc21f80a3800cdbdabffbbaf3",
+    "filetype": null,
+    "metadata": {
+      "Task": "Add ocr_enabled flag in Knowledgebase APIs and upload flow",
+      "Date": "March 26, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-145",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Add ocr_enabled flag in Knowledgebase APIs and upl 32f2ff1bc21f80a3800cdbdabffbbaf3.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-145",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-145",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-145",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "fd1fc71382cd1ba8c48ed45b168622a7e7116bac",
+    "file_path": "data/uploads/Agentic Cache Issue 33e2ff1bc21f80b0b18fdedd3bd0fce5.md",
+    "extension": "md",
+    "url_path": "Agentic%20Cache%20Issue%2033e2ff1bc21f80b0b18fdedd3bd0fce5",
+    "filetype": null,
+    "metadata": {
+      "Task": "Agentic Cache Issue",
+      "Date": "April 13, 2026 → April 17, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-172",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Agentic Cache Issue 33e2ff1bc21f80b0b18fdedd3bd0fce5.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-172",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-172",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-172",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "a095e11851a6e5de6389a12472b6442d24aa241b",
+    "file_path": "data/uploads/Audit Trail Logs Not Reflecting Correct Changes 3352ff1bc21f800d956ef23b7cb387b6.md",
+    "extension": "md",
+    "url_path": "Audit%20Trail%20Logs%20Not%20Reflecting%20Correct%20Changes%203352ff1bc21f800d956ef23b7cb387b6",
+    "filetype": null,
+    "metadata": {
+      "Task": "Audit Trail Logs Not Reflecting Correct Changes",
+      "Date": "April 1, 2026 → April 4, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-407",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Audit Trail Logs Not Reflecting Correct Changes 3352ff1bc21f800d956ef23b7cb387b6.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-407",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-407",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-407",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "9c80e3bf0f3415daf3c60f15d3f4eeaf769af7ca",
+    "file_path": "data/uploads/BE- Provide Currency Conversion Support for Dashbo 33d2ff1bc21f80a09c46d44b34994179.md",
+    "extension": "md",
+    "url_path": "BE-%20Provide%20Currency%20Conversion%20Support%20for%20Dashbo%2033d2ff1bc21f80a09c46d44b34994179",
+    "filetype": null,
+    "metadata": {
+      "Task": "BE- Provide Currency Conversion Support for Dashboard Total Cost",
+      "Date": "April 7, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-420",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "BE- Provide Currency Conversion Support for Dashbo 33d2ff1bc21f80a09c46d44b34994179.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-420",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-420",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-420",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "b38c62a95c03eb831c23850308d0e5b044859682",
+    "file_path": "data/uploads/Campaign Automation - 1 - 1 34a2ff1bc21f80a4aaacd9dd88f7f6ec.md",
+    "extension": "md",
+    "url_path": "Campaign%20Automation%20-%201%20-%201%2034a2ff1bc21f80a4aaacd9dd88f7f6ec",
+    "filetype": null,
+    "metadata": {
+      "Task": "Campaign Automation - 1 - 1",
+      "Date": "April 23, 2026 → April 24, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-478",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Campaign Automation - 1 - 1 34a2ff1bc21f80a4aaacd9dd88f7f6ec.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-478",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-478",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-478",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "3d7fb0ad803de8ef4c81b02203888cfeeb33d545",
+    "file_path": "data/uploads/Campaign Automation - 2 3562ff1bc21f80579828f1eb3a5f734a.md",
+    "extension": "md",
+    "url_path": "Campaign%20Automation%20-%202%203562ff1bc21f80579828f1eb3a5f734a",
+    "filetype": null,
+    "metadata": {
+      "Task": "Campaign Automation - 2",
+      "Date": "April 27, 2026 → April 29, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-478",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Campaign Automation - 2 3562ff1bc21f80579828f1eb3a5f734a.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-478",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-478",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-478",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "a67ae6de694eefaf0b6e01073be9fe620bd56974",
+    "file_path": "data/uploads/Campaigns API Fix 3582ff1bc21f80ab969ae31677a0e585.md",
+    "extension": "md",
+    "url_path": "Campaigns%20API%20Fix%203582ff1bc21f80ab969ae31677a0e585",
+    "filetype": null,
+    "metadata": {
+      "Task": "Campaigns API Fix",
+      "Date": "May 6, 2026 → May 7, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-478",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Campaigns API Fix 3582ff1bc21f80ab969ae31677a0e585.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-478",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-478",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-478",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "eccce110320e33a835b2c8dbee2876efe40695f3",
+    "file_path": "data/uploads/Change agent_status to active 33b2ff1bc21f80a0b0f2e36678d89a96.md",
+    "extension": "md",
+    "url_path": "Change%20agent_status%20to%20active%2033b2ff1bc21f80a0b0f2e36678d89a96",
+    "filetype": null,
+    "metadata": {
+      "Task": "Change agent_status to active",
+      "Date": "April 7, 2026 → April 8, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-407",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Change agent_status to active 33b2ff1bc21f80a0b0f2e36678d89a96.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-407",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-407",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-407",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "9c6b03d5ca39a692d183e73b102b5511d9f08cb9",
+    "file_path": "data/uploads/Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
+    "extension": "md",
+    "url_path": "Create%20PRs%20for%20Prod%2033d2ff1bc21f80789639d4eba3e85843",
+    "filetype": null,
+    "metadata": {
+      "Task": "Create PRs for Prod",
+      "Date": "April 9, 2026",
+      "LINK": "",
+      "Task Type": "Chore, Work",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/918",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/918",
+        "text": "https://github.com/sumanel/chat360-agents/pull/918",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/940",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/940",
+        "text": "https://github.com/sumanel/chat360-agents/pull/940",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/938",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/938",
+        "text": "https://github.com/sumanel/chat360-agents/pull/938",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/937/",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/937/",
+        "text": "https://github.com/sumanel/chat360-agents/pull/937/",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/939",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/939",
+        "text": "https://github.com/sumanel/chat360-agents/pull/939",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Create PRs for Prod 33d2ff1bc21f80789639d4eba3e85843.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/917",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/917",
+        "text": "https://github.com/sumanel/chat360-agents/pull/917",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "b937574f61ffdd17ecfaff0ab431723c281262a7",
+    "file_path": "data/uploads/Create a tool for one click setup 3382ff1bc21f80a08196f1205bf7e9b0.md",
+    "extension": "md",
+    "url_path": "Create%20a%20tool%20for%20one%20click%20setup%203382ff1bc21f80a08196f1205bf7e9b0",
+    "filetype": null,
+    "metadata": {
+      "Task": "Create a tool for one click setup",
+      "Date": "April 4, 2026 → April 7, 2026",
+      "LINK": "",
+      "Task Type": "Personal",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "c0412a9af5d4eb7fad282f9661d348c54bf1844f",
+    "file_path": "data/uploads/Currency Conversion 3452ff1bc21f80149c59f21c7b295926.md",
+    "extension": "md",
+    "url_path": "Currency%20Conversion%203452ff1bc21f80149c59f21c7b295926",
+    "filetype": null,
+    "metadata": {
+      "Task": "Currency Conversion",
+      "Date": "April 15, 2026 → April 16, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-420",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Currency Conversion 3452ff1bc21f80149c59f21c7b295926.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-420",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-420",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-420",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "fc0ce86967dc80bb3201d70d755c8286fe899676",
+    "file_path": "data/uploads/Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
+    "extension": "md",
+    "url_path": "Data%20Capture%201%2032d2ff1bc21f80dcb762d05b84596ccd",
+    "filetype": null,
+    "metadata": {
+      "Task": "Data Capture 1",
+      "Date": "March 24, 2026 → March 25, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-384",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-384",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-384",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-384",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
+        "to": "https://docs.google.com/document/d/1IxFNcjPTje2abZV6JMppglH3pPqTsSg_srKFcW4hmIw/edit?tab=t.0#heading=h.v1jt5yffl603",
+        "toRaw": "https://docs.google.com/document/d/1IxFNcjPTje2abZV6JMppglH3pPqTsSg_srKFcW4hmIw/edit?tab=t.0#heading=h.v1jt5yffl603",
+        "text": "https://docs.google.com/document/d/1IxFNcjPTje2abZV6JMppglH3pPqTsSg_srKFcW4hmIw/edit?tab=t.0#heading=h.v1jt5yffl603",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
+        "to": "https://github.com/sumanel/chat360-agents/blob/stage-v1.1.0/backend/supervisor/webhook.py#L568",
+        "toRaw": "https://github.com/sumanel/chat360-agents/blob/stage-v1.1.0/backend/supervisor/webhook.py#L568",
+        "text": "chat360-agents/backend/supervisor/webhook.py at stage-v1.1.0 · sumanel/chat360-agents",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
+        "to": "http://staging.chat360.io/",
+        "toRaw": "http://staging.chat360.io/",
+        "text": "staging.chat360.io",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
+        "to": "https://staging.chat360.io/web_bot/?h=39557670-1ad3-4159-a043-6f9a69646f5b",
+        "toRaw": "https://staging.chat360.io/web_bot/?h=39557670-1ad3-4159-a043-6f9a69646f5b",
+        "text": "https://staging.chat360.io/web_bot/?h=39557670-1ad3-4159-a043-6f9a69646f5b",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
+        "to": "https://testmsgvarinlivechat.blogspot.com/?m=1\",\"ADMIN_ID_INT\":\"214\",\"bot_id\":\"b63039fb-825e-4bb1-a2ae-85604715faed\",\"CLIENTWIDGETLEADFIELDS\":\"['@name",
+        "toRaw": "https://testmsgvarinlivechat.blogspot.com/?m=1\",\"ADMIN_ID_INT\":\"214\",\"bot_id\":\"b63039fb-825e-4bb1-a2ae-85604715faed\",\"CLIENTWIDGETLEADFIELDS\":\"['@name",
+        "text": "https://testmsgvarinlivechat.blogspot.com/?m=1\",\"ADMIN_ID_INT\":\"214\",\"bot_id\":\"b63039fb-825e-4bb1-a2ae-85604715faed\",\"CLIENTWIDGETLEADFIELDS\":\"['@name",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
+        "to": "http://www.google.com/bot.html",
+        "toRaw": "http://www.google.com/bot.html",
+        "text": "http://www.google.com/bot.html",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
+        "to": "https://testmsgvarinlivechat.blogspot.com/?m=1",
+        "toRaw": "https://testmsgvarinlivechat.blogspot.com/?m=1",
+        "text": "https://testmsgvarinlivechat.blogspot.com/?m=1",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
+        "to": "https://testmsgvarinlivechat.blogspot.com/?m=1",
+        "toRaw": "https://testmsgvarinlivechat.blogspot.com/?m=1",
+        "text": "https://testmsgvarinlivechat.blogspot.com/?m=1",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Data Capture 1 32d2ff1bc21f80dcb762d05b84596ccd.md",
+        "to": "https://testmsgvarinlivechat.blogspot.com'}\"}",
+        "toRaw": "https://testmsgvarinlivechat.blogspot.com'}\"}",
+        "text": "https://testmsgvarinlivechat.blogspot.com'}\"}",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "56b10b3399a5997f7c062ab3bf07039331417391",
+    "file_path": "data/uploads/Data Capture 2 3302ff1bc21f80dfa7fad728c0175484.md",
+    "extension": "md",
+    "url_path": "Data%20Capture%202%203302ff1bc21f80dfa7fad728c0175484",
+    "filetype": null,
+    "metadata": {
+      "Task": "Data Capture 2",
+      "Date": "March 30, 2026 → March 31, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-384",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Data Capture 2 3302ff1bc21f80dfa7fad728c0175484.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-384",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-384",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-384",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Data Capture 2 3302ff1bc21f80dfa7fad728c0175484.md",
+        "to": "https://staging.chat360.io/builder/774e932c-5d72-405c-9122-1b6219a3fc3e",
+        "toRaw": "https://staging.chat360.io/builder/774e932c-5d72-405c-9122-1b6219a3fc3e",
+        "text": "https://staging.chat360.io/builder/774e932c-5d72-405c-9122-1b6219a3fc3e",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Data Capture 2 3302ff1bc21f80dfa7fad728c0175484.md",
+        "to": "https://staging.chat360.io/live-chats/f6a9ba83-571a-4b26-91f3-aa75f1af068c",
+        "toRaw": "https://staging.chat360.io/live-chats/f6a9ba83-571a-4b26-91f3-aa75f1af068c",
+        "text": "Chat360 - Live Chat",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Data Capture 2 3302ff1bc21f80dfa7fad728c0175484.md",
+        "to": "Data%20Capture%202/image.png",
+        "toRaw": "Data%20Capture%202/image.png",
+        "text": "image.png",
+        "embed": true,
+        "internal": true
+      },
+      {
+        "from": "Data Capture 2 3302ff1bc21f80dfa7fad728c0175484.md",
+        "to": "Data%20Capture%202/image%201.png",
+        "toRaw": "Data%20Capture%202/image%201.png",
+        "text": "image.png",
+        "embed": true,
+        "internal": true
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "0701bea8000476047e973d279786f0d0c2011dda",
+    "file_path": "data/uploads/Data Capture Prod Issue 3302ff1bc21f80938a15c9035335e4f9.md",
+    "extension": "md",
+    "url_path": "Data%20Capture%20Prod%20Issue%203302ff1bc21f80938a15c9035335e4f9",
+    "filetype": null,
+    "metadata": {
+      "Task": "Data Capture Prod Issue",
+      "Date": "March 27, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-384",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Data Capture Prod Issue 3302ff1bc21f80938a15c9035335e4f9.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-384",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-384",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-384",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "7c463176ef573f425a1040440b0b7a4202832867",
+    "file_path": "data/uploads/Doc Ock 32f2ff1bc21f802fba1bf5781ecb172b.md",
+    "extension": "md",
+    "url_path": "Doc%20Ock%2032f2ff1bc21f802fba1bf5781ecb172b",
+    "filetype": null,
+    "metadata": {
+      "Task": "Doc Ock",
+      "Date": "March 28, 2026 → March 29, 2026",
+      "LINK": "https://github.com/kgoel59/doc-ock",
+      "Task Type": "Personal",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Doc Ock 32f2ff1bc21f802fba1bf5781ecb172b.md",
+        "to": "https://github.com/kgoel59/doc-ock",
+        "toRaw": "https://github.com/kgoel59/doc-ock",
+        "text": "https://github.com/kgoel59/doc-ock",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "13bf00b8a88f4c9932a40d61ef5220e05ed11978",
+    "file_path": "data/uploads/Dynamic Tool Integration in UI 3382ff1bc21f802d8d13c21bf673a169.md",
+    "extension": "md",
+    "url_path": "Dynamic%20Tool%20Integration%20in%20UI%203382ff1bc21f802d8d13c21bf673a169",
+    "filetype": null,
+    "metadata": {
+      "Task": "Dynamic Tool Integration in UI",
+      "Date": "April 6, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-446",
+      "Task Type": "Chore",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Dynamic Tool Integration in UI 3382ff1bc21f802d8d13c21bf673a169.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "c7dd8432cb43564749be517d6c50d6bbf0a4f78e",
+    "file_path": "data/uploads/Enable Status for Delete - 1 3482ff1bc21f80418361f790e1593ea9.md",
+    "extension": "md",
+    "url_path": "Enable%20Status%20for%20Delete%20-%201%203482ff1bc21f80418361f790e1593ea9",
+    "filetype": null,
+    "metadata": {
+      "Task": "Enable Status for Delete - 1",
+      "Date": "April 21, 2026 → April 22, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-463",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Enable Status for Delete - 1 3482ff1bc21f80418361f790e1593ea9.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-463",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-463",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-463",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Enable Status for Delete - 1 3482ff1bc21f80418361f790e1593ea9.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-463",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-463",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-4",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "d4a52bb81fba1542e5632ec4d5eb3fd16dd3023a",
+    "file_path": "data/uploads/GPT Setup 3482ff1bc21f8030a227cc43c7d58ec4.md",
+    "extension": "md",
+    "url_path": "GPT%20Setup%203482ff1bc21f8030a227cc43c7d58ec4",
+    "filetype": null,
+    "metadata": {
+      "Task": "GPT Setup",
+      "Date": "April 18, 2026",
+      "LINK": "OpenWebUI",
+      "Task Type": "Personal",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "4da8b0175feb7a89b9889ba42086bcb4c04ca9e2",
+    "file_path": "data/uploads/Global Variable 3452ff1bc21f804e8a56ffe33f3b144a.md",
+    "extension": "md",
+    "url_path": "Global%20Variable%203452ff1bc21f804e8a56ffe33f3b144a",
+    "filetype": null,
+    "metadata": {
+      "Task": "Global Variable",
+      "Date": "April 16, 2026 → April 17, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-452",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Global Variable 3452ff1bc21f804e8a56ffe33f3b144a.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-452",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-452",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-452",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "e665455a7715c27504480efb6ac904c04b663bee",
+    "file_path": "data/uploads/Global vars - 2 3602ff1bc21f802ab2a6e964748141f5.md",
+    "extension": "md",
+    "url_path": "Global%20vars%20-%202%203602ff1bc21f802ab2a6e964748141f5",
+    "filetype": null,
+    "metadata": {
+      "Task": "Global vars - 2",
+      "Date": "May 13, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-452",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Global vars - 2 3602ff1bc21f802ab2a6e964748141f5.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-452",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-452",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-452",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "cc40a2de629ed44d565e279c1c11ab965484c6e3",
+    "file_path": "data/uploads/Image Recognition Feature-Learn more page 32d2ff1bc21f800b8c8ad08fd555e265.md",
+    "extension": "md",
+    "url_path": "Image%20Recognition%20Feature-Learn%20more%20page%2032d2ff1bc21f800b8c8ad08fd555e265",
+    "filetype": null,
+    "metadata": {
+      "Task": "Image Recognition Feature-Learn more page",
+      "Date": "March 20, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-362",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Image Recognition Feature-Learn more page 32d2ff1bc21f800b8c8ad08fd555e265.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-362",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-362",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-362",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "d05e9861e1c1f7234728b4bdee8ef463f60fe648",
+    "file_path": "data/uploads/Integration API 3452ff1bc21f80f49758f1c5b584eae8.md",
+    "extension": "md",
+    "url_path": "Integration%20API%203452ff1bc21f80f49758f1c5b584eae8",
+    "filetype": null,
+    "metadata": {
+      "Task": "Integration API",
+      "Date": "April 14, 2026 → April 15, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-446",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Integration API 3452ff1bc21f80f49758f1c5b584eae8.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "63ef146939e13fe87223a73be187735e54c73d3c",
+    "file_path": "data/uploads/Intgration API 3482ff1bc21f8010af56d68260f88321.md",
+    "extension": "md",
+    "url_path": "Intgration%20API%203482ff1bc21f8010af56d68260f88321",
+    "filetype": null,
+    "metadata": {
+      "Task": "Intgration API",
+      "Date": "April 20, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-446",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Intgration API 3482ff1bc21f8010af56d68260f88321.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "247575d7268f4fcb26a1df6d6cbee047fc4a0a38",
+    "file_path": "data/uploads/KT on Code 32e2ff1bc21f80468743ec40ab00e6bb.md",
+    "extension": "md",
+    "url_path": "KT%20on%20Code%2032e2ff1bc21f80468743ec40ab00e6bb",
+    "filetype": null,
+    "metadata": {
+      "Task": "KT on Code",
+      "Date": "March 16, 2026",
+      "LINK": "",
+      "Task Type": "Chore, Work",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "820240816225d46f4b9dbf02117041a363f8003c",
+    "file_path": "data/uploads/KT on Setup 32e2ff1bc21f806bacfacae6cda64438.md",
+    "extension": "md",
+    "url_path": "KT%20on%20Setup%2032e2ff1bc21f806bacfacae6cda64438",
+    "filetype": null,
+    "metadata": {
+      "Task": "KT on Setup",
+      "Date": "March 13, 2026",
+      "LINK": "",
+      "Task Type": "Chore, Work",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "75816204d1b0d6f83a7ab7c735f589d2e8ca0f4d",
+    "file_path": "data/uploads/Modifier Name Prompt Appears Multiple Times 32d2ff1bc21f80a69a5fecc791cc7e97.md",
+    "extension": "md",
+    "url_path": "Modifier%20Name%20Prompt%20Appears%20Multiple%20Times%2032d2ff1bc21f80a69a5fecc791cc7e97",
+    "filetype": null,
+    "metadata": {
+      "Task": "Modifier Name Prompt Appears Multiple Times",
+      "Date": "March 23, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-375",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Modifier Name Prompt Appears Multiple Times 32d2ff1bc21f80a69a5fecc791cc7e97.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-375",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-375",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-375",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "1204af915c08ee65df90b9fd67a5d8521c9ad565",
+    "file_path": "data/uploads/Move Pinecone to Qdrant - 1 35e2ff1bc21f800e8940f1f91beda215.md",
+    "extension": "md",
+    "url_path": "Move%20Pinecone%20to%20Qdrant%20-%201%2035e2ff1bc21f800e8940f1f91beda215",
+    "filetype": null,
+    "metadata": {
+      "Task": "Move Pinecone to Qdrant - 1",
+      "Date": "May 12, 2026 → May 12, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-508",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Move Pinecone to Qdrant - 1 35e2ff1bc21f800e8940f1f91beda215.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-508",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-508",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-508",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "4c63a1116d83d18a5c76e3fba84c970312031fc2",
+    "file_path": "data/uploads/Move Pinecone to Qdrant - 2 3602ff1bc21f80abbf32f4983c19a4a9.md",
+    "extension": "md",
+    "url_path": "Move%20Pinecone%20to%20Qdrant%20-%202%203602ff1bc21f80abbf32f4983c19a4a9",
+    "filetype": null,
+    "metadata": {
+      "Task": "Move Pinecone to Qdrant - 2",
+      "Date": "May 14, 2026",
+      "LINK": "",
+      "Task Type": "",
+      "Status": "No",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "8c49401c18719f8b0402f8f5945dc66eac0586cb",
+    "file_path": "data/uploads/Notes.md",
+    "extension": "md",
+    "url_path": "Notes",
+    "filetype": null,
+    "metadata": {
+      "Task": "Things To Note",
+      "Date": "May 16, 2026",
+      "LINK": "",
+      "Task Type": "",
+      "Status": "No",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "438a0f09f2ac7a26dda9968865a2223fd3ac03f2",
+    "file_path": "data/uploads/OCR - 5 34f2ff1bc21f805e915bd4b17194ae43.md",
+    "extension": "md",
+    "url_path": "OCR%20-%205%2034f2ff1bc21f805e915bd4b17194ae43",
+    "filetype": null,
+    "metadata": {
+      "Task": "OCR - 5",
+      "Date": "May 4, 2026 → May 5, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "OCR - 5 34f2ff1bc21f805e915bd4b17194ae43.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "0dc1fea0e31893e951099449a1917f10b19e1db9",
+    "file_path": "data/uploads/OCR 3 33b2ff1bc21f809ea178e605df9b25f9.md",
+    "extension": "md",
+    "url_path": "OCR%203%2033b2ff1bc21f809ea178e605df9b25f9",
+    "filetype": null,
+    "metadata": {
+      "Task": "OCR 3",
+      "Date": "April 9, 2026",
+      "LINK": "https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing",
+      "Task Type": "Chore, Work",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "OCR 3 33b2ff1bc21f809ea178e605df9b25f9.md",
+        "to": "https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing",
+        "toRaw": "https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing",
+        "text": "https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "ccf8cb936ae4b97734aa2e3f1a65ad5cfdb4b272",
+    "file_path": "data/uploads/OCR 4 3452ff1bc21f806da563c659903b4e37.md",
+    "extension": "md",
+    "url_path": "OCR%204%203452ff1bc21f806da563c659903b4e37",
+    "filetype": null,
+    "metadata": {
+      "Task": "OCR 4",
+      "Date": "April 20, 2026 → April 21, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "OCR 4 3452ff1bc21f806da563c659903b4e37.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "0d1677f9f31dfece9338442691933408fc133586",
+    "file_path": "data/uploads/OCR Integration for Knowledge Base 32d2ff1bc21f80e6a21cea5698c62442.md",
+    "extension": "md",
+    "url_path": "OCR%20Integration%20for%20Knowledge%20Base%2032d2ff1bc21f80e6a21cea5698c62442",
+    "filetype": null,
+    "metadata": {
+      "Task": "OCR Integration for Knowledge Base",
+      "Date": "March 23, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "OCR Integration for Knowledge Base 32d2ff1bc21f80e6a21cea5698c62442.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "20d1b3bb71ec5adca8b086822810cd5cac81303a",
+    "file_path": "data/uploads/OCR Issue 2 3342ff1bc21f80b2a619da8af06ab12f.md",
+    "extension": "md",
+    "url_path": "OCR%20Issue%202%203342ff1bc21f80b2a619da8af06ab12f",
+    "filetype": null,
+    "metadata": {
+      "Task": "OCR Issue 2",
+      "Date": "April 1, 2026 → April 4, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "OCR Issue 2 3342ff1bc21f80b2a619da8af06ab12f.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "OCR Issue 2 3342ff1bc21f80b2a619da8af06ab12f.md",
+        "to": "OCR%20Issue%202/Paddle%20Results%203352ff1bc21f806ca4e0ce3eceff2ddc.md",
+        "toRaw": "OCR%20Issue%202/Paddle%20Results%203352ff1bc21f806ca4e0ce3eceff2ddc.md",
+        "text": "Paddle Results",
+        "embed": false,
+        "internal": true
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "467ca50f6518c0d80516d057ac27a6b4dcca755e",
+    "file_path": "data/uploads/OCR Testing 3332ff1bc21f8031b62dcbb78e2ede02.md",
+    "extension": "md",
+    "url_path": "OCR%20Testing%203332ff1bc21f8031b62dcbb78e2ede02",
+    "filetype": null,
+    "metadata": {
+      "Task": "OCR Testing",
+      "Date": "March 30, 2026 → March 31, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "OCR Testing 3332ff1bc21f8031b62dcbb78e2ede02.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "8bc510bb775b22867e6d31b42dde3827c1a0516b",
+    "file_path": "data/uploads/OCR Testing 33a2ff1bc21f8009906ce8740492a233.md",
+    "extension": "md",
+    "url_path": "OCR%20Testing%2033a2ff1bc21f8009906ce8740492a233",
+    "filetype": null,
+    "metadata": {
+      "Task": "OCR Testing",
+      "Date": "April 6, 2026",
+      "LINK": "",
+      "Task Type": "Chore",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "f85446024b8bcd4a33dfa88946534988987829b6",
+    "file_path": "data/uploads/Orchestrator Returns “No Response” 32d2ff1bc21f8042b91af1c2db732e1e.md",
+    "extension": "md",
+    "url_path": "Orchestrator%20Returns%20%E2%80%9CNo%20Response%E2%80%9D%2032d2ff1bc21f8042b91af1c2db732e1e",
+    "filetype": null,
+    "metadata": {
+      "Task": "Orchestrator Returns “No Response”",
+      "Date": "March 17, 2026 → March 18, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-354",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Orchestrator Returns “No Response” 32d2ff1bc21f8042b91af1c2db732e1e.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-354",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-354",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-354",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "4fe51f2fc0d4250e13d1a56ad0281453756e27e6",
+    "file_path": "data/uploads/PII Masking Framework 32d2ff1bc21f8034af5cd13f96054187.md",
+    "extension": "md",
+    "url_path": "PII%20Masking%20Framework%2032d2ff1bc21f8034af5cd13f96054187",
+    "filetype": null,
+    "metadata": {
+      "Task": "PII Masking Framework",
+      "Date": "March 23, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-374",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "PII Masking Framework 32d2ff1bc21f8034af5cd13f96054187.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-374",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-374",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-374",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "6087617611e6869976bfe9e3fc09f9492de9d0cd",
+    "file_path": "data/uploads/Prod Issue 33e2ff1bc21f802da748d5ff0de4d455.md",
+    "extension": "md",
+    "url_path": "Prod%20Issue%2033e2ff1bc21f802da748d5ff0de4d455",
+    "filetype": null,
+    "metadata": {
+      "Task": "Prod Issue",
+      "Date": "April 10, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-363",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Prod Issue 33e2ff1bc21f802da748d5ff0de4d455.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-363",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-363",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-363",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "66d51c4d3e345d66a94a753b40c74f1f6e558f8f",
+    "file_path": "data/uploads/Prod Issue 3452ff1bc21f80368950f3d87b5479d8.md",
+    "extension": "md",
+    "url_path": "Prod%20Issue%203452ff1bc21f80368950f3d87b5479d8",
+    "filetype": null,
+    "metadata": {
+      "Task": "Prod Issue",
+      "Date": "April 16, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-172",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Prod Issue 3452ff1bc21f80368950f3d87b5479d8.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-172",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-172",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-172",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "97c297ff5f55200b3d728947c4dacbe05f4ef9f5",
+    "file_path": "data/uploads/Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+    "extension": "md",
+    "url_path": "Prod%20PR%203452ff1bc21f80f38409c809d8c1b38b",
+    "filetype": null,
+    "metadata": {
+      "Task": "Prod PR",
+      "Date": "May 5, 2026 → May 7, 2026",
+      "LINK": "",
+      "Task Type": "Chore, Work",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/972",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/972",
+        "text": "https://github.com/sumanel/chat360-agents/pull/972",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-424",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-424",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-424",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/1005",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/1005",
+        "text": "https://github.com/sumanel/chat360-agents/pull/1005",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-452",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-452",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-452",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/1006",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/1006",
+        "text": "https://github.com/sumanel/chat360-agents/pull/1006",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/1012",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/1012",
+        "text": "https://github.com/sumanel/chat360-agents/pull/1012",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/1009",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/1009",
+        "text": "https://github.com/sumanel/chat360-agents/pull/1009",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-470",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-470",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-470",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/1007",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/1007",
+        "text": "https://github.com/sumanel/chat360-agents/pull/1007",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-466",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-466",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-466",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://github.com/sumanel/chat360-agents/pull/1010/",
+        "toRaw": "https://github.com/sumanel/chat360-agents/pull/1010/",
+        "text": "https://github.com/sumanel/chat360-agents/pull/1010/",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Prod PR 3452ff1bc21f80f38409c809d8c1b38b.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-156",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-156",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-156",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "12e4113d144f542dd5454d977c78772bea2bb90b",
+    "file_path": "data/uploads/Quick-links.md",
+    "extension": "md",
+    "url_path": "Quick-links",
+    "filetype": null,
+    "metadata": {
+      "Task": "Quick links",
+      "Date": "May 16, 2026",
+      "LINK": "",
+      "Task Type": "",
+      "Status": "No",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Quick-links.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA",
+        "text": "Check assigned tickets (JIRA)",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Quick-links.md",
+        "to": "https://github.com/sumanel/chat360-agents",
+        "toRaw": "https://github.com/sumanel/chat360-agents",
+        "text": "Review PRs (GitHub)",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Quick-links.md",
+        "to": "https://staging.chat360.io/",
+        "toRaw": "https://staging.chat360.io/",
+        "text": "Open staging",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Quick-links.md",
+        "to": "https://meet.google.com/iar-fyds-rib",
+        "toRaw": "https://meet.google.com/iar-fyds-rib",
+        "text": "Start scrum call",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Quick-links.md",
+        "to": "https://mail.google.com/mail/u/0/",
+        "toRaw": "https://mail.google.com/mail/u/0/",
+        "text": "Open mail",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Quick-links.md",
+        "to": "https://chat360.keka.com/#/home/dashboard",
+        "toRaw": "https://chat360.keka.com/#/home/dashboard",
+        "text": "Open Keka",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "Quick-links.md",
+        "to": "http://localhost:3000/",
+        "toRaw": "http://localhost:3000/",
+        "text": "OpenWebUI",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "444630ee72565c0f643d81aa1c4011e5d3dbd6e3",
+    "file_path": "data/uploads/Search functionality not working in Assets feature 32f2ff1bc21f80e88a49c7758cd9dfcf.md",
+    "extension": "md",
+    "url_path": "Search%20functionality%20not%20working%20in%20Assets%20feature%2032f2ff1bc21f80e88a49c7758cd9dfcf",
+    "filetype": null,
+    "metadata": {
+      "Task": "Search functionality not working in Assets feature",
+      "Date": "March 26, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-390",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Search functionality not working in Assets feature 32f2ff1bc21f80e88a49c7758cd9dfcf.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-390",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-390",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-390",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "7fe706b2fca9990b777a3aaf8172364267677076",
+    "file_path": "data/uploads/Search functionality not working in Assets feature 3332ff1bc21f806cbcfefe7cc7009549.md",
+    "extension": "md",
+    "url_path": "Search%20functionality%20not%20working%20in%20Assets%20feature%203332ff1bc21f806cbcfefe7cc7009549",
+    "filetype": null,
+    "metadata": {
+      "Task": "Search functionality not working in Assets feature - 2",
+      "Date": "March 30, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-390",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Search functionality not working in Assets feature 3332ff1bc21f806cbcfefe7cc7009549.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-390",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-390",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-390",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "ab4e0bdf3b541792e004d42ad06f62a4964fd770",
+    "file_path": "data/uploads/Semantic KB answer not provided correctly for spre 32f2ff1bc21f800abc6aefcb96abaadf.md",
+    "extension": "md",
+    "url_path": "Semantic%20KB%20answer%20not%20provided%20correctly%20for%20spre%2032f2ff1bc21f800abc6aefcb96abaadf",
+    "filetype": null,
+    "metadata": {
+      "Task": "Semantic KB answer not provided correctly for spreadsheet-based query",
+      "Date": "March 27, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-156",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Semantic KB answer not provided correctly for spre 32f2ff1bc21f800abc6aefcb96abaadf.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-156",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-156",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-156",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "8c134f4549e78408b081af44d4551a802bba15fe",
+    "file_path": "data/uploads/Semantic Sheet Upload 3562ff1bc21f80e89d59fdfe764a938d.md",
+    "extension": "md",
+    "url_path": "Semantic%20Sheet%20Upload%203562ff1bc21f80e89d59fdfe764a938d",
+    "filetype": null,
+    "metadata": {
+      "Task": "Semantic Sheet Upload",
+      "Date": "May 4, 2026 → May 5, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-470",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Semantic Sheet Upload 3562ff1bc21f80e89d59fdfe764a938d.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-470",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-470",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-470",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "b3f0ded273e2a1ef4d154f84e84640ff1f327547",
+    "file_path": "data/uploads/Sent Keka regularise after confirming 3362ff1bc21f80debb3cd387e30f08ba.md",
+    "extension": "md",
+    "url_path": "Sent%20Keka%20regularise%20after%20confirming%203362ff1bc21f80debb3cd387e30f08ba",
+    "filetype": null,
+    "metadata": {
+      "Task": "Sent Keka regularise after confirming",
+      "Date": "April 2, 2026",
+      "LINK": "",
+      "Task Type": "Chore",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "e185f66e7b6296e5622103332f355f968fee7f06",
+    "file_path": "data/uploads/Set up Backend Repo 35e2ff1bc21f805e8174f2723e958baa.md",
+    "extension": "md",
+    "url_path": "Set%20up%20Backend%20Repo%2035e2ff1bc21f805e8174f2723e958baa",
+    "filetype": null,
+    "metadata": {
+      "Task": "Set up Backend Repo",
+      "Date": "May 11, 2026",
+      "LINK": "",
+      "Task Type": "Chore",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "9edfef7bf5de36d69f40331ab062f943dce537f5",
+    "file_path": "data/uploads/Take Charger from Omkar 3342ff1bc21f80368f48e289b6c07706.md",
+    "extension": "md",
+    "url_path": "Take%20Charger%20from%20Omkar%203342ff1bc21f80368f48e289b6c07706",
+    "filetype": null,
+    "metadata": {
+      "Task": "Take Charger from Omkar",
+      "Date": "April 1, 2026",
+      "LINK": "",
+      "Task Type": "Chore",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "afb0ba68b0a80de09b0783c3b6ccde211be66713",
+    "file_path": "data/uploads/Test Semantic 3382ff1bc21f8082a88ac87c01271d3d.md",
+    "extension": "md",
+    "url_path": "Test%20Semantic%203382ff1bc21f8082a88ac87c01271d3d",
+    "filetype": null,
+    "metadata": {
+      "Task": "Test Semantic",
+      "Date": "April 8, 2026 → April 9, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-156",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Test Semantic 3382ff1bc21f8082a88ac87c01271d3d.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-156",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-156",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-156",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "fcad4a1940e51878465c85bdcdecbbe7aba2a9db",
+    "file_path": "data/uploads/Tool Capture Fix 33b2ff1bc21f80af91d1fdb2577f0b9f.md",
+    "extension": "md",
+    "url_path": "Tool%20Capture%20Fix%2033b2ff1bc21f80af91d1fdb2577f0b9f",
+    "filetype": null,
+    "metadata": {
+      "Task": "Tool Capture Fix",
+      "Date": "April 7, 2026 → April 8, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-422",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Tool Capture Fix 33b2ff1bc21f80af91d1fdb2577f0b9f.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-422",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-422",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-422",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "99fb514fe61564f511c1727e9c24aba4f7f08112",
+    "file_path": "data/uploads/Tool Trace 2 33e2ff1bc21f80d2bacbfd72b0c00bce.md",
+    "extension": "md",
+    "url_path": "Tool%20Trace%202%2033e2ff1bc21f80d2bacbfd72b0c00bce",
+    "filetype": null,
+    "metadata": {
+      "Task": "Tool Trace 2",
+      "Date": "April 13, 2026 → April 14, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-422",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Tool Trace 2 33e2ff1bc21f80d2bacbfd72b0c00bce.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-422",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-422",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-422",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "f7496657c7f773998e1cac25a7338a7c0f4f6587",
+    "file_path": "data/uploads/Update Metric for 3rd Card 3492ff1bc21f8000b528f9a15703dd00.md",
+    "extension": "md",
+    "url_path": "Update%20Metric%20for%203rd%20Card%203492ff1bc21f8000b528f9a15703dd00",
+    "filetype": null,
+    "metadata": {
+      "Task": "Update Metric for 3rd Card",
+      "Date": "April 22, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-466",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Update Metric for 3rd Card 3492ff1bc21f8000b528f9a15703dd00.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-466",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-466",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-466",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "63ac34db46f847c31914d9c1cdc7d036436a6372",
+    "file_path": "data/uploads/Update Usage Overview Cards 32d2ff1bc21f8033813de2930c71275c.md",
+    "extension": "md",
+    "url_path": "Update%20Usage%20Overview%20Cards%2032d2ff1bc21f8033813de2930c71275c",
+    "filetype": null,
+    "metadata": {
+      "Task": "Update Usage Overview Cards",
+      "Date": "March 20, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-363",
+      "Task Type": "Development",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "Update Usage Overview Cards 32d2ff1bc21f8033813de2930c71275c.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-363",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-363",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-363",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "0c1f666f224866fe83af94cad7730056c258aee6",
+    "file_path": "data/uploads/Wash Clothes 3342ff1bc21f8017bcaed46acd4c840d.md",
+    "extension": "md",
+    "url_path": "Wash%20Clothes%203342ff1bc21f8017bcaed46acd4c840d",
+    "filetype": null,
+    "metadata": {
+      "Task": "Wash Clothes",
+      "Date": "March 31, 2026",
+      "LINK": "",
+      "Task Type": "Chore, Personal",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "a90bbeccf738aeb2a0b1af82b71447aead352e7d",
+    "file_path": "data/uploads/Wfh 3602ff1bc21f806284aad949d80db88f.md",
+    "extension": "md",
+    "url_path": "Wfh%203602ff1bc21f806284aad949d80db88f",
+    "filetype": null,
+    "metadata": {
+      "Task": "Wfh",
+      "Date": "May 13, 2026",
+      "LINK": "",
+      "Task Type": "Personal",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "0ac335baab99388db849f644a06d08de1117fa08",
+    "file_path": "data/uploads/WriteHere 32d2ff1bc21f80eb949ee354c82da546.md",
+    "extension": "md",
+    "url_path": "WriteHere%2032d2ff1bc21f80eb949ee354c82da546",
+    "filetype": null,
+    "metadata": {
+      "Task": "WriteHere",
+      "Date": "March 21, 2026",
+      "LINK": "https://github.com/principia-ai/WriteHERE",
+      "Task Type": "Personal",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "WriteHere 32d2ff1bc21f80eb949ee354c82da546.md",
+        "to": "https://github.com/principia-ai/WriteHERE",
+        "toRaw": "https://github.com/principia-ai/WriteHERE",
+        "text": "https://github.com/principia-ai/WriteHERE",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "11e7d34d9c58b38acdc2fe0d86f10a66b6be6e23",
+    "file_path": "data/uploads/[Stage] Assistant Preview Displays Image URLs Inst 35e2ff1bc21f80afaca5d0cd13b296d7.md",
+    "extension": "md",
+    "url_path": "%5BStage%5D%20Assistant%20Preview%20Displays%20Image%20URLs%20Inst%2035e2ff1bc21f80afaca5d0cd13b296d7",
+    "filetype": null,
+    "metadata": {
+      "Task": "[Stage] Assistant Preview Displays Image URLs Instead of Rendering Images - 1",
+      "Date": "May 12, 2026 → May 12, 2026",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-504",
+      "Task Type": "Issue",
+      "Status": "Yes",
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "[Stage] Assistant Preview Displays Image URLs Inst 35e2ff1bc21f80afaca5d0cd13b296d7.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-504",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-504",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-504",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  }
 ]
