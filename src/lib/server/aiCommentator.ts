@@ -2,7 +2,7 @@
  * Logic for generating contextual AI comments based on page data.
  * Configured for Azure OpenAI (GPT-4o / GPT-4o-mini).
  */
-import { AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 export type CommentType = 'quick-links' | 'journal' | 'task' | 'calendar';
 
@@ -30,11 +30,11 @@ export async function getAIInsight(type: CommentType, data: any): Promise<string
 	}
 
 	try {
-		const response = await fetch(AZURE_OPENAI_ENDPOINT, {
+		const response = await fetch(env.AZURE_OPENAI_ENDPOINT as string, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
-				'api-key': AZURE_OPENAI_API_KEY
+				'api-key': env.AZURE_OPENAI_API_KEY as string
 			},
 			body: JSON.stringify({
 				messages: [

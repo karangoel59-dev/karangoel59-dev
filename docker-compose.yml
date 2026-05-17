@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: svelte-app-local
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      # Add any necessary local environment variables here
+      # - GOOGLE_TRANSLATE_API_KEY=your_key_here
+    
+    # Optional: If you want to persist your SQLite database locally between container restarts,
+    # you can mount a volume. Assuming your SQLite DB is stored in a 'data' folder:
+    # volumes:
+    #   - ./data:/app/data

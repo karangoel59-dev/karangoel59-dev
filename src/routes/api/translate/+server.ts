@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit';
-import { GOOGLE_TRANSLATE_API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 export async function POST({ request }) {
 	try {
@@ -9,7 +9,7 @@ export async function POST({ request }) {
 			return json({ error: 'Missing text or targetLanguage' }, { status: 400 });
 		}
 
-		const url = `https://translation.googleapis.com/language/translate/v2?key=${GOOGLE_TRANSLATE_API_KEY}`;
+		const url = `https://translation.googleapis.com/language/translate/v2?key=${env.GOOGLE_TRANSLATE_API_KEY}`;
 
 		const response = await fetch(url, {
 			method: 'POST',
