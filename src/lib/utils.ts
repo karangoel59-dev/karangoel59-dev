@@ -161,3 +161,14 @@ export function getEventColors(typeString: string): { background: string; text: 
 	const color = getColorForType(types[0]);
 	return { background: color.eventBg, text: color.eventText };
 }
+
+export const formatDate = (dateStr: string) => {
+		if (!dateStr) return '';
+		const date = new Date(dateStr);
+		if (isNaN(date.getTime())) return dateStr;
+		return new Intl.DateTimeFormat('en-US', {
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric'
+		}).format(date);
+	};

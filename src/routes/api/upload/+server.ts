@@ -2,6 +2,7 @@ import { json } from '@sveltejs/kit';
 import fs from 'fs';
 import path from 'path';
 import { refreshTasks } from '$lib/server/tasks';
+import yaml from 'js-yaml';
 
 function processContent(originalContent: string) {
 	const fmMatch = originalContent.match(/^---\n([\s\S]*?)\n---/);
@@ -12,50 +13,41 @@ function processContent(originalContent: string) {
 	const frontmatterStr = fmMatch[1];
 	const body = originalContent.slice(fmMatch[0].length);
 
-	const parsed: Record<string, string> = {};
-	const lines = frontmatterStr.split('\n');
-	for (const line of lines) {
-		const colonIdx = line.indexOf(':');
-		if (colonIdx !== -1) {
-			const key = line.slice(0, colonIdx).trim().toLowerCase();
-			let value = line.slice(colonIdx + 1).trim();
-			// strip surrounding quotes if any
-			if (
-				(value.startsWith("'") && value.endsWith("'")) ||
-				(value.startsWith('"') && value.endsWith('"'))
-			) {
-				value = value.slice(1, -1);
-			}
-			parsed[key] = value;
-		}
+	let parsed: any;
+	try {
+		parsed = yaml.load(frontmatterStr);
+	} catch (e) {
+		throw new Error('Invalid YAML syntax in frontmatter');
 	}
 
-	const task = parsed['task'];
-	const date = parsed['date'];
-	const taskType = parsed['task type'] || '';
+	const task = parsed.Task || parsed.task;
+	const from = parsed.From || parsed.from;
+	const to = parsed.To || parsed.to;
+	const taskType = parsed['Task Type'] || parsed['task type'] || [];
+	const link = parsed.LINK || parsed.link || '';
+	const status = parsed.Status !== undefined ? parsed.Status : (parsed.status !== undefined ? parsed.status : false);
 
 	if (!task) throw new Error('Missing mandatory field: Task');
+	
+	const isQuickLinks = task.toLowerCase() === 'quick links' || (Array.isArray(taskType) ? taskType.some(t => t.toLowerCase() === 'quick links') : taskType.toLowerCase() === 'quick links');
+	
 	if (
-		!date &&
+		!from &&
 		task.toLowerCase() !== 'things to note' &&
-		task.toLowerCase() !== 'quick links' &&
-		taskType.toLowerCase() !== 'quick links'
+		!isQuickLinks
 	)
-		throw new Error('Missing mandatory field: Date');
+		throw new Error('Missing mandatory field: From');
 
-	const link = parsed['link'] || '';
-	const status = parsed['status'] || 'No';
+	const cleanMetadata = {
+		Task: task,
+		From: from || '',
+		To: to || '',
+		LINK: link,
+		'Task Type': Array.isArray(taskType) ? taskType : [taskType].filter(Boolean),
+		Status: status === true || String(status).toLowerCase() === 'true'
+	};
 
-	// standard yaml format
-	const newFrontmatter = [
-		'---',
-		`Task: '${task.replace(/'/g, "\\'")}'`,
-		`Date: '${(date || '').replace(/'/g, "\\'")}'`,
-		`LINK: '${link.replace(/'/g, "\\'")}'`,
-		`Task Type: '${taskType.replace(/'/g, "\\'")}'`,
-		`Status: '${status.replace(/'/g, "\\'")}'`,
-		'---'
-	].join('\n');
+	const newFrontmatter = `---\n${yaml.dump(cleanMetadata, { quotingType: "'" }).trim()}\n---`;
 
 	// Clean up body (remove leading blank lines)
 	let cleanedBody = body;
@@ -201,4 +193,3 @@ export async function POST({ request }) {
 		return json({ error: 'Failed to process upload' }, { status: 500 });
 	}
 }
-

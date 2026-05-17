@@ -1,9 +1,16 @@
 <script lang="ts">
-	import { getPillColor, getTypes } from '$lib/utils';
+	import { getPillColor, getTypes, formatDate } from '$lib/utils';
 
-	type TaskItem = Record<string, string>;
+	interface Task {
+		Task: string;
+		From: string;
+		To: string;
+		Type: string;
+		Status: boolean;
+		LINK: string;
+	}
 
-	let { tasks = [] }: { tasks: TaskItem[] } = $props();
+	let { tasks = [] }: { tasks: Task[] } = $props();
 
 	let searchQuery = $state('');
 	let statusFilter = $state('all');
@@ -11,17 +18,17 @@
 	let dateSort = $state('desc');
 
 	let allTypes = $derived(
-		[...new Set(tasks.flatMap((t: TaskItem) => getTypes(t['Type'])))].filter(Boolean).sort()
+		[...new Set(tasks.flatMap((t: Task) => getTypes(t['Type'])))].filter(Boolean).sort()
 	);
 
 	let filteredTasks = $derived(
 		tasks
-			.filter((task: TaskItem) => {
+			.filter((task: Task) => {
 				if (searchQuery && !task.Task.toLowerCase().includes(searchQuery.toLowerCase())) {
 					return false;
 				}
 				if (statusFilter !== 'all') {
-					const isDone = task['Status'] === 'Yes';
+					const isDone = task['Status'] === true;
 					if (statusFilter === 'yes' && !isDone) return false;
 					if (statusFilter === 'no' && isDone) return false;
 				}
@@ -31,14 +38,13 @@
 				}
 				return true;
 			})
-			.sort((a: TaskItem, b: TaskItem) => {
+			.sort((a: Task, b: Task) => {
 				const parseDate = (d: string) => {
 					if (!d) return 0;
-					const firstPart = d.split('→')[0].trim();
-					return new Date(firstPart).getTime() || 0;
+					return new Date(d).getTime() || 0;
 				};
-				const dateA = parseDate(a.Date);
-				const dateB = parseDate(b.Date);
+				const dateA = parseDate(a.From);
+				const dateB = parseDate(b.From);
 				return dateSort === 'asc' ? dateA - dateB : dateB - dateA;
 			})
 	);
@@ -122,18 +128,18 @@
 					>Task Type</th
 				>
 				<th class="border-x border-gray-200 px-3 py-2 font-normal dark:border-gray-700">LINK</th>
-				<th class="border-x border-gray-200 px-3 py-2 font-normal dark:border-gray-700">Date</th>
+				<th class="border-x border-gray-200 px-3 py-2 font-normal dark:border-gray-700">Timeline</th>
 			</tr>
 		</thead>
 		<tbody>
-			{#each filteredTasks as task (task.Task + task.Date)}
+			{#each filteredTasks as task (task.Task + task.From + task.To)}
 				<tr
 					class="border-b border-gray-100 hover:bg-gray-50/50 dark:border-gray-800 dark:hover:bg-gray-800/50"
 				>
 					<td class="border-x border-gray-200 px-3 py-2 text-center dark:border-gray-700">
 						<input
 							type="checkbox"
-							checked={task['Status'] === 'Yes'}
+							checked={task['Status']}
 							class="h-4 w-4 cursor-not-allowed rounded border-gray-300 text-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700"
 							readonly
 						/>
@@ -179,7 +185,11 @@
 					<td
 						class="border-x border-gray-200 px-3 py-2 whitespace-nowrap text-gray-500 dark:border-gray-700 dark:text-gray-400"
 					>
-						{task.Date}
+						{#if task.From === task.To || !task.To}
+							{formatDate(task.From)}
+						{:else}
+							{formatDate(task.From)} → {formatDate(task.To)}
+						{/if}
 					</td>
 				</tr>
 			{/each}

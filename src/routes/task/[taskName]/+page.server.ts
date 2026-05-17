@@ -11,7 +11,8 @@ export const load: PageServerLoad = async ({ params }) => {
 
 			return {
 				taskName: task.Task,
-				date: task.Date,
+				To: task.To,
+				From: task.From,
 				type: task.Type,
 				link: task.LINK,
 				status: task.Status,

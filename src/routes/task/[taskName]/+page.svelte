@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { marked } from 'marked';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
-	import { getTypes, getPillColor } from '$lib/utils';
+	import { getTypes, getPillColor, formatDate } from '$lib/utils';
 
 	let { data } = $props();
 
@@ -76,11 +76,19 @@
 				{/if}
 
 				<!-- Date -->
-				{#if data.date}
+				{#if data.From}
 					<div class="flex items-center gap-2">
-						<span class="text-sm font-medium text-gray-500 dark:text-gray-400">Date</span>
+						<span class="text-sm font-medium text-gray-500 dark:text-gray-400">Start Date</span>
 						<span class="text-sm font-medium text-gray-900 dark:text-gray-100">
-							{data.date}
+							{formatDate(data.From)}
+						</span>
+					</div>
+				{/if}
+				{#if data.To}
+					<div class="flex items-center gap-2">
+						<span class="text-sm font-medium text-gray-500 dark:text-gray-400">End Date</span>
+						<span class="text-sm font-medium text-gray-900 dark:text-gray-100">
+							{formatDate(data.To)}
 						</span>
 					</div>
 				{/if}

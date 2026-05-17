@@ -9,7 +9,8 @@ export async function load() {
         // Use .map() for cleaner array transformation
         const links = tasks.map(t => ({
             content: t.content,
-            date: t.Date // Ensure 'Date' is correctly capitalized in your source
+            From: t.From,
+            To: t.To
         }));
 
         return { links };

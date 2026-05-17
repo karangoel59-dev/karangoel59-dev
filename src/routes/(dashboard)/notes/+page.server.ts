@@ -6,7 +6,8 @@ export async function load() {
 	
 	const notes = tasks.map(t => ({
 		content: t.content,
-		date: t.Date
+		From: t.From,
+		To: t.To
 	}));
 
 	return { notes };

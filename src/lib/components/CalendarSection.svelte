@@ -20,14 +20,12 @@
 	const ganttData = $derived.by(() => {
 		const validTasks = tasks
 			.map((task: any, index: number) => {
-				if (!task.Date || task.Date === 'No Date') {
+				if (!task.From) {
 					return null;
 				}
 
-				const parts = task.Date.split('→').map((s: string) => s.trim());
-				const startDate = new Date(`${parts[0]} 12:00:00`);
-				const endDate =
-					parts.length > 1 ? new Date(`${parts[1]} 12:00:00`) : new Date(`${parts[0]} 12:00:00`);
+				const startDate = new Date(`${task.From}`);
+				const endDate = new Date(`${task.To || task.From}`);
 
 				if (isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
 					return null;
@@ -41,11 +39,12 @@
 					duration: Math.max(
 						1,
 						Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) +
-							(parts.length > 1 ? 1 : 0)
+							(task.To && task.To !== task.From ? 1 : 0)
 					)
 				};
 			})
-			.filter((e: any): e is NonNullable<typeof e> => e !== null);
+			.filter((e: any): e is NonNullable<typeof e> => e !== null)
+			.sort((a: any, b: any) => b.startDate.getTime() - a.startDate.getTime());
 
 		const groups = new Map<string, any[]>();
 		validTasks.forEach((task: any) => {

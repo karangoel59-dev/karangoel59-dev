@@ -54,9 +54,10 @@ export async function clearTasks() {
 
 export interface TaskItem {
 	Task: string;
-	Date: string;
+	From: string;
+	To: string;
 	Type: string;
-	Status?: string;
+	Status: boolean;
 	LINK: string;
 }
 
@@ -73,13 +74,19 @@ export async function getAllTasks(): Promise<Task[]> {
 
 		return markdownFiles.map((file) => {
 			const metadata = file.metadata || {};
+			const rawType = metadata['Task Type'] || metadata['task type'];
+			const typeStr = Array.isArray(rawType) 
+				? rawType.join(', ') 
+				: (rawType === '[]' ? '' : (rawType || ''));
+
 			const content = fs.readFileSync(file.file_path, 'utf-8').replace(/^---\n[\s\S]*?\n---\n/, '');
 			return {
 				Task: metadata.Task || (file.url_path || file.file_path).replace(/%20/g, ' '),
-				Date: metadata.Date || '',
+				From: metadata.From || '',
+				To: metadata.To || '',
 				LINK: metadata.LINK || '',
-				Type: metadata['Task Type'] || '',
-				Status: metadata.Status || '',
+				Type: typeStr,
+				Status: metadata.Status === true || metadata.Status === 'true',
 				content
 			};
 		});
@@ -115,13 +122,18 @@ export async function getTask(encodedTaskName: string): Promise<Task[]> {
 			const rawContent = fs.readFileSync(matchedFile.file_path, 'utf-8');
 			const content = rawContent.replace(/^---\n[\s\S]*?\n---\n/, '');
 			const metadata = matchedFile.metadata || {};
+			const rawType = metadata['Task Type'] || metadata['task type'];
+			const typeStr = Array.isArray(rawType) 
+				? rawType.join(', ') 
+				: (rawType === '[]' ? '' : (rawType || ''));
 
 			return {
 				Task: metadata.Task || (matchedFile.url_path || matchedFile.file_path).replace(/%20/g, ' '),
-				Date: metadata.Date || '',
+				From: metadata.From || '',
+				To: metadata.To || '',
 				LINK: metadata.LINK || '',
-				Type: metadata['Task Type'] || '',
-				Status: metadata.Status || '',
+				Type: typeStr,
+				Status: metadata.Status === true || metadata.Status === 'true',
 				content
 			};
 		});

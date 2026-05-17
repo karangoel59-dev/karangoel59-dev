@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { marked } from 'marked';
+	import { formatDate } from '$lib/utils';
 
 	let { data } = $props();
 
@@ -13,15 +14,19 @@
 </script>
 
 <svelte:head>
-	<title>Quick Links</title>
+	<title>Bookmarks</title>
 </svelte:head>
 
 <div class="pt-4 divide-y divide-gray-200 dark:divide-gray-800">
 	{#each parsedLinks as link}
 		<div class="py-6">
-			{#if link.date}
+			{#if link.From}
 				<p class="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">
-					{link.date}
+					{#if link.From === link.To || !link.To}
+						{formatDate(link.From)}
+					{:else}
+						{formatDate(link.From)} → {formatDate(link.To)}
+					{/if}
 				</p>
 			{/if}
 

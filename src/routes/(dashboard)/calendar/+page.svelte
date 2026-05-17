@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>Calendar</title>
+	<title>Schedule</title>
 </svelte:head>
 
 {#await tasks}

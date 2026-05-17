@@ -7,10 +7,13 @@
     "filetype": null,
     "metadata": {
       "Task": "KT on Setup",
-      "Date": "March 13, 2026",
+      "From": "2026-03-13T00:00:00.000Z",
+      "To": "2026-03-13T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "Chore, Work",
-      "Status": "Yes",
+      "Task Type": [
+        "Chore"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -26,10 +29,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Data Capture 1",
-      "Date": "March 24, 2026 → March 25, 2026",
+      "From": "2026-03-24T00:00:00.000Z",
+      "To": "2026-03-25T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-384",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -126,10 +132,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Add ocr_enabled flag in Knowledgebase APIs and upload flow",
-      "Date": "March 26, 2026",
+      "From": "2026-03-26T00:00:00.000Z",
+      "To": "2026-03-26T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-145",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -154,10 +163,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Search functionality not working in Assets feature",
-      "Date": "March 26, 2026",
+      "From": "2026-03-26T00:00:00.000Z",
+      "To": "2026-03-26T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-390",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -182,10 +194,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Semantic KB answer not provided correctly for spreadsheet-based query",
-      "Date": "March 27, 2026",
+      "From": "2026-03-27T00:00:00.000Z",
+      "To": "2026-03-27T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-156",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -210,10 +225,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Data Capture Prod Issue",
-      "Date": "March 27, 2026",
+      "From": "2026-03-27T00:00:00.000Z",
+      "To": "2026-03-27T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-384",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -238,10 +256,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Doc Ock",
-      "Date": "March 28, 2026 → March 29, 2026",
+      "From": "2026-03-28T00:00:00.000Z",
+      "To": "2026-03-29T00:00:00.000Z",
       "LINK": "https://github.com/kgoel59/doc-ock",
-      "Task Type": "Personal",
-      "Status": "Yes",
+      "Task Type": [
+        "Personal"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -266,10 +287,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Data Capture 2",
-      "Date": "March 30, 2026 → March 31, 2026",
+      "From": "2026-03-30T00:00:00.000Z",
+      "To": "2026-03-31T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-384",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -326,10 +350,13 @@
     "filetype": null,
     "metadata": {
       "Task": "OCR Testing",
-      "Date": "March 30, 2026 → March 31, 2026",
+      "From": "2026-03-30T00:00:00.000Z",
+      "To": "2026-03-31T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -354,10 +381,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Search functionality not working in Assets feature - 2",
-      "Date": "March 30, 2026",
+      "From": "2026-03-30T00:00:00.000Z",
+      "To": "2026-03-30T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-390",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -382,10 +412,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Wash Clothes",
-      "Date": "March 31, 2026",
+      "From": "2026-03-31T00:00:00.000Z",
+      "To": "2026-03-31T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "Chore, Personal",
-      "Status": "Yes",
+      "Task Type": [
+        "Chore, Personal"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -401,10 +434,13 @@
     "filetype": null,
     "metadata": {
       "Task": "KT on Code",
-      "Date": "March 16, 2026",
+      "From": "2026-03-16T00:00:00.000Z",
+      "To": "2026-03-16T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "Chore, Work",
-      "Status": "Yes",
+      "Task Type": [
+        "Chore, Work"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -420,10 +456,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Take Charger from Omkar",
-      "Date": "April 1, 2026",
+      "From": "2026-04-01T00:00:00.000Z",
+      "To": "2026-04-01T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "Chore",
-      "Status": "Yes",
+      "Task Type": [
+        "Chore"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -439,10 +478,13 @@
     "filetype": null,
     "metadata": {
       "Task": "OCR Issue 2",
-      "Date": "April 1, 2026 → April 4, 2026",
+      "From": "2026-04-01T00:00:00.000Z",
+      "To": "2026-04-04T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -475,10 +517,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Audit Trail Logs Not Reflecting Correct Changes",
-      "Date": "April 1, 2026 → April 4, 2026",
+      "From": "2026-04-01T00:00:00.000Z",
+      "To": "2026-04-04T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-407",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -503,10 +548,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Sent Keka regularise after confirming",
-      "Date": "April 2, 2026",
+      "From": "2026-04-02T00:00:00.000Z",
+      "To": "2026-04-02T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "Chore",
-      "Status": "Yes",
+      "Task Type": [
+        "Chore"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -522,10 +570,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Create a tool for one click setup",
-      "Date": "April 4, 2026 → April 7, 2026",
+      "From": "2026-04-04T00:00:00.000Z",
+      "To": "2026-04-07T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "Personal",
-      "Status": "Yes",
+      "Task Type": [
+        "Personal"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -541,10 +592,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Dynamic Tool Integration in UI",
-      "Date": "April 6, 2026",
+      "From": "2026-04-06T00:00:00.000Z",
+      "To": "2026-04-06T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-446",
-      "Task Type": "Chore",
-      "Status": "Yes",
+      "Task Type": [
+        "Chore"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -569,10 +623,13 @@
     "filetype": null,
     "metadata": {
       "Task": "OCR Testing",
-      "Date": "April 6, 2026",
+      "From": "2026-04-06T00:00:00.000Z",
+      "To": "2026-04-06T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "Chore",
-      "Status": "Yes",
+      "Task Type": [
+        "Chore"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -588,10 +645,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Add fields to Data Capture",
-      "Date": "April 6, 2026 → April 8, 2026",
+      "From": "2026-04-06T00:00:00.000Z",
+      "To": "2026-04-08T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-416",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -616,10 +676,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Change agent_status to active",
-      "Date": "April 7, 2026 → April 8, 2026",
+      "From": "2026-04-07T00:00:00.000Z",
+      "To": "2026-04-08T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-407",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -644,10 +707,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Tool Capture Fix",
-      "Date": "April 7, 2026 → April 8, 2026",
+      "From": "2026-04-07T00:00:00.000Z",
+      "To": "2026-04-08T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-422",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -672,10 +738,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Orchestrator Returns “No Response”",
-      "Date": "March 17, 2026 → March 18, 2026",
+      "From": "2026-03-17T00:00:00.000Z",
+      "To": "2026-03-18T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-354",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -700,10 +769,13 @@
     "filetype": null,
     "metadata": {
       "Task": "BE- Provide Currency Conversion Support for Dashboard Total Cost",
-      "Date": "April 7, 2026",
+      "From": "2026-04-07T00:00:00.000Z",
+      "To": "2026-04-07T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-420",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -728,10 +800,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Test Semantic",
-      "Date": "April 8, 2026 → April 9, 2026",
+      "From": "2026-04-08T00:00:00.000Z",
+      "To": "2026-04-09T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-156",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -756,10 +831,13 @@
     "filetype": null,
     "metadata": {
       "Task": "OCR 3",
-      "Date": "April 9, 2026",
+      "From": "2026-04-09T00:00:00.000Z",
+      "To": "2026-04-09T00:00:00.000Z",
       "LINK": "https://docs.google.com/document/d/1hw0_V6tqAglx8IO05O0JVDkb66c5AlMLwbphmI5mEGY/edit?usp=sharing",
-      "Task Type": "Chore, Work",
-      "Status": "Yes",
+      "Task Type": [
+        "Chore, Work"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -784,10 +862,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Create PRs for Prod",
-      "Date": "April 9, 2026",
+      "From": "2026-04-09T00:00:00.000Z",
+      "To": "2026-04-09T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "Chore, Work",
-      "Status": "Yes",
+      "Task Type": [
+        "Chore, Work"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -852,10 +933,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Prod Issue",
-      "Date": "April 10, 2026",
+      "From": "2026-04-10T00:00:00.000Z",
+      "To": "2026-04-10T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-363",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -880,10 +964,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Agentic Cache Issue",
-      "Date": "April 13, 2026 → April 17, 2026",
+      "From": "2026-04-13T00:00:00.000Z",
+      "To": "2026-04-17T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-172",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -908,10 +995,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Tool Trace 2",
-      "Date": "April 13, 2026 → April 14, 2026",
+      "From": "2026-04-13T00:00:00.000Z",
+      "To": "2026-04-14T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-422",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -936,10 +1026,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Integration API",
-      "Date": "April 14, 2026 → April 15, 2026",
+      "From": "2026-04-14T00:00:00.000Z",
+      "To": "2026-04-15T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-446",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -964,10 +1057,13 @@
     "filetype": null,
     "metadata": {
       "Task": "AI Assistant Dashboard Metrics API",
-      "Date": "April 15, 2026 → April 16, 2026",
+      "From": "2026-04-15T00:00:00.000Z",
+      "To": "2026-04-16T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-424",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -992,10 +1088,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Currency Conversion",
-      "Date": "April 15, 2026 → April 16, 2026",
+      "From": "2026-04-15T00:00:00.000Z",
+      "To": "2026-04-16T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-420",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1020,10 +1119,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Image Recognition Feature-Learn more page",
-      "Date": "March 20, 2026",
+      "From": "2026-03-20T00:00:00.000Z",
+      "To": "2026-03-20T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-362",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1048,10 +1150,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Prod Issue",
-      "Date": "April 16, 2026",
+      "From": "2026-04-16T00:00:00.000Z",
+      "To": "2026-04-16T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-172",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1076,10 +1181,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Global Variable",
-      "Date": "April 16, 2026 → April 17, 2026",
+      "From": "2026-04-16T00:00:00.000Z",
+      "To": "2026-04-17T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-452",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1104,10 +1212,13 @@
     "filetype": null,
     "metadata": {
       "Task": "AI Assistant Dashboard Metrics API 2",
-      "Date": "April 17, 2026 → April 17, 2026",
+      "From": "2026-04-17T00:00:00.000Z",
+      "To": "2026-04-17T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-424",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1132,10 +1243,13 @@
     "filetype": null,
     "metadata": {
       "Task": "GPT Setup",
-      "Date": "April 18, 2026",
+      "From": "2026-04-18T00:00:00.000Z",
+      "To": "2026-04-18T00:00:00.000Z",
       "LINK": "OpenWebUI",
-      "Task Type": "Personal",
-      "Status": "Yes",
+      "Task Type": [
+        "Personal"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1151,10 +1265,13 @@
     "filetype": null,
     "metadata": {
       "Task": "OCR 4",
-      "Date": "April 20, 2026 → April 21, 2026",
+      "From": "2026-04-20T00:00:00.000Z",
+      "To": "2026-04-21T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1179,10 +1296,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Intgration API",
-      "Date": "April 20, 2026",
+      "From": "2026-04-20T00:00:00.000Z",
+      "To": "2026-04-20T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-446",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1207,10 +1327,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Enable Status for Delete - 1",
-      "Date": "April 21, 2026 → April 22, 2026",
+      "From": "2026-04-21T00:00:00.000Z",
+      "To": "2026-04-22T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-463",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1243,10 +1366,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Update Metric for 3rd Card",
-      "Date": "April 22, 2026",
+      "From": "2026-04-22T00:00:00.000Z",
+      "To": "2026-04-22T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-466",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1271,10 +1397,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Campaign Automation - 1 - 1",
-      "Date": "April 23, 2026 → April 24, 2026",
+      "From": "2026-04-23T00:00:00.000Z",
+      "To": "2026-04-24T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-478",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1299,10 +1428,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Campaign Automation - 2",
-      "Date": "April 27, 2026 → April 29, 2026",
+      "From": "2026-04-27T00:00:00.000Z",
+      "To": "2026-04-29T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-478",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1327,10 +1459,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Update Usage Overview Cards",
-      "Date": "March 20, 2026",
+      "From": "2026-03-20T00:00:00.000Z",
+      "To": "2026-03-20T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-363",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1355,10 +1490,13 @@
     "filetype": null,
     "metadata": {
       "Task": "OCR - 5",
-      "Date": "May 4, 2026 → May 5, 2026",
+      "From": "2026-05-04T00:00:00.000Z",
+      "To": "2026-05-05T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1383,10 +1521,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Semantic Sheet Upload",
-      "Date": "May 4, 2026 → May 5, 2026",
+      "From": "2026-05-04T00:00:00.000Z",
+      "To": "2026-05-05T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-470",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1411,10 +1552,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Prod PR",
-      "Date": "May 5, 2026 → May 7, 2026",
+      "From": "2026-05-05T00:00:00.000Z",
+      "To": "2026-05-07T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "Chore, Work",
-      "Status": "Yes",
+      "Task Type": [
+        "Chore, Work"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1543,10 +1687,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Add a retry/filter to fix wrong status code in fallback",
-      "Date": "May 6, 2026 → May 8, 2026",
+      "From": "2026-05-06T00:00:00.000Z",
+      "To": "2026-05-08T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-496",
-      "Task Type": "Development, Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Development, Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1571,10 +1718,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Campaigns API Fix",
-      "Date": "May 6, 2026 → May 7, 2026",
+      "From": "2026-05-06T00:00:00.000Z",
+      "To": "2026-05-07T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-478",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1599,10 +1749,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Set up Backend Repo",
-      "Date": "May 11, 2026",
+      "From": "2026-05-11T00:00:00.000Z",
+      "To": "2026-05-11T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "Chore",
-      "Status": "Yes",
+      "Task Type": [
+        "Chore"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1618,10 +1771,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Move Pinecone to Qdrant - 1",
-      "Date": "May 12, 2026 → May 12, 2026",
+      "From": "2026-05-12T00:00:00.000Z",
+      "To": "2026-05-12T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-508",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1646,10 +1802,13 @@
     "filetype": null,
     "metadata": {
       "Task": "[Stage] Assistant Preview Displays Image URLs Instead of Rendering Images - 1",
-      "Date": "May 12, 2026 → May 12, 2026",
+      "From": "2026-05-12T00:00:00.000Z",
+      "To": "2026-05-12T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-504",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1674,10 +1833,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Global vars - 2",
-      "Date": "May 13, 2026",
+      "From": "2026-05-13T00:00:00.000Z",
+      "To": "2026-05-13T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-452",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1702,10 +1864,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Wfh",
-      "Date": "May 13, 2026",
+      "From": "2026-05-13T00:00:00.000Z",
+      "To": "2026-05-13T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "Personal",
-      "Status": "Yes",
+      "Task Type": [
+        "Personal"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1721,10 +1886,13 @@
     "filetype": null,
     "metadata": {
       "Task": "WriteHere",
-      "Date": "March 21, 2026",
+      "From": "2026-03-21T00:00:00.000Z",
+      "To": "2026-03-21T00:00:00.000Z",
       "LINK": "https://github.com/principia-ai/WriteHERE",
-      "Task Type": "Personal",
-      "Status": "Yes",
+      "Task Type": [
+        "Personal"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1749,10 +1917,11 @@
     "filetype": null,
     "metadata": {
       "Task": "Move Pinecone to Qdrant - 2",
-      "Date": "May 14, 2026",
+      "From": "2026-05-14T00:00:00.000Z",
+      "To": "2026-05-14T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "",
-      "Status": "No",
+      "Task Type": [],
+      "Status": false,
       "tags": [],
       "tasks": []
     },
@@ -1768,10 +1937,11 @@
     "filetype": null,
     "metadata": {
       "Task": "Quick links",
-      "Date": "May 16, 2026",
+      "From": "2026-05-16T00:00:00.000Z",
+      "To": "2026-05-16T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "",
-      "Status": "No",
+      "Task Type": [],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1844,10 +2014,11 @@
     "filetype": null,
     "metadata": {
       "Task": "Things To Note",
-      "Date": "May 16, 2026",
+      "From": "2026-05-16T00:00:00.000Z",
+      "To": "2026-05-16T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "",
-      "Status": "No",
+      "Task Type": [],
+      "Status": false,
       "tags": [],
       "tasks": []
     },
@@ -1863,10 +2034,11 @@
     "filetype": null,
     "metadata": {
       "Task": "Things To Note",
-      "Date": "May 17, 2026",
+      "From": "2026-05-17T00:00:00.000Z",
+      "To": "2026-05-17T00:00:00.000Z",
       "LINK": "",
-      "Task Type": "",
-      "Status": "No",
+      "Task Type": [],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1882,10 +2054,13 @@
     "filetype": null,
     "metadata": {
       "Task": "PII Masking Framework",
-      "Date": "March 23, 2026",
+      "From": "2026-03-23T00:00:00.000Z",
+      "To": "2026-03-23T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-374",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1910,10 +2085,13 @@
     "filetype": null,
     "metadata": {
       "Task": "Modifier Name Prompt Appears Multiple Times",
-      "Date": "March 23, 2026",
+      "From": "2026-03-23T00:00:00.000Z",
+      "To": "2026-03-23T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-375",
-      "Task Type": "Development",
-      "Status": "Yes",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },
@@ -1938,10 +2116,13 @@
     "filetype": null,
     "metadata": {
       "Task": "OCR Integration for Knowledge Base",
-      "Date": "March 23, 2026",
+      "From": "2026-03-23T00:00:00.000Z",
+      "To": "2026-03-23T00:00:00.000Z",
       "LINK": "https://chat360-jira.atlassian.net/browse/AA-115",
-      "Task Type": "Issue",
-      "Status": "Yes",
+      "Task Type": [
+        "Issue"
+      ],
+      "Status": true,
       "tags": [],
       "tasks": []
     },

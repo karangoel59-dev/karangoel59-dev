@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { marked } from 'marked';
+	import { formatDate } from '$lib/utils';
 
 	let { data } = $props();
 
@@ -13,15 +14,15 @@
 </script>
 
 <svelte:head>
-	<title>Things to Note</title>
+	<title>Notebook</title>
 </svelte:head>
 
 <div class="pt-4 divide-y divide-gray-200 dark:divide-gray-800">
 	{#each processedNotes as note}
 		<div class="py-6 first:pt-0">
-			{#if note.date}
+			{#if note.From}
 				<p class="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">
-					{note.date}
+					{formatDate(note.From)}
 				</p>
 			{/if}
 

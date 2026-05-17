@@ -15,14 +15,12 @@
 	const events = $derived(
 		tasks
 			.map((task: any, index: number) => {
-				if (!task.Date || task.Date === 'No Date') {
+				if (!task.From) {
 					return null;
 				}
 
-				const parts = task.Date.split('→').map((s: string) => s.trim());
-				const startDate = new Date(`${parts[0]} 12:00:00`);
-				const endDate =
-					parts.length > 1 ? new Date(`${parts[1]} 12:00:00`) : new Date(`${parts[0]} 12:00:00`);
+				const startDate = new Date(`${task.From}`);
+				const endDate = new Date(`${task.To || task.From}`);
 
 				if (isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
 					return null;
@@ -42,7 +40,7 @@
 					backgroundColor: '#3b82f6', // blue-500
 					extendedProps: {
 						taskType: task['Type'] || '',
-						completed: task['Status'] === 'Yes'
+						completed: task.Status === true
 					}
 				};
 			})

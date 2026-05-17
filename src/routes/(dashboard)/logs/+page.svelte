@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>Logs</title>
+	<title>Journal</title>
 </svelte:head>
 
 <!-- Handle the Promise in the UI -->
