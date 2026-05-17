@@ -3,42 +3,37 @@ import path from 'path';
 import fs from 'fs';
 
 let mddbClient: MarkdownDB | null = null;
+let clientPromise: Promise<MarkdownDB> | null = null;
 
 async function getClient() {
-	if (!mddbClient) {
-		mddbClient = new MarkdownDB({
-			client: 'sqlite3',
-			connection: {
-				filename: 'markdown.db'
-			}
-		});
-		await mddbClient.init();
+	if (!clientPromise) {
+		clientPromise = (async () => {
+			mddbClient = new MarkdownDB({
+				client: 'sqlite3',
+				connection: { filename: 'markdown.db' }
+			});
+			await mddbClient.init();
 
-		const uploadsDir = 'data/uploads';
-
-		if (fs.existsSync(uploadsDir)) {
-			const files = fs.readdirSync(uploadsDir);
-			if (files.length > 0) {
+			// Perform initial indexing.
+			const uploadsDir = 'data/uploads';
+			if (fs.existsSync(uploadsDir)) {
 				await mddbClient.indexFolder({
 					folderPath: uploadsDir,
 					ignorePatterns: []
 				});
 			}
-		}
+
+			return mddbClient;
+		})();
 	}
-	return mddbClient;
+	return clientPromise;
 }
 
 export async function refreshTasks() {
-	if (mddbClient) {
-		const uploadsDir = 'data/uploads';
-
-		if (fs.existsSync(uploadsDir)) {
-			await mddbClient.indexFolder({
-				folderPath: uploadsDir,
-				ignorePatterns: []
-			});
-		}
+	const client = await getClient();
+	const uploadsDir = 'data/uploads';
+	if (fs.existsSync(uploadsDir)) {
+		await client.indexFolder({ folderPath: uploadsDir, ignorePatterns: [] });
 	}
 }
 
@@ -50,6 +45,7 @@ export async function clearTasks() {
 			console.error('Error destroying mddb db:', e);
 		}
 		mddbClient = null;
+		clientPromise = null;
 	}
 	if (fs.existsSync('markdown.db')) {
 		fs.unlinkSync('markdown.db');
@@ -68,19 +64,21 @@ export interface Task extends TaskItem {
 	content: string;
 }
 
-export async function getAllTasks(): Promise<TaskItem[]> {
+export async function getAllTasks(): Promise<Task[]> {
 	try {
 		const client = await getClient();
 		const files = await client.getFiles();
 
 		return files.map((file) => {
 			const metadata = file.metadata || {};
+			const content = fs.readFileSync(file.file_path, 'utf-8').replace(/^---\n[\s\S]*?\n---\n/, '');
 			return {
 				Task: metadata.Task || (file.url_path || file.file_path).replace(/%20/g, ' '),
 				Date: metadata.Date || '',
 				LINK: metadata.LINK || '',
 				Type: metadata['Task Type'] || '',
-				Status: metadata.Status || ''
+				Status: metadata.Status || '',
+				content
 			};
 		});
 	} catch (e) {
@@ -88,7 +86,8 @@ export async function getAllTasks(): Promise<TaskItem[]> {
 	}
 }
 
-export async function getTask(encodedTaskName: string): Promise<Task | null> {
+// Updated getTask function to return Promise<Task[]>
+export async function getTask(encodedTaskName: string): Promise<Task[]> {
 	try {
 		const taskName = decodeURIComponent(encodedTaskName).trim();
 		const cleanTaskName = taskName.replace(/\u00a0/g, ' ').trim();
@@ -96,7 +95,8 @@ export async function getTask(encodedTaskName: string): Promise<Task | null> {
 		const client = await getClient();
 		const files = await client.getFiles();
 
-		const matchedFile = files.find((file) => {
+		// Use .filter() instead of .find() to get all matching files
+		const matchedFiles = files.filter((file) => {
 			const metadataTask = (file.metadata?.Task || '').trim();
 			if (metadataTask === cleanTaskName || metadataTask.startsWith(cleanTaskName)) return true;
 
@@ -108,7 +108,8 @@ export async function getTask(encodedTaskName: string): Promise<Task | null> {
 			return normalizedFileName.includes(cleanTaskName);
 		});
 
-		if (matchedFile) {
+		// Map over all matched files to process and return them as an array
+		return matchedFiles.map((matchedFile) => {
 			const rawContent = fs.readFileSync(matchedFile.file_path, 'utf-8');
 			const content = rawContent.replace(/^---\n[\s\S]*?\n---\n/, '');
 			const metadata = matchedFile.metadata || {};
@@ -121,10 +122,9 @@ export async function getTask(encodedTaskName: string): Promise<Task | null> {
 				Status: metadata.Status || '',
 				content
 			};
-		}
-		return null;
+		});
 	} catch (e) {
-		console.error('Error getting task via MarkdownDB:', e);
-		return null;
+		// Return an empty array instead of null on error
+		return [];
 	}
 }

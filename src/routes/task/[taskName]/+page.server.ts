@@ -4,7 +4,7 @@ import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ params }) => {
 	try {
-		const task = await getTask(params.taskName);
+		const task = (await getTask(params.taskName))[0];
 		if (task) {
 			// Strip frontmatter from content
 			const contentWithoutFrontmatter = task.content.replace(/^---[\s\S]*?---\n*/, '');
