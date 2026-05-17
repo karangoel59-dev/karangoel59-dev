@@ -25,17 +25,22 @@ function processContent(originalContent: string) {
 	const to = parsed.To || parsed.to;
 	const taskType = parsed['Task Type'] || parsed['task type'] || [];
 	const link = parsed.LINK || parsed.link || '';
-	const status = parsed.Status !== undefined ? parsed.Status : (parsed.status !== undefined ? parsed.status : false);
+	const status =
+		parsed.Status !== undefined
+			? parsed.Status
+			: parsed.status !== undefined
+				? parsed.status
+				: false;
 
 	if (!task) throw new Error('Missing mandatory field: Task');
-	
-	const isQuickLinks = task.toLowerCase() === 'quick links' || (Array.isArray(taskType) ? taskType.some(t => t.toLowerCase() === 'quick links') : taskType.toLowerCase() === 'quick links');
-	
-	if (
-		!from &&
-		task.toLowerCase() !== 'things to note' &&
-		!isQuickLinks
-	)
+
+	const isQuickLinks =
+		task.toLowerCase() === 'quick links' ||
+		(Array.isArray(taskType)
+			? taskType.some((t) => t.toLowerCase() === 'quick links')
+			: taskType.toLowerCase() === 'quick links');
+
+	if (!from && task.toLowerCase() !== 'things to note' && !isQuickLinks)
 		throw new Error('Missing mandatory field: From');
 
 	const cleanMetadata = {
@@ -106,7 +111,7 @@ export async function POST({ request }) {
 			} else if (isImage) {
 				try {
 					let relativePath = normalizedPath;
-					
+
 					// If "images" is in the path, keep it and everything after it
 					const imagesIdx = pathParts.indexOf('images');
 					if (imagesIdx !== -1) {
@@ -136,7 +141,7 @@ export async function POST({ request }) {
 						// Otherwise strip the root folder name if it exists
 						relativePath = pathParts.slice(1).join('/');
 					}
-					
+
 					const arrayBuffer = await file.arrayBuffer();
 					docFiles.push({
 						name: relativePath,

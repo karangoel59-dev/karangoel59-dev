@@ -18,9 +18,9 @@
 	<title>Bookmarks</title>
 </svelte:head>
 
-<div class="flex flex-col lg:flex-row gap-0">
-	<div class="lg:w-[40%] pr-6">
-		<div class="pt-4 divide-y divide-gray-200 dark:divide-gray-800">
+<div class="flex flex-col gap-0 lg:flex-row">
+	<div class="pr-6 lg:w-[40%]">
+		<div class="divide-y divide-gray-200 pt-4 dark:divide-gray-800">
 			{#each parsedLinks as link}
 				<div class="py-6">
 					{#if link.From}
@@ -46,11 +46,13 @@
 		</div>
 	</div>
 
-	<aside class="lg:w-[60%] pt-4 text-8xl font-black leading-tight">
+	<aside class="pt-4 text-8xl leading-tight font-black lg:w-[60%]">
 		{#await data.aiComment}
 			<AICommentator loading={true} />
 		{:then comment}
-			<AICommentator {comment} />
+			{#if comment}
+				<AICommentator {comment} />
+			{/if}
 		{/await}
 	</aside>
 </div>

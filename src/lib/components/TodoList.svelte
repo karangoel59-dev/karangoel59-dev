@@ -128,7 +128,8 @@
 					>Task Type</th
 				>
 				<th class="border-x border-gray-200 px-3 py-2 font-normal dark:border-gray-700">LINK</th>
-				<th class="border-x border-gray-200 px-3 py-2 font-normal dark:border-gray-700">Timeline</th>
+				<th class="border-x border-gray-200 px-3 py-2 font-normal dark:border-gray-700">Timeline</th
+				>
 			</tr>
 		</thead>
 		<tbody>

@@ -18,7 +18,7 @@
 	<title>Notebook</title>
 </svelte:head>
 
-<div class="mb-8 mt-4">
+<div class="mt-4 mb-8">
 	{#await data.aiComment}
 		<AICommentator loading={true} />
 	{:then comment}
@@ -28,7 +28,7 @@
 	{/await}
 </div>
 
-<div class="pt-4 divide-y divide-gray-200 dark:divide-gray-800">
+<div class="divide-y divide-gray-200 pt-4 dark:divide-gray-800">
 	{#each processedNotes as note}
 		<div class="py-6 first:pt-0">
 			{#if note.From}

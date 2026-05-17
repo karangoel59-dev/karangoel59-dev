@@ -6,12 +6,12 @@ import { clearTasks } from '$lib/server/tasks';
 export async function POST() {
 	try {
 		const uploadsDir = path.resolve('data/uploads');
-		
+
 		// Delete all files in uploadsDir
 		if (fs.existsSync(uploadsDir)) {
 			fs.rmSync(uploadsDir, { recursive: true, force: true });
 		}
-		
+
 		// Recreate empty uploadsDir
 		fs.mkdirSync(uploadsDir, { recursive: true });
 

@@ -7,7 +7,7 @@ import { AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_API_KEY } from '$env/static/private
 export type CommentType = 'quick-links' | 'journal' | 'task' | 'calendar';
 
 export async function getAIInsight(type: CommentType, data: any): Promise<string> {
-	let prompt = "";
+	let prompt = '';
 
 	switch (type) {
 		case 'quick-links':
@@ -38,9 +38,10 @@ export async function getAIInsight(type: CommentType, data: any): Promise<string
 			},
 			body: JSON.stringify({
 				messages: [
-					{ 
-						role: 'system', 
-						content: 'You are an Intelligent Workflow Commentator. Provide concise, high-value insights (under 100 words) based on the provided user data.' 
+					{
+						role: 'system',
+						content:
+							'You are an Intelligent Workflow Commentator. Provide concise, high-value insights (under 100 words) based on the provided user data.'
 					},
 					{ role: 'user', content: prompt }
 				],
@@ -50,9 +51,9 @@ export async function getAIInsight(type: CommentType, data: any): Promise<string
 		});
 
 		const result = await response.json();
-		return result.choices?.[0]?.message?.content?.trim() || "Insight generated but empty.";
+		return result.choices?.[0]?.message?.content?.trim() || 'Insight generated but empty.';
 	} catch (error) {
-		console.error("AI Insight Error:", error);
-		return "Workflow analysis paused. Please check your AI connection configuration.";
+		console.error('AI Insight Error:', error);
+		return 'Workflow analysis paused. Please check your AI connection configuration.';
 	}
 }

@@ -6,7 +6,7 @@
 	let isUploading = $state(false);
 	let isSyncing = $state(false);
 	let isClearing = $state(false);
-	
+
 	let directoryHandle = $state<any>(null);
 	let fileInput = $state<HTMLInputElement | null>(null);
 
@@ -36,13 +36,13 @@
 		if (!target.files || target.files.length === 0) return;
 
 		isSyncing = true;
-		
+
 		try {
 			const formData = new FormData();
 			let count = 0;
 			const imageRegex = /\.(png|jpe?g|gif|svg|webp)$/i;
 			const docRegex = /\.(docx?|pdf|txt)$/i;
-			
+
 			for (let i = 0; i < target.files.length; i++) {
 				const file = target.files[i];
 				const relPath = file.webkitRelativePath || file.name;
@@ -50,12 +50,16 @@
 				// Skip hidden files or files in hidden directories (e.g., .trash)
 				if (relPath.split(/[/\\]/).some((part) => part.startsWith('.'))) continue;
 
-				if (relPath.toLowerCase().endsWith('.md') || imageRegex.test(relPath) || docRegex.test(relPath)) {
+				if (
+					relPath.toLowerCase().endsWith('.md') ||
+					imageRegex.test(relPath) ||
+					docRegex.test(relPath)
+				) {
 					formData.append('files', file, relPath);
 					count++;
 				}
 			}
-			
+
 			if (count === 0) {
 				alert('No valid markdown, image, or document files found in the selected directory.');
 				isSyncing = false;
@@ -102,13 +106,13 @@
 		}
 
 		isSyncing = true;
-		
+
 		try {
 			const formData = new FormData();
 			let count = 0;
 			const imageRegex = /\.(png|jpe?g|gif|svg|webp)$/i;
 			const docRegex = /\.(docx?|pdf|txt)$/i;
-			
+
 			// Recursively add markdown, image, and document files
 			// @ts-ignore
 			async function addFiles(handle, path = '') {
@@ -118,7 +122,11 @@
 					if (entry.name.startsWith('.')) continue;
 
 					if (entry.kind === 'file') {
-						if (entry.name.toLowerCase().endsWith('.md') || imageRegex.test(entry.name) || docRegex.test(entry.name)) {
+						if (
+							entry.name.toLowerCase().endsWith('.md') ||
+							imageRegex.test(entry.name) ||
+							docRegex.test(entry.name)
+						) {
 							const file = await entry.getFile();
 							// Explicitly pass the full relative path as the filename
 							formData.append('files', file, path + entry.name);
@@ -129,9 +137,9 @@
 					}
 				}
 			}
-			
+
 			await addFiles(directoryHandle);
-			
+
 			if (count === 0) {
 				alert('No valid markdown, image, or document files found in the selected directory.');
 				isSyncing = false;
@@ -166,13 +174,13 @@
 
 	async function closeDir() {
 		if (!confirm('Are you sure you want to clear all data and make everything fresh?')) return;
-		
+
 		isClearing = true;
 		try {
 			const response = await fetch('/api/clear', {
 				method: 'POST'
 			});
-			
+
 			if (response.ok) {
 				directoryHandle = null;
 				alert('Successfully cleared data.');
@@ -209,16 +217,21 @@
 		<FolderUp size={16} />
 		Select Dir
 	</button>
-	
+
 	<button
 		onclick={syncFiles}
-		disabled={(!directoryHandle && (typeof window !== 'undefined' && 'showDirectoryPicker' in window)) || isUploading || isSyncing || isClearing}
+		disabled={(!directoryHandle &&
+			typeof window !== 'undefined' &&
+			'showDirectoryPicker' in window) ||
+			isUploading ||
+			isSyncing ||
+			isClearing}
 		class="flex items-center gap-1.5 rounded-md border border-green-200 bg-green-50 px-3 py-1.5 text-sm text-green-600 transition-colors hover:bg-green-100 disabled:opacity-50 dark:border-green-800 dark:bg-green-900/30 dark:text-green-400 dark:hover:bg-green-900/50"
 	>
 		<RefreshCw size={16} class={isSyncing ? 'animate-spin' : ''} />
 		{isSyncing ? 'Syncing...' : 'Sync'}
 	</button>
-	
+
 	<button
 		onclick={closeDir}
 		disabled={isUploading || isSyncing || isClearing}

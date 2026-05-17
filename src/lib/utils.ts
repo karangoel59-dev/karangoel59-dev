@@ -163,12 +163,12 @@ export function getEventColors(typeString: string): { background: string; text: 
 }
 
 export const formatDate = (dateStr: string) => {
-		if (!dateStr) return '';
-		const date = new Date(dateStr);
-		if (isNaN(date.getTime())) return dateStr;
-		return new Intl.DateTimeFormat('en-US', {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric'
-		}).format(date);
-	};
+	if (!dateStr) return '';
+	const date = new Date(dateStr);
+	if (isNaN(date.getTime())) return dateStr;
+	return new Intl.DateTimeFormat('en-US', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric'
+	}).format(date);
+};

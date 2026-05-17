@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+	import AIToggle from '$lib/components/AIToggle.svelte';
 	import FolderUpload from '$lib/components/FolderUpload.svelte';
 	import { Link2, FileText, ScrollText, Calendar, Code2 } from '@lucide/svelte';
 
@@ -21,7 +22,9 @@
 	<nav
 		class="sticky top-0 z-50 flex items-center border-b border-gray-200 bg-white/80 px-8 py-5 backdrop-blur-md transition-colors duration-200 dark:border-gray-800 dark:bg-gray-900/80"
 	>
-		<div class="flex items-center gap-2 mr-8 font-semibold text-lg text-gray-900 dark:text-gray-100 shrink-0">
+		<div
+			class="mr-8 flex shrink-0 items-center gap-2 text-lg font-semibold text-gray-900 dark:text-gray-100"
+		>
 			<Code2 class="text-blue-500" size={24} />
 			<span>karangoel59-dev</span>
 		</div>
@@ -41,8 +44,9 @@
 				</a>
 			{/each}
 		</div>
-		<div class="ml-4 flex items-center gap-4 shrink-0">
+		<div class="ml-4 flex shrink-0 items-center gap-4">
 			<FolderUpload />
+			<AIToggle />
 			<ThemeToggle />
 		</div>
 	</nav>

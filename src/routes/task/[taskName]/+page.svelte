@@ -31,7 +31,6 @@
 	</nav>
 
 	<main class="mx-auto mt-12 max-w-[900px] px-12">
-
 		<!-- Metadata Section -->
 		<div class="mb-10 flex flex-col gap-4 border-b border-gray-100 pb-8 dark:border-gray-800">
 			<!-- Link -->
@@ -100,7 +99,9 @@
 		{#await data.aiComment}
 			<AICommentator loading={true} />
 		{:then comment}
-			<AICommentator {comment} />
+			{#if comment}
+				<AICommentator {comment} />
+			{/if}
 		{/await}
 
 		<!-- We don't render the title again because it's usually in the markdown # Title -->

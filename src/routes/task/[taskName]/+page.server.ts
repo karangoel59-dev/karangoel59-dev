@@ -7,7 +7,8 @@ import { getAIInsight } from '$lib/server/aiCommentator';
 const cache = new Map<string, { data: any; timestamp: number }>();
 const CACHE_TTL = 1000 * 60 * 60; // Cache for 1 hour
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load: PageServerLoad = async ({ params, cookies }) => {
+	const aiEnabled = cookies.get('ai_insights_enabled') === 'true';
 	try {
 		const taskName = params.taskName;
 		const task = (await getTask(taskName))[0];
@@ -16,19 +17,23 @@ export const load: PageServerLoad = async ({ params }) => {
 			const contentWithoutFrontmatter = task.content.replace(/^---[\s\S]*?---\n*/, '');
 
 			const now = Date.now();
-			let aiCommentPromise;
+			let aiCommentPromise = Promise.resolve(null);
 			const cachedInsight = cache.get(taskName);
 
-			if (cachedInsight && (now - cachedInsight.timestamp) <= CACHE_TTL) {
-				aiCommentPromise = Promise.resolve(cachedInsight.data);
-			} else {
-				aiCommentPromise = getAIInsight('task', { content: contentWithoutFrontmatter }).then(insight => {
-					cache.set(taskName, { data: insight, timestamp: Date.now() });
-					return insight;
-				}).catch(err => {
-					console.error("AI Insight error:", err);
-					return null;
-				});
+			if (aiEnabled) {
+				if (cachedInsight && now - cachedInsight.timestamp <= CACHE_TTL) {
+					aiCommentPromise = Promise.resolve(cachedInsight.data);
+				} else {
+					aiCommentPromise = getAIInsight('task', { content: contentWithoutFrontmatter })
+						.then((insight) => {
+							cache.set(taskName, { data: insight, timestamp: Date.now() });
+							return insight;
+						})
+						.catch((err) => {
+							console.error('AI Insight error:', err);
+							return null;
+						});
+				}
 			}
 
 			return {

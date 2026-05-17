@@ -75,9 +75,11 @@ export async function getAllTasks(): Promise<Task[]> {
 		return markdownFiles.map((file) => {
 			const metadata = file.metadata || {};
 			const rawType = metadata['Task Type'] || metadata['task type'];
-			const typeStr = Array.isArray(rawType) 
-				? rawType.join(', ') 
-				: (rawType === '[]' ? '' : (rawType || ''));
+			const typeStr = Array.isArray(rawType)
+				? rawType.join(', ')
+				: rawType === '[]'
+					? ''
+					: rawType || '';
 
 			const content = fs.readFileSync(file.file_path, 'utf-8').replace(/^---\n[\s\S]*?\n---\n/, '');
 			return {
@@ -123,9 +125,11 @@ export async function getTask(encodedTaskName: string): Promise<Task[]> {
 			const content = rawContent.replace(/^---\n[\s\S]*?\n---\n/, '');
 			const metadata = matchedFile.metadata || {};
 			const rawType = metadata['Task Type'] || metadata['task type'];
-			const typeStr = Array.isArray(rawType) 
-				? rawType.join(', ') 
-				: (rawType === '[]' ? '' : (rawType || ''));
+			const typeStr = Array.isArray(rawType)
+				? rawType.join(', ')
+				: rawType === '[]'
+					? ''
+					: rawType || '';
 
 			return {
 				Task: metadata.Task || (matchedFile.url_path || matchedFile.file_path).replace(/%20/g, ' '),

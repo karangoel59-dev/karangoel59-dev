@@ -24,7 +24,7 @@ const getSubfolder = (ext: string): string => {
 
 	if (docTypes.includes(ext)) return 'docs';
 	if (imageTypes.includes(ext)) return 'images'; // or whatever your image folder is named
-	
+
 	return ''; // Default to root if it doesn't match
 };
 
@@ -42,7 +42,7 @@ export const GET: RequestHandler = async ({ params }) => {
 	// 2. Resolve the target directory to include the smart subfolder
 	// Example: Resolves to "data/uploads/docs" or "data/uploads/images"
 	const baseDir = path.resolve('data/uploads', subfolder);
-	
+
 	const filePath = path.resolve(baseDir, `${file}.${normalizedExt}`);
 
 	if (!filePath.startsWith(baseDir + path.sep)) {
@@ -51,7 +51,7 @@ export const GET: RequestHandler = async ({ params }) => {
 
 	try {
 		const fileContent = await readFile(filePath);
-		
+
 		return new Response(fileContent, {
 			headers: {
 				'Content-Type': mimeTypes[normalizedExt],
