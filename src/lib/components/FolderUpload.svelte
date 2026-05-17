@@ -41,6 +41,7 @@
 			const formData = new FormData();
 			let count = 0;
 			const imageRegex = /\.(png|jpe?g|gif|svg|webp)$/i;
+			const docRegex = /\.(docx?|pdf|txt)$/i;
 			
 			for (let i = 0; i < target.files.length; i++) {
 				const file = target.files[i];
@@ -49,14 +50,14 @@
 				// Skip hidden files or files in hidden directories (e.g., .trash)
 				if (relPath.split(/[/\\]/).some((part) => part.startsWith('.'))) continue;
 
-				if (relPath.toLowerCase().endsWith('.md') || imageRegex.test(relPath)) {
+				if (relPath.toLowerCase().endsWith('.md') || imageRegex.test(relPath) || docRegex.test(relPath)) {
 					formData.append('files', file, relPath);
 					count++;
 				}
 			}
 			
 			if (count === 0) {
-				alert('No valid markdown or image files found in the selected directory.');
+				alert('No valid markdown, image, or document files found in the selected directory.');
 				isSyncing = false;
 				return;
 			}
@@ -106,8 +107,9 @@
 			const formData = new FormData();
 			let count = 0;
 			const imageRegex = /\.(png|jpe?g|gif|svg|webp)$/i;
+			const docRegex = /\.(docx?|pdf|txt)$/i;
 			
-			// Recursively add markdown and image files
+			// Recursively add markdown, image, and document files
 			// @ts-ignore
 			async function addFiles(handle, path = '') {
 				// @ts-ignore
@@ -116,7 +118,7 @@
 					if (entry.name.startsWith('.')) continue;
 
 					if (entry.kind === 'file') {
-						if (entry.name.toLowerCase().endsWith('.md') || imageRegex.test(entry.name)) {
+						if (entry.name.toLowerCase().endsWith('.md') || imageRegex.test(entry.name) || docRegex.test(entry.name)) {
 							const file = await entry.getFile();
 							// Explicitly pass the full relative path as the filename
 							formData.append('files', file, path + entry.name);
@@ -131,7 +133,7 @@
 			await addFiles(directoryHandle);
 			
 			if (count === 0) {
-				alert('No valid markdown or image files found in the selected directory.');
+				alert('No valid markdown, image, or document files found in the selected directory.');
 				isSyncing = false;
 				return;
 			}

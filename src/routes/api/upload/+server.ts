@@ -80,6 +80,7 @@ export async function POST({ request }) {
 		// Validate all files first
 		const processedFiles: { name: string; content: string }[] = [];
 		const imageFiles: { name: string; buffer: Buffer }[] = [];
+		const docFiles: { name: string; content: string }[] = [];
 		const errors: string[] = [];
 
 		for (const file of files) {
@@ -95,8 +96,9 @@ export async function POST({ request }) {
 
 			const isMarkdown = fullPath.toLowerCase().endsWith('.md');
 			const isImage = /\.(png|jpe?g|gif|svg|webp)$/i.test(fullPath);
+			const isDoc = /\.(docx?|pdf|txt)$/i.test(fullPath);
 
-			if (!isMarkdown && !isImage) continue;
+			if (!isMarkdown && !isImage && !isDoc) continue;
 
 			if (isMarkdown) {
 				const rawText = await file.text();
@@ -130,6 +132,27 @@ export async function POST({ request }) {
 				} catch (err) {
 					errors.push(`${file.name}: Failed to read image data`);
 				}
+			} else if (isDoc) {
+				try {
+					let relativePath = normalizedPath;
+
+					// If "docs" is in the path, keep it and everything after it
+					const docsIdx = pathParts.indexOf('docs');
+					if (docsIdx !== -1) {
+						relativePath = pathParts.slice(docsIdx).join('/');
+					} else if (pathParts.length > 1) {
+						// Otherwise strip the root folder name if it exists
+						relativePath = pathParts.slice(1).join('/');
+					}
+					
+					const arrayBuffer = await file.arrayBuffer();
+					docFiles.push({
+						name: relativePath,
+						content: Buffer.from(arrayBuffer).toString('base64')
+					});
+				} catch (err) {
+					errors.push(`${file.name}: Failed to read document data`);
+				}
 			}
 		}
 
@@ -152,7 +175,17 @@ export async function POST({ request }) {
 			fs.writeFileSync(targetPath, file.buffer);
 		}
 
-		if (processedFiles.length > 0 || imageFiles.length > 0) {
+		// Write Document files (maintaining subdirectories)
+		for (const file of docFiles) {
+			const targetPath = path.join(uploadsDir, file.name);
+			const targetDir = path.dirname(targetPath);
+			if (!fs.existsSync(targetDir)) {
+				fs.mkdirSync(targetDir, { recursive: true });
+			}
+			fs.writeFileSync(targetPath, Buffer.from(file.content, 'base64'));
+		}
+
+		if (processedFiles.length > 0 || imageFiles.length > 0 || docFiles.length > 0) {
 			// Force MarkdownDB to re-index the newly added files
 			await refreshTasks();
 		}

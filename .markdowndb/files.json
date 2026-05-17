@@ -301,16 +301,16 @@
       },
       {
         "from": "16. Data Capture 2.md",
-        "to": "Data%20Capture%202/image.png",
-        "toRaw": "Data%20Capture%202/image.png",
-        "text": "image.png",
+        "to": "data_capture_1.png",
+        "toRaw": "data_capture_1.png",
+        "text": "data_capture_1.png",
         "embed": true,
         "internal": true
       },
       {
         "from": "16. Data Capture 2.md",
-        "to": "Data%20Capture%202/image%201.png",
-        "toRaw": "Data%20Capture%202/image%201.png",
+        "to": "data_capture_2.png",
+        "toRaw": "data_capture_2.png",
         "text": "image.png",
         "embed": true,
         "internal": true
@@ -458,9 +458,9 @@
       },
       {
         "from": "21. OCR Issue 2.md",
-        "to": "Paddle%20Results/_OCR_Service_Code_Review_.pdf",
-        "toRaw": "Paddle%20Results/_OCR_Service_Code_Review_.pdf",
-        "text": "_OCR Service Code Review .pdf",
+        "to": "_OCR_Service_Code_Review_.pdf",
+        "toRaw": "_OCR_Service_Code_Review_.pdf",
+        "text": "OCR Service Code Review .pdf",
         "embed": false,
         "internal": true
       }
@@ -1959,10 +1959,10 @@
     "tasks": []
   },
   {
-    "_id": "e9753db83e65767ef827ef29a55ced317435e32b",
-    "file_path": "data/uploads/images/16. Data Capture 2/image 1.png",
-    "extension": "png",
-    "url_path": "images/16.%20Data%20Capture%202/image%201.png",
+    "_id": "180ca9f1e77966d38445932a9cb7936c1be09637",
+    "file_path": "data/uploads/docs/_OCR_Service_Code_Review_.pdf",
+    "extension": "pdf",
+    "url_path": "docs/_OCR_Service_Code_Review_.pdf",
     "filetype": null,
     "metadata": {},
     "tags": [],
@@ -1970,10 +1970,21 @@
     "tasks": []
   },
   {
-    "_id": "e247ae387b69684a9ff20ae9a77c8f631211473f",
-    "file_path": "data/uploads/images/16. Data Capture 2/image.png",
+    "_id": "564cac524d542d4300b3f79661a3b16f25f8b7ab",
+    "file_path": "data/uploads/images/data_capture_1.png",
     "extension": "png",
-    "url_path": "images/16.%20Data%20Capture%202/image.png",
+    "url_path": "images/data_capture_1.png",
+    "filetype": null,
+    "metadata": {},
+    "tags": [],
+    "links": [],
+    "tasks": []
+  },
+  {
+    "_id": "3e56ac3ad9afffbb23356aac69f3bced648e9120",
+    "file_path": "data/uploads/images/data_capture_2.png",
+    "extension": "png",
+    "url_path": "images/data_capture_2.png",
     "filetype": null,
     "metadata": {},
     "tags": [],

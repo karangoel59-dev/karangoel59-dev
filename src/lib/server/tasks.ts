@@ -69,7 +69,9 @@ export async function getAllTasks(): Promise<Task[]> {
 		const client = await getClient();
 		const files = await client.getFiles();
 
-		return files.map((file) => {
+		const markdownFiles = files.filter((file) => file.extension === 'md');
+
+		return markdownFiles.map((file) => {
 			const metadata = file.metadata || {};
 			const content = fs.readFileSync(file.file_path, 'utf-8').replace(/^---\n[\s\S]*?\n---\n/, '');
 			return {
