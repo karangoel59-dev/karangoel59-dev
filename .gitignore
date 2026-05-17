@@ -9,6 +9,9 @@ node_modules
 /build
 data
 markdown.db
+/.markdown.db
+/dist
+
 
 # OS
 .DS_Store
