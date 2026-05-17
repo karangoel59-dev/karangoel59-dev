@@ -79,28 +79,58 @@ export async function POST({ request }) {
 
 		// Validate all files first
 		const processedFiles: { name: string; content: string }[] = [];
+		const imageFiles: { name: string; buffer: Buffer }[] = [];
 		const errors: string[] = [];
 
 		for (const file of files) {
-			if (!file.name.endsWith('.md')) continue;
+			// In SvelteKit, file.name usually contains the relative path for folder uploads
+			const fullPath = file.name;
+			const normalizedPath = fullPath.replace(/\\/g, '/');
+			const pathParts = normalizedPath.split('/').filter(Boolean);
 
-			const rawText = await file.text();
-			const sanitizedName = path.basename(file.webkitRelativePath || file.name);
-
-			try {
-				const processedContent = processContent(rawText);
-				processedFiles.push({ name: sanitizedName, content: processedContent });
-			} catch (err) {
-				const msg = err instanceof Error ? err.message : String(err);
-				errors.push(`${file.name}: ${msg}`);
+			// Skip hidden files or files in hidden directories
+			if (pathParts.some((part) => part.startsWith('.'))) {
+				continue;
 			}
-		}
 
-		if (errors.length > 0) {
-			return json(
-				{ error: 'Invalid files detected. Please ensure standard YAML format.', details: errors },
-				{ status: 400 }
-			);
+			const isMarkdown = fullPath.toLowerCase().endsWith('.md');
+			const isImage = /\.(png|jpe?g|gif|svg|webp)$/i.test(fullPath);
+
+			if (!isMarkdown && !isImage) continue;
+
+			if (isMarkdown) {
+				const rawText = await file.text();
+				const sanitizedName = path.basename(normalizedPath);
+
+				try {
+					const processedContent = processContent(rawText);
+					processedFiles.push({ name: sanitizedName, content: processedContent });
+				} catch (err) {
+					const msg = err instanceof Error ? err.message : String(err);
+					errors.push(`${file.name}: ${msg}`);
+				}
+			} else if (isImage) {
+				try {
+					let relativePath = normalizedPath;
+					
+					// If "images" is in the path, keep it and everything after it
+					const imagesIdx = pathParts.indexOf('images');
+					if (imagesIdx !== -1) {
+						relativePath = pathParts.slice(imagesIdx).join('/');
+					} else if (pathParts.length > 1) {
+						// Otherwise strip the root folder name if it exists
+						relativePath = pathParts.slice(1).join('/');
+					}
+
+					const arrayBuffer = await file.arrayBuffer();
+					imageFiles.push({
+						name: relativePath,
+						buffer: Buffer.from(arrayBuffer)
+					});
+				} catch (err) {
+					errors.push(`${file.name}: Failed to read image data`);
+				}
+			}
 		}
 
 		// Create directory if it doesn't exist
@@ -112,12 +142,30 @@ export async function POST({ request }) {
 			fs.writeFileSync(path.join(uploadsDir, file.name), file.content, 'utf-8');
 		}
 
-		// Force MarkdownDB to re-index the newly added files
-		await refreshTasks();
+		// Write Image files (maintaining subdirectories)
+		for (const file of imageFiles) {
+			const targetPath = path.join(uploadsDir, file.name);
+			const targetDir = path.dirname(targetPath);
+			if (!fs.existsSync(targetDir)) {
+				fs.mkdirSync(targetDir, { recursive: true });
+			}
+			fs.writeFileSync(targetPath, file.buffer);
+		}
 
-		return json({ success: true, count: processedFiles.length });
+		if (processedFiles.length > 0 || imageFiles.length > 0) {
+			// Force MarkdownDB to re-index the newly added files
+			await refreshTasks();
+		}
+
+		return json({
+			success: true,
+			count: processedFiles.length + imageFiles.length,
+			skipped: errors.length,
+			details: errors.length > 0 ? errors : undefined
+		});
 	} catch (e) {
 		console.error('Upload error:', e);
 		return json({ error: 'Failed to process upload' }, { status: 500 });
 	}
 }
+

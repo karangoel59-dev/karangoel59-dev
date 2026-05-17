@@ -40,17 +40,24 @@
 		try {
 			const formData = new FormData();
 			let count = 0;
+			const imageRegex = /\.(png|jpe?g|gif|svg|webp)$/i;
 			
 			for (let i = 0; i < target.files.length; i++) {
 				const file = target.files[i];
-				if (file.name.endsWith('.md')) {
-					formData.append('files', file);
+				const relPath = file.webkitRelativePath || file.name;
+
+				// Skip hidden files or files in hidden directories (e.g., .trash)
+				if (relPath.split(/[/\\]/).some((part) => part.startsWith('.'))) continue;
+
+				if (relPath.toLowerCase().endsWith('.md') || imageRegex.test(relPath)) {
+					formData.append('files', file, relPath);
 					count++;
 				}
 			}
 			
 			if (count === 0) {
-				alert('No markdown files found in the selected directory.');
+				alert('No valid markdown or image files found in the selected directory.');
+				isSyncing = false;
 				return;
 			}
 
@@ -61,7 +68,7 @@
 
 			if (response.ok) {
 				const result = await response.json();
-				alert(`Successfully synced ${result.count} task files.`);
+				alert(`Successfully synced ${result.count} files.`);
 				await invalidateAll();
 			} else {
 				const result = await response.json();
@@ -98,16 +105,23 @@
 		try {
 			const formData = new FormData();
 			let count = 0;
+			const imageRegex = /\.(png|jpe?g|gif|svg|webp)$/i;
 			
-			// Recursively add all markdown files
+			// Recursively add markdown and image files
 			// @ts-ignore
 			async function addFiles(handle, path = '') {
 				// @ts-ignore
 				for await (const entry of handle.values()) {
-					if (entry.kind === 'file' && entry.name.endsWith('.md')) {
-						const file = await entry.getFile();
-						formData.append('files', file);
-						count++;
+					// Skip hidden directories and files
+					if (entry.name.startsWith('.')) continue;
+
+					if (entry.kind === 'file') {
+						if (entry.name.toLowerCase().endsWith('.md') || imageRegex.test(entry.name)) {
+							const file = await entry.getFile();
+							// Explicitly pass the full relative path as the filename
+							formData.append('files', file, path + entry.name);
+							count++;
+						}
 					} else if (entry.kind === 'directory') {
 						await addFiles(entry, path + entry.name + '/');
 					}
@@ -117,7 +131,7 @@
 			await addFiles(directoryHandle);
 			
 			if (count === 0) {
-				alert('No markdown files found in the selected directory.');
+				alert('No valid markdown or image files found in the selected directory.');
 				isSyncing = false;
 				return;
 			}
@@ -129,7 +143,7 @@
 
 			if (response.ok) {
 				const result = await response.json();
-				alert(`Successfully synced ${result.count} task files.`);
+				alert(`Successfully synced ${result.count} files.`);
 				await invalidateAll();
 			} else {
 				const result = await response.json();
