@@ -10,6 +10,7 @@ services:
       - "8080:8080"
     environment:
       - PORT=8080
+      - BODY_SIZE_LIMIT=0
       # Add any necessary local environment variables here
       # - GOOGLE_TRANSLATE_API_KEY=your_key_here
     

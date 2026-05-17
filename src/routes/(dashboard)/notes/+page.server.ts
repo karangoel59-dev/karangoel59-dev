@@ -17,7 +17,7 @@ export async function load({ cookies }) {
 	}));
 
 	const now = Date.now();
-	let aiCommentPromise = Promise.resolve(null);
+	let aiCommentPromise: Promise<string | null> = Promise.resolve(null);
 
 	if (aiEnabled) {
 		if (!cachedInsight || now - cachedInsight.timestamp > CACHE_TTL) {

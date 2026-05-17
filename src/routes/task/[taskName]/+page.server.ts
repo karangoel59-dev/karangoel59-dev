@@ -17,7 +17,7 @@ export const load: PageServerLoad = async ({ params, cookies }) => {
 			const contentWithoutFrontmatter = task.content.replace(/^---[\s\S]*?---\n*/, '');
 
 			const now = Date.now();
-			let aiCommentPromise = Promise.resolve(null);
+			let aiCommentPromise: Promise<string | null> = Promise.resolve(null);
 			const cachedInsight = cache.get(taskName);
 
 			if (aiEnabled) {

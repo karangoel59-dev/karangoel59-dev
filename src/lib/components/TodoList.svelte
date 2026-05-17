@@ -88,7 +88,7 @@
 			class="rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
 		>
 			<option value="all">All</option>
-			{#each allTypes as t (t)}
+			{#each allTypes as t, i (t + i)}
 				<option value={t}>{t}</option>
 			{/each}
 		</select>
@@ -133,7 +133,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each filteredTasks as task (task.Task + task.From + task.To)}
+			{#each filteredTasks as task, i (task.Task + task.From + task.To + i)}
 				<tr
 					class="border-b border-gray-100 hover:bg-gray-50/50 dark:border-gray-800 dark:hover:bg-gray-800/50"
 				>
@@ -156,7 +156,7 @@
 					</td>
 					<td class="border-x border-gray-200 px-3 py-2 dark:border-gray-700">
 						<div class="flex flex-wrap gap-1">
-							{#each getTypes(task['Type']) as type (type)}
+							{#each getTypes(task['Type']) as type, i (type + i)}
 								<span
 									class="inline-flex items-center rounded px-2 py-0.5 text-xs font-medium {getPillColor(
 										type
