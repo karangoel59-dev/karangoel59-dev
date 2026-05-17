@@ -2,6 +2,7 @@
 	import { marked } from 'marked';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import { getTypes, getPillColor, formatDate } from '$lib/utils';
+	import AICommentator from '$lib/components/AICommentator.svelte';
 
 	let { data } = $props();
 
@@ -30,6 +31,12 @@
 	</nav>
 
 	<main class="mx-auto mt-12 max-w-[900px] px-12">
+		{#await data.aiComment}
+			<AICommentator loading={true} />
+		{:then comment}
+			<AICommentator {comment} />
+		{/await}
+
 		<!-- Metadata Section -->
 		<div class="mb-10 flex flex-col gap-4 border-b border-gray-100 pb-8 dark:border-gray-800">
 			<!-- Link -->

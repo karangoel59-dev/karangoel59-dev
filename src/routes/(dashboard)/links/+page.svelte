@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { marked } from 'marked';
 	import { formatDate } from '$lib/utils';
+	import AICommentator from '$lib/components/AICommentator.svelte';
 
 	let { data } = $props();
 
@@ -16,6 +17,12 @@
 <svelte:head>
 	<title>Bookmarks</title>
 </svelte:head>
+
+{#await data.aiComment}
+	<AICommentator loading={true} />
+{:then comment}
+	<AICommentator {comment} />
+{/await}
 
 <div class="pt-4 divide-y divide-gray-200 dark:divide-gray-800">
 	{#each parsedLinks as link}
