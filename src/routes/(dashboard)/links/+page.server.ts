@@ -1,13 +1,13 @@
 import { getTask, getClient } from '$lib/server/tasks';
 import { error } from '@sveltejs/kit';
 import { getAIInsight } from '$lib/server/aiCommentator';
+import type { PageServerLoad } from './$types';
 
 // Simple in-memory cache for AI responses
 let cachedInsight: { data: any; timestamp: number } | null = null;
 const CACHE_TTL = 1000 * 60 * 60; // Cache for 1 hour
 
-/** @type {import('./$types').PageServerLoad} */
-export async function load({ cookies }) {
+export const load: PageServerLoad = async ({ cookies }) => {
 	const aiEnabled = cookies.get('ai_insights_enabled') === 'true';
 	try {
 		const tasks = await getTask('Quick links');
@@ -56,4 +56,4 @@ export async function load({ cookies }) {
 		// Returns a standard SvelteKit error page
 		throw error(500, 'Could not fetch quick links');
 	}
-}
+};

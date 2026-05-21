@@ -2095,7 +2095,7 @@
     "url_path": "65.%20Semantic%20Adani%20Testing%20-%201",
     "filetype": null,
     "metadata": {
-      "Task": "Arka Flow issue",
+      "Task": "Semantic Adani Testing - 1",
       "From": "2026-05-15T00:00:00.000Z",
       "To": "2026-05-15T00:00:00.000Z",
       "LINK": "",
@@ -2126,7 +2126,7 @@
     "url_path": "66.%20Developing%20Karangoel59-dev%20site",
     "filetype": null,
     "metadata": {
-      "Task": "Arka Flow issue",
+      "Task": "Developing Karangoel59-dev site",
       "From": "2026-05-16T00:00:00.000Z",
       "To": "2026-05-17T00:00:00.000Z",
       "LINK": "https://github.com/karangoel59-dev/karangoel59-dev",
@@ -2180,6 +2180,76 @@
     "tasks": []
   },
   {
+    "_id": "289762e2f165f618e32ce62a5fb2f935c29cd54e",
+    "file_path": "data/uploads/68. Move Pinecone to Qdrant - 2.md",
+    "extension": "md",
+    "url_path": "68.%20Move%20Pinecone%20to%20Qdrant%20-%202",
+    "filetype": null,
+    "metadata": {
+      "Task": "Move Pinecone to Qdrant - 2",
+      "From": "2026-05-18T00:00:00.000Z",
+      "To": "2026-05-20T00:00:00.000Z",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-508",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "68. Move Pinecone to Qdrant - 2.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-508",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-508",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-508",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "68. Move Pinecone to Qdrant - 2.md",
+        "to": "https://colab.research.google.com/drive/1PFMp6k2_QqWbj1pFaufSE2El_5WDB4Vc?usp=sharing",
+        "toRaw": "https://colab.research.google.com/drive/1PFMp6k2_QqWbj1pFaufSE2El_5WDB4Vc?usp=sharing",
+        "text": "https://colab.research.google.com/drive/1PFMp6k2_QqWbj1pFaufSE2El_5WDB4Vc?usp=sharing",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "54dcbba735dd4d3fdd12e56dc21f7bf3ecf3e878",
+    "file_path": "data/uploads/69. Rendering Image In Preview.md",
+    "extension": "md",
+    "url_path": "69.%20Rendering%20Image%20In%20Preview",
+    "filetype": null,
+    "metadata": {
+      "Task": "[Stage] Assistant Preview Displays Image URLs Instead of Rendering Images",
+      "From": "2026-05-18T00:00:00.000Z",
+      "To": "2026-05-19T00:00:00.000Z",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-504",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "69. Rendering Image In Preview.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-504",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-504",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-504",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
     "_id": "72a5d02d749d6ade0e74a3aab5560b6464b87b64",
     "file_path": "data/uploads/7. PII Masking Framework.md",
     "extension": "md",
@@ -2204,6 +2274,139 @@
         "to": "https://chat360-jira.atlassian.net/browse/AA-374",
         "toRaw": "https://chat360-jira.atlassian.net/browse/AA-374",
         "text": "https://chat360-jira.atlassian.net/browse/AA-374",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "9eb1b80bb79798cc65ade9a225639889dc496ae7",
+    "file_path": "data/uploads/70. Separate Dependencies Between User Billing and Agent Analytics.md",
+    "extension": "md",
+    "url_path": "70.%20Separate%20Dependencies%20Between%20User%20Billing%20and%20Agent%20Analytics",
+    "filetype": null,
+    "metadata": {
+      "Task": "Separate Dependencies Between User Billing and Agent Analytics",
+      "From": "2026-05-19T00:00:00.000Z",
+      "To": "2026-05-20T00:00:00.000Z",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-528",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "70. Separate Dependencies Between User Billing and Agent Analytics.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-528",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-528",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-528",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "26c54ca96d405f81372154ed8e1a87957311106e",
+    "file_path": "data/uploads/71.  Enable Parallel Async Tool Calls in Agentic AI Runtime for Performance Optimization - 1.md",
+    "extension": "md",
+    "url_path": "71.%20%20Enable%20Parallel%20Async%20Tool%20Calls%20in%20Agentic%20AI%20Runtime%20for%20Performance%20Optimization%20-%201",
+    "filetype": null,
+    "metadata": {
+      "Task": " Enable Parallel Async Tool Calls in Agentic AI",
+      "From": "2026-05-20T00:00:00.000Z",
+      "To": "2026-05-21T00:00:00.000Z",
+      "LINK": "https://chat360-jira.atlassian.net/browse/AA-528",
+      "Task Type": [
+        "Development"
+      ],
+      "Status": true,
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "71.  Enable Parallel Async Tool Calls in Agentic AI Runtime for Performance Optimization - 1.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-528",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-528",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-528",
+        "embed": false,
+        "internal": false
+      }
+    ],
+    "tasks": []
+  },
+  {
+    "_id": "7dd920a30a6c559719897d2043bbccc5c59a5cde",
+    "file_path": "data/uploads/71. Prod PR 1.md",
+    "extension": "md",
+    "url_path": "71.%20Prod%20PR%201",
+    "filetype": null,
+    "metadata": {
+      "Task": "Prod PR 2",
+      "From": "2026-05-21T00:00:00.000Z",
+      "To": "2026-05-22T00:00:00.000Z",
+      "LINK": "",
+      "Task Type": [
+        "Chore, Work"
+      ],
+      "Status": false,
+      "tags": [],
+      "tasks": []
+    },
+    "tags": [],
+    "links": [
+      {
+        "from": "71. Prod PR 1.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-452",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-452",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-452",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "71. Prod PR 1.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-446",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "71. Prod PR 1.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-115",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "71. Prod PR 1.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-470",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-470",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-470",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "71. Prod PR 1.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-466",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-466",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-466",
+        "embed": false,
+        "internal": false
+      },
+      {
+        "from": "71. Prod PR 1.md",
+        "to": "https://chat360-jira.atlassian.net/browse/AA-156",
+        "toRaw": "https://chat360-jira.atlassian.net/browse/AA-156",
+        "text": "https://chat360-jira.atlassian.net/browse/AA-156",
         "embed": false,
         "internal": false
       }
