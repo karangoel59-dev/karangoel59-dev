@@ -2,6 +2,7 @@ import { json } from '@sveltejs/kit';
 import fs from 'fs';
 import path from 'path';
 import { refreshTasks } from '$lib/server/tasks';
+import { setActiveDataset } from '$lib/server/dataset';
 import yaml from 'js-yaml';
 
 function processContent(originalContent: string) {
@@ -67,12 +68,14 @@ export async function POST({ request }) {
 	try {
 		const formData = await request.formData();
 		const files = formData.getAll('files') as File[];
+		const datasetName = (formData.get('dataset') as string) || 'default';
 
 		if (!files || files.length === 0) {
 			return json({ error: 'No files uploaded' }, { status: 400 });
 		}
 
-		const uploadsDir = path.resolve('data/uploads');
+		setActiveDataset(datasetName);
+		const uploadsDir = path.resolve(`data/uploads/${datasetName}`);
 
 		// Validate all files first
 		const processedFiles: { name: string; content: string }[] = [];

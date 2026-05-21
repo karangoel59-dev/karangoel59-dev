@@ -1,7 +1,7 @@
 [
   {
     "_id": "7cccd4db34570a4abfd562d80754a0d9c4239027",
-    "file_path": "data/uploads/1. KT on Setup.md",
+    "file_path": "data/uploads/work-logs/1. KT on Setup.md",
     "extension": "md",
     "url_path": "1.%20KT%20on%20Setup",
     "filetype": null,
@@ -23,7 +23,7 @@
   },
   {
     "_id": "e645a1d0e1ee5e5a0898934b9eda38431732a487",
-    "file_path": "data/uploads/10. Data Capture 1.md",
+    "file_path": "data/uploads/work-logs/10. Data Capture 1.md",
     "extension": "md",
     "url_path": "10.%20Data%20Capture%201",
     "filetype": null,
@@ -126,7 +126,7 @@
   },
   {
     "_id": "92e2fd75a324f85b789bbacaba4c207b07515f8c",
-    "file_path": "data/uploads/11. Add ocr_enabled flag in Knowledgebase APIs and upload flow.md",
+    "file_path": "data/uploads/work-logs/11. Add ocr_enabled flag in Knowledgebase APIs and upload flow.md",
     "extension": "md",
     "url_path": "11.%20Add%20ocr_enabled%20flag%20in%20Knowledgebase%20APIs%20and%20upload%20flow",
     "filetype": null,
@@ -157,7 +157,7 @@
   },
   {
     "_id": "ecb5d1acb35b9e3d846a2bcc2ac9a7cb4fc3705c",
-    "file_path": "data/uploads/12. Search functionality not working in Assets feature.md",
+    "file_path": "data/uploads/work-logs/12. Search functionality not working in Assets feature.md",
     "extension": "md",
     "url_path": "12.%20Search%20functionality%20not%20working%20in%20Assets%20feature",
     "filetype": null,
@@ -188,7 +188,7 @@
   },
   {
     "_id": "42528b449e71d5d3c0107945373afd8eda2a951f",
-    "file_path": "data/uploads/13. Semantic KB answer not provided correctly for spreadsheet-based query.md",
+    "file_path": "data/uploads/work-logs/13. Semantic KB answer not provided correctly for spreadsheet-based query.md",
     "extension": "md",
     "url_path": "13.%20Semantic%20KB%20answer%20not%20provided%20correctly%20for%20spreadsheet-based%20query",
     "filetype": null,
@@ -219,7 +219,7 @@
   },
   {
     "_id": "eca05e4722b8c010b69bfa468a66250d1b92063f",
-    "file_path": "data/uploads/14. Data Capture Prod Issue.md",
+    "file_path": "data/uploads/work-logs/14. Data Capture Prod Issue.md",
     "extension": "md",
     "url_path": "14.%20Data%20Capture%20Prod%20Issue",
     "filetype": null,
@@ -250,7 +250,7 @@
   },
   {
     "_id": "1e42ea7e06fe536a247dd4c35c13621fd02a9b2a",
-    "file_path": "data/uploads/15. Doc Ock.md",
+    "file_path": "data/uploads/work-logs/15. Doc Ock.md",
     "extension": "md",
     "url_path": "15.%20Doc%20Ock",
     "filetype": null,
@@ -281,7 +281,7 @@
   },
   {
     "_id": "e7540116f3c3efa134e03035992bbc06217229d5",
-    "file_path": "data/uploads/16. Data Capture 2.md",
+    "file_path": "data/uploads/work-logs/16. Data Capture 2.md",
     "extension": "md",
     "url_path": "16.%20Data%20Capture%202",
     "filetype": null,
@@ -344,7 +344,7 @@
   },
   {
     "_id": "f8bff799f16c5307d0f274c88ec0e3acb8e6a011",
-    "file_path": "data/uploads/17. OCR Testing.md",
+    "file_path": "data/uploads/work-logs/17. OCR Testing.md",
     "extension": "md",
     "url_path": "17.%20OCR%20Testing",
     "filetype": null,
@@ -375,7 +375,7 @@
   },
   {
     "_id": "d17f36a36b22b5a62e9988a89a106165e64927ac",
-    "file_path": "data/uploads/18. Search functionality not working in Assets feature - 2.md",
+    "file_path": "data/uploads/work-logs/18. Search functionality not working in Assets feature - 2.md",
     "extension": "md",
     "url_path": "18.%20Search%20functionality%20not%20working%20in%20Assets%20feature%20-%202",
     "filetype": null,
@@ -406,7 +406,7 @@
   },
   {
     "_id": "73c89e747c15ae359225e54245f9b43d77f50832",
-    "file_path": "data/uploads/19. Wash Clothes.md",
+    "file_path": "data/uploads/work-logs/19. Wash Clothes.md",
     "extension": "md",
     "url_path": "19.%20Wash%20Clothes",
     "filetype": null,
@@ -428,7 +428,7 @@
   },
   {
     "_id": "2ea522b94ff160f2b29d923116b834cf7044dbb0",
-    "file_path": "data/uploads/2. KT on Code.md",
+    "file_path": "data/uploads/work-logs/2. KT on Code.md",
     "extension": "md",
     "url_path": "2.%20KT%20on%20Code",
     "filetype": null,
@@ -450,7 +450,7 @@
   },
   {
     "_id": "230568a2a255cc21940fe2b7bc8e8fd53fe4dc3e",
-    "file_path": "data/uploads/20. Take Charger from Omkar.md",
+    "file_path": "data/uploads/work-logs/20. Take Charger from Omkar.md",
     "extension": "md",
     "url_path": "20.%20Take%20Charger%20from%20Omkar",
     "filetype": null,
@@ -472,7 +472,7 @@
   },
   {
     "_id": "f39d5ebd56cafbad1b3ea535ca5957a6ea2077e8",
-    "file_path": "data/uploads/21. OCR Issue 2.md",
+    "file_path": "data/uploads/work-logs/21. OCR Issue 2.md",
     "extension": "md",
     "url_path": "21.%20OCR%20Issue%202",
     "filetype": null,
@@ -511,7 +511,7 @@
   },
   {
     "_id": "fbb0e484e373a72255b3c6b087632c8c36730eb0",
-    "file_path": "data/uploads/22. Audit Trail Logs Not Reflecting Correct Changes.md",
+    "file_path": "data/uploads/work-logs/22. Audit Trail Logs Not Reflecting Correct Changes.md",
     "extension": "md",
     "url_path": "22.%20Audit%20Trail%20Logs%20Not%20Reflecting%20Correct%20Changes",
     "filetype": null,
@@ -542,7 +542,7 @@
   },
   {
     "_id": "dd5a4d8a808da89de99f2d895341c08261187f04",
-    "file_path": "data/uploads/23. Sent Keka regularise after confirming.md",
+    "file_path": "data/uploads/work-logs/23. Sent Keka regularise after confirming.md",
     "extension": "md",
     "url_path": "23.%20Sent%20Keka%20regularise%20after%20confirming",
     "filetype": null,
@@ -564,7 +564,7 @@
   },
   {
     "_id": "239c1503e3ab36ea96b091d6c8003ec4aa8335e8",
-    "file_path": "data/uploads/24. Create a tool for one click setup.md",
+    "file_path": "data/uploads/work-logs/24. Create a tool for one click setup.md",
     "extension": "md",
     "url_path": "24.%20Create%20a%20tool%20for%20one%20click%20setup",
     "filetype": null,
@@ -586,7 +586,7 @@
   },
   {
     "_id": "afcae8c877baf17210d95c63c400d404796b263b",
-    "file_path": "data/uploads/25. Dynamic Tool Integration in UI.md",
+    "file_path": "data/uploads/work-logs/25. Dynamic Tool Integration in UI.md",
     "extension": "md",
     "url_path": "25.%20Dynamic%20Tool%20Integration%20in%20UI",
     "filetype": null,
@@ -617,7 +617,7 @@
   },
   {
     "_id": "a3b526bf473a302e0a013f461ab0dcf94d9f9367",
-    "file_path": "data/uploads/26. OCR Testing.md",
+    "file_path": "data/uploads/work-logs/26. OCR Testing.md",
     "extension": "md",
     "url_path": "26.%20OCR%20Testing",
     "filetype": null,
@@ -639,7 +639,7 @@
   },
   {
     "_id": "1f312d023cf8f1a1cb68f8f12532132700649d08",
-    "file_path": "data/uploads/27. Add fields to Data Capture.md",
+    "file_path": "data/uploads/work-logs/27. Add fields to Data Capture.md",
     "extension": "md",
     "url_path": "27.%20Add%20fields%20to%20Data%20Capture",
     "filetype": null,
@@ -670,7 +670,7 @@
   },
   {
     "_id": "2c87e6d51d6ce746f4a19f31167fbd6383071aec",
-    "file_path": "data/uploads/28. Change agent_status to active.md",
+    "file_path": "data/uploads/work-logs/28. Change agent_status to active.md",
     "extension": "md",
     "url_path": "28.%20Change%20agent_status%20to%20active",
     "filetype": null,
@@ -701,7 +701,7 @@
   },
   {
     "_id": "8591f3225fe4d627b6e285799996718cfcc62b7b",
-    "file_path": "data/uploads/29. Tool Capture Fix.md",
+    "file_path": "data/uploads/work-logs/29. Tool Capture Fix.md",
     "extension": "md",
     "url_path": "29.%20Tool%20Capture%20Fix",
     "filetype": null,
@@ -732,7 +732,7 @@
   },
   {
     "_id": "b0d5a5c1c7aae74093015e1254b8d6b30ab5c14d",
-    "file_path": "data/uploads/3. Orchestrator Returns “No Response”.md",
+    "file_path": "data/uploads/work-logs/3. Orchestrator Returns “No Response”.md",
     "extension": "md",
     "url_path": "3.%20Orchestrator%20Returns%20%E2%80%9CNo%20Response%E2%80%9D",
     "filetype": null,
@@ -763,7 +763,7 @@
   },
   {
     "_id": "11f7caa5da5f5c8e263c239b16bbc88b640f6d1b",
-    "file_path": "data/uploads/30. BE- Provide Currency Conversion Support for Dashboard Total Cost.md",
+    "file_path": "data/uploads/work-logs/30. BE- Provide Currency Conversion Support for Dashboard Total Cost.md",
     "extension": "md",
     "url_path": "30.%20BE-%20Provide%20Currency%20Conversion%20Support%20for%20Dashboard%20Total%20Cost",
     "filetype": null,
@@ -794,7 +794,7 @@
   },
   {
     "_id": "75c46cceabb90e1368b6185f04b6e13a21943456",
-    "file_path": "data/uploads/31. Test Semantic.md",
+    "file_path": "data/uploads/work-logs/31. Test Semantic.md",
     "extension": "md",
     "url_path": "31.%20Test%20Semantic",
     "filetype": null,
@@ -825,7 +825,7 @@
   },
   {
     "_id": "93378e139d32616cb01bf7a6f4155a0c13d1b817",
-    "file_path": "data/uploads/32. OCR 3.md",
+    "file_path": "data/uploads/work-logs/32. OCR 3.md",
     "extension": "md",
     "url_path": "32.%20OCR%203",
     "filetype": null,
@@ -856,7 +856,7 @@
   },
   {
     "_id": "e720b3de214c6a1fb02601514466d11f2dc53597",
-    "file_path": "data/uploads/33. Create PRs for Prod.md",
+    "file_path": "data/uploads/work-logs/33. Create PRs for Prod.md",
     "extension": "md",
     "url_path": "33.%20Create%20PRs%20for%20Prod",
     "filetype": null,
@@ -927,7 +927,7 @@
   },
   {
     "_id": "e36899d0671f34ff93bd5d9b24152d7f59550933",
-    "file_path": "data/uploads/34. Prod Issue.md",
+    "file_path": "data/uploads/work-logs/34. Prod Issue.md",
     "extension": "md",
     "url_path": "34.%20Prod%20Issue",
     "filetype": null,
@@ -958,7 +958,7 @@
   },
   {
     "_id": "263b7e241731860467813d640f77ef53bc42c035",
-    "file_path": "data/uploads/35. Agentic Cache Issue.md",
+    "file_path": "data/uploads/work-logs/35. Agentic Cache Issue.md",
     "extension": "md",
     "url_path": "35.%20Agentic%20Cache%20Issue",
     "filetype": null,
@@ -989,7 +989,7 @@
   },
   {
     "_id": "bc87f1dbc407e0d0ccd26b358d6bad622909eaea",
-    "file_path": "data/uploads/36. Tool Trace 2.md",
+    "file_path": "data/uploads/work-logs/36. Tool Trace 2.md",
     "extension": "md",
     "url_path": "36.%20Tool%20Trace%202",
     "filetype": null,
@@ -1020,7 +1020,7 @@
   },
   {
     "_id": "47cb4bd53638a4ffa3525e8f31dacc31b832c231",
-    "file_path": "data/uploads/37. Integration API.md",
+    "file_path": "data/uploads/work-logs/37. Integration API.md",
     "extension": "md",
     "url_path": "37.%20Integration%20API",
     "filetype": null,
@@ -1051,7 +1051,7 @@
   },
   {
     "_id": "eef27276b2f192f984403f6404282eb0b5051da3",
-    "file_path": "data/uploads/38. AI Assistant Dashboard Metrics API.md",
+    "file_path": "data/uploads/work-logs/38. AI Assistant Dashboard Metrics API.md",
     "extension": "md",
     "url_path": "38.%20AI%20Assistant%20Dashboard%20Metrics%20API",
     "filetype": null,
@@ -1082,7 +1082,7 @@
   },
   {
     "_id": "c46de15adfb8132b562b2bc7348b79e8da6e48ca",
-    "file_path": "data/uploads/39. Currency Conversion.md",
+    "file_path": "data/uploads/work-logs/39. Currency Conversion.md",
     "extension": "md",
     "url_path": "39.%20Currency%20Conversion",
     "filetype": null,
@@ -1113,7 +1113,7 @@
   },
   {
     "_id": "d670babb42afefdd56273c99c3b4fbbe7b5caf03",
-    "file_path": "data/uploads/4. Image Recognition Feature-Learn more page.md",
+    "file_path": "data/uploads/work-logs/4. Image Recognition Feature-Learn more page.md",
     "extension": "md",
     "url_path": "4.%20Image%20Recognition%20Feature-Learn%20more%20page",
     "filetype": null,
@@ -1144,7 +1144,7 @@
   },
   {
     "_id": "7970fe6854848386e4f0256d4b08c628d4be8ca7",
-    "file_path": "data/uploads/40. Prod Issue.md",
+    "file_path": "data/uploads/work-logs/40. Prod Issue.md",
     "extension": "md",
     "url_path": "40.%20Prod%20Issue",
     "filetype": null,
@@ -1175,7 +1175,7 @@
   },
   {
     "_id": "2842a84786a9b08f44be5210fb917f528a0e277b",
-    "file_path": "data/uploads/41. Global Variable.md",
+    "file_path": "data/uploads/work-logs/41. Global Variable.md",
     "extension": "md",
     "url_path": "41.%20Global%20Variable",
     "filetype": null,
@@ -1206,7 +1206,7 @@
   },
   {
     "_id": "6aa084086012d306ad473cf9c886269109bbf896",
-    "file_path": "data/uploads/42. AI Assistant Dashboard Metrics API 2.md",
+    "file_path": "data/uploads/work-logs/42. AI Assistant Dashboard Metrics API 2.md",
     "extension": "md",
     "url_path": "42.%20AI%20Assistant%20Dashboard%20Metrics%20API%202",
     "filetype": null,
@@ -1237,7 +1237,7 @@
   },
   {
     "_id": "a87469a284b31eb8d24de331624e2173d40285cb",
-    "file_path": "data/uploads/43. GPT Setup.md",
+    "file_path": "data/uploads/work-logs/43. GPT Setup.md",
     "extension": "md",
     "url_path": "43.%20GPT%20Setup",
     "filetype": null,
@@ -1259,7 +1259,7 @@
   },
   {
     "_id": "310133de15100642196ffc6cbc3d080e94381867",
-    "file_path": "data/uploads/44. OCR 4.md",
+    "file_path": "data/uploads/work-logs/44. OCR 4.md",
     "extension": "md",
     "url_path": "44.%20OCR%204",
     "filetype": null,
@@ -1290,7 +1290,7 @@
   },
   {
     "_id": "2b6cf467d285ca58655538fc43b433e8adf0bbc3",
-    "file_path": "data/uploads/45. Intgration API.md",
+    "file_path": "data/uploads/work-logs/45. Intgration API.md",
     "extension": "md",
     "url_path": "45.%20Intgration%20API",
     "filetype": null,
@@ -1321,7 +1321,7 @@
   },
   {
     "_id": "6c3a7cb050c2f89b88ac9d0020b1bf77028f3a04",
-    "file_path": "data/uploads/46. Enable Status for Delete - 1.md",
+    "file_path": "data/uploads/work-logs/46. Enable Status for Delete - 1.md",
     "extension": "md",
     "url_path": "46.%20Enable%20Status%20for%20Delete%20-%201",
     "filetype": null,
@@ -1360,7 +1360,7 @@
   },
   {
     "_id": "eac1fdd5b6f636a01337af7dc478009c835312f5",
-    "file_path": "data/uploads/47. Update Metric for 3rd Card.md",
+    "file_path": "data/uploads/work-logs/47. Update Metric for 3rd Card.md",
     "extension": "md",
     "url_path": "47.%20Update%20Metric%20for%203rd%20Card",
     "filetype": null,
@@ -1391,7 +1391,7 @@
   },
   {
     "_id": "c2cca7914f97e720aa879a35c9ede00217dc783a",
-    "file_path": "data/uploads/48. Campaign Automation - 1 - 1.md",
+    "file_path": "data/uploads/work-logs/48. Campaign Automation - 1 - 1.md",
     "extension": "md",
     "url_path": "48.%20Campaign%20Automation%20-%201%20-%201",
     "filetype": null,
@@ -1422,7 +1422,7 @@
   },
   {
     "_id": "7770df3bcc61b9fea44ed71e7bba29365c2fa160",
-    "file_path": "data/uploads/49. Campaign Automation - 2.md",
+    "file_path": "data/uploads/work-logs/49. Campaign Automation - 2.md",
     "extension": "md",
     "url_path": "49.%20Campaign%20Automation%20-%202",
     "filetype": null,
@@ -1453,7 +1453,7 @@
   },
   {
     "_id": "1c69a99d8dd8ec0550930723388819df658d858c",
-    "file_path": "data/uploads/5. Update Usage Overview Cards.md",
+    "file_path": "data/uploads/work-logs/5. Update Usage Overview Cards.md",
     "extension": "md",
     "url_path": "5.%20Update%20Usage%20Overview%20Cards",
     "filetype": null,
@@ -1484,7 +1484,7 @@
   },
   {
     "_id": "f7006c555fcd6d8323bf8f538d7867c801cb12d4",
-    "file_path": "data/uploads/50. OCR - 5.md",
+    "file_path": "data/uploads/work-logs/50. OCR - 5.md",
     "extension": "md",
     "url_path": "50.%20OCR%20-%205",
     "filetype": null,
@@ -1515,7 +1515,7 @@
   },
   {
     "_id": "f541b8a677424326874e98805fb349036691f538",
-    "file_path": "data/uploads/51. Semantic Sheet Upload.md",
+    "file_path": "data/uploads/work-logs/51. Semantic Sheet Upload.md",
     "extension": "md",
     "url_path": "51.%20Semantic%20Sheet%20Upload",
     "filetype": null,
@@ -1546,7 +1546,7 @@
   },
   {
     "_id": "4e07700888423c0df61568a392b0b2f69332bbcc",
-    "file_path": "data/uploads/52. Prod PR.md",
+    "file_path": "data/uploads/work-logs/52. Prod PR.md",
     "extension": "md",
     "url_path": "52.%20Prod%20PR",
     "filetype": null,
@@ -1681,7 +1681,7 @@
   },
   {
     "_id": "9aa199d62f97970ce8bd02bf6a264872ffda8430",
-    "file_path": "data/uploads/53. Add a retryfilter to fix wrong status code in fallback.md",
+    "file_path": "data/uploads/work-logs/53. Add a retryfilter to fix wrong status code in fallback.md",
     "extension": "md",
     "url_path": "53.%20Add%20a%20retryfilter%20to%20fix%20wrong%20status%20code%20in%20fallback",
     "filetype": null,
@@ -1712,7 +1712,7 @@
   },
   {
     "_id": "86e9c83f68f20fd94463a971f2f36b4c2141cc76",
-    "file_path": "data/uploads/54. Campaigns API Fix.md",
+    "file_path": "data/uploads/work-logs/54. Campaigns API Fix.md",
     "extension": "md",
     "url_path": "54.%20Campaigns%20API%20Fix",
     "filetype": null,
@@ -1743,7 +1743,7 @@
   },
   {
     "_id": "a1090932e0bc03a66320dde4c9e69017147352f0",
-    "file_path": "data/uploads/55. Set up Backend Repo.md",
+    "file_path": "data/uploads/work-logs/55. Set up Backend Repo.md",
     "extension": "md",
     "url_path": "55.%20Set%20up%20Backend%20Repo",
     "filetype": null,
@@ -1765,7 +1765,7 @@
   },
   {
     "_id": "32aac74d68e48e5cfd19e551cd2398a42eac5252",
-    "file_path": "data/uploads/56. Move Pinecone to Qdrant - 1.md",
+    "file_path": "data/uploads/work-logs/56. Move Pinecone to Qdrant - 1.md",
     "extension": "md",
     "url_path": "56.%20Move%20Pinecone%20to%20Qdrant%20-%201",
     "filetype": null,
@@ -1796,7 +1796,7 @@
   },
   {
     "_id": "d5c329061b5dcd0d6e20ee292913eb624040dfb7",
-    "file_path": "data/uploads/57. [Stage] Assistant Preview Displays Image URLs Instead of Rendering Images - 1.md",
+    "file_path": "data/uploads/work-logs/57. [Stage] Assistant Preview Displays Image URLs Instead of Rendering Images - 1.md",
     "extension": "md",
     "url_path": "57.%20%5BStage%5D%20Assistant%20Preview%20Displays%20Image%20URLs%20Instead%20of%20Rendering%20Images%20-%201",
     "filetype": null,
@@ -1827,7 +1827,7 @@
   },
   {
     "_id": "16c80a53f072bc5d748144be8c22231f7df3aa61",
-    "file_path": "data/uploads/58. Global vars - 2.md",
+    "file_path": "data/uploads/work-logs/58. Global vars - 2.md",
     "extension": "md",
     "url_path": "58.%20Global%20vars%20-%202",
     "filetype": null,
@@ -1858,7 +1858,7 @@
   },
   {
     "_id": "4de5d6fa1ee159be66438c8db4e0ca73ce5e65f6",
-    "file_path": "data/uploads/59. Wfh.md",
+    "file_path": "data/uploads/work-logs/59. Wfh.md",
     "extension": "md",
     "url_path": "59.%20Wfh",
     "filetype": null,
@@ -1880,7 +1880,7 @@
   },
   {
     "_id": "086e28c3ee0b319e7e32f72e11c118850579f3bd",
-    "file_path": "data/uploads/6. WriteHere.md",
+    "file_path": "data/uploads/work-logs/6. WriteHere.md",
     "extension": "md",
     "url_path": "6.%20WriteHere",
     "filetype": null,
@@ -1911,7 +1911,7 @@
   },
   {
     "_id": "c9d223e149744db530b96d0bd5ff1589e49b6fc0",
-    "file_path": "data/uploads/60. Move Pinecone to Qdrant - 2.md",
+    "file_path": "data/uploads/work-logs/60. Move Pinecone to Qdrant - 2.md",
     "extension": "md",
     "url_path": "60.%20Move%20Pinecone%20to%20Qdrant%20-%202",
     "filetype": null,
@@ -1942,7 +1942,7 @@
   },
   {
     "_id": "8435752c6b2820c28e167ff5d7d16fbf5d125489",
-    "file_path": "data/uploads/61. Quick links.md",
+    "file_path": "data/uploads/work-logs/61. Quick links.md",
     "extension": "md",
     "url_path": "61.%20Quick%20links",
     "filetype": null,
@@ -2019,7 +2019,7 @@
   },
   {
     "_id": "3eace32cbacc0d58ccfd1581752571e606590b0d",
-    "file_path": "data/uploads/62. Things To Note.md",
+    "file_path": "data/uploads/work-logs/62. Things To Note.md",
     "extension": "md",
     "url_path": "62.%20Things%20To%20Note",
     "filetype": null,
@@ -2039,7 +2039,7 @@
   },
   {
     "_id": "1609255282a5ed3208831953519568fbf4013fe7",
-    "file_path": "data/uploads/63. Things to Note -2.md",
+    "file_path": "data/uploads/work-logs/63. Things to Note -2.md",
     "extension": "md",
     "url_path": "63.%20Things%20to%20Note%20-2",
     "filetype": null,
@@ -2059,7 +2059,7 @@
   },
   {
     "_id": "157988085254f9c77c79873a0a19562e92459ef1",
-    "file_path": "data/uploads/64. Arka flow issue.md",
+    "file_path": "data/uploads/work-logs/64. Arka flow issue.md",
     "extension": "md",
     "url_path": "64.%20Arka%20flow%20issue",
     "filetype": null,
@@ -2090,7 +2090,7 @@
   },
   {
     "_id": "b0a5cb4d82d611af81c8ef901c682141e66cf818",
-    "file_path": "data/uploads/65. Semantic Adani Testing - 1.md",
+    "file_path": "data/uploads/work-logs/65. Semantic Adani Testing - 1.md",
     "extension": "md",
     "url_path": "65.%20Semantic%20Adani%20Testing%20-%201",
     "filetype": null,
@@ -2121,7 +2121,7 @@
   },
   {
     "_id": "d25e055f0f438d4352f702e6980013bc2ff54661",
-    "file_path": "data/uploads/66. Developing Karangoel59-dev site.md",
+    "file_path": "data/uploads/work-logs/66. Developing Karangoel59-dev site.md",
     "extension": "md",
     "url_path": "66.%20Developing%20Karangoel59-dev%20site",
     "filetype": null,
@@ -2152,7 +2152,7 @@
   },
   {
     "_id": "1bd4834fcde40d3efbc0101b05d0c486a9714544",
-    "file_path": "data/uploads/67. Quick links 2.md",
+    "file_path": "data/uploads/work-logs/67. Quick links 2.md",
     "extension": "md",
     "url_path": "67.%20Quick%20links%202",
     "filetype": null,
@@ -2181,7 +2181,7 @@
   },
   {
     "_id": "289762e2f165f618e32ce62a5fb2f935c29cd54e",
-    "file_path": "data/uploads/68. Move Pinecone to Qdrant - 2.md",
+    "file_path": "data/uploads/work-logs/68. Move Pinecone to Qdrant - 2.md",
     "extension": "md",
     "url_path": "68.%20Move%20Pinecone%20to%20Qdrant%20-%202",
     "filetype": null,
@@ -2220,7 +2220,7 @@
   },
   {
     "_id": "54dcbba735dd4d3fdd12e56dc21f7bf3ecf3e878",
-    "file_path": "data/uploads/69. Rendering Image In Preview.md",
+    "file_path": "data/uploads/work-logs/69. Rendering Image In Preview.md",
     "extension": "md",
     "url_path": "69.%20Rendering%20Image%20In%20Preview",
     "filetype": null,
@@ -2251,7 +2251,7 @@
   },
   {
     "_id": "72a5d02d749d6ade0e74a3aab5560b6464b87b64",
-    "file_path": "data/uploads/7. PII Masking Framework.md",
+    "file_path": "data/uploads/work-logs/7. PII Masking Framework.md",
     "extension": "md",
     "url_path": "7.%20PII%20Masking%20Framework",
     "filetype": null,
@@ -2282,7 +2282,7 @@
   },
   {
     "_id": "9eb1b80bb79798cc65ade9a225639889dc496ae7",
-    "file_path": "data/uploads/70. Separate Dependencies Between User Billing and Agent Analytics.md",
+    "file_path": "data/uploads/work-logs/70. Separate Dependencies Between User Billing and Agent Analytics.md",
     "extension": "md",
     "url_path": "70.%20Separate%20Dependencies%20Between%20User%20Billing%20and%20Agent%20Analytics",
     "filetype": null,
@@ -2313,7 +2313,7 @@
   },
   {
     "_id": "26c54ca96d405f81372154ed8e1a87957311106e",
-    "file_path": "data/uploads/71.  Enable Parallel Async Tool Calls in Agentic AI Runtime for Performance Optimization - 1.md",
+    "file_path": "data/uploads/work-logs/71.  Enable Parallel Async Tool Calls in Agentic AI Runtime for Performance Optimization - 1.md",
     "extension": "md",
     "url_path": "71.%20%20Enable%20Parallel%20Async%20Tool%20Calls%20in%20Agentic%20AI%20Runtime%20for%20Performance%20Optimization%20-%201",
     "filetype": null,
@@ -2344,7 +2344,7 @@
   },
   {
     "_id": "7dd920a30a6c559719897d2043bbccc5c59a5cde",
-    "file_path": "data/uploads/71. Prod PR 1.md",
+    "file_path": "data/uploads/work-logs/71. Prod PR 1.md",
     "extension": "md",
     "url_path": "71.%20Prod%20PR%201",
     "filetype": null,
@@ -2415,7 +2415,7 @@
   },
   {
     "_id": "2bef85774d44cff3dd85e11d85c5b06b837f4e5d",
-    "file_path": "data/uploads/8. Modifier Name Prompt Appears Multiple Times.md",
+    "file_path": "data/uploads/work-logs/8. Modifier Name Prompt Appears Multiple Times.md",
     "extension": "md",
     "url_path": "8.%20Modifier%20Name%20Prompt%20Appears%20Multiple%20Times",
     "filetype": null,
@@ -2446,7 +2446,7 @@
   },
   {
     "_id": "1336b23b2797f8c25a60d0c509daa31dbbd1f88f",
-    "file_path": "data/uploads/9. OCR Integration for Knowledge Base.md",
+    "file_path": "data/uploads/work-logs/9. OCR Integration for Knowledge Base.md",
     "extension": "md",
     "url_path": "9.%20OCR%20Integration%20for%20Knowledge%20Base",
     "filetype": null,
@@ -2477,7 +2477,7 @@
   },
   {
     "_id": "180ca9f1e77966d38445932a9cb7936c1be09637",
-    "file_path": "data/uploads/docs/_OCR_Service_Code_Review_.pdf",
+    "file_path": "data/uploads/work-logs/docs/_OCR_Service_Code_Review_.pdf",
     "extension": "pdf",
     "url_path": "docs/_OCR_Service_Code_Review_.pdf",
     "filetype": null,
@@ -2488,7 +2488,7 @@
   },
   {
     "_id": "564cac524d542d4300b3f79661a3b16f25f8b7ab",
-    "file_path": "data/uploads/images/data_capture_1.png",
+    "file_path": "data/uploads/work-logs/images/data_capture_1.png",
     "extension": "png",
     "url_path": "images/data_capture_1.png",
     "filetype": null,
@@ -2499,7 +2499,7 @@
   },
   {
     "_id": "3e56ac3ad9afffbb23356aac69f3bced648e9120",
-    "file_path": "data/uploads/images/data_capture_2.png",
+    "file_path": "data/uploads/work-logs/images/data_capture_2.png",
     "extension": "png",
     "url_path": "images/data_capture_2.png",
     "filetype": null,

@@ -1,21 +1,36 @@
 import { MarkdownDB } from 'mddb';
 import path from 'path';
 import fs from 'fs';
+import { getActiveDataset } from './dataset';
 
 let mddbClient: MarkdownDB | null = null;
 let clientPromise: Promise<MarkdownDB> | null = null;
+let currentActiveDataset: string | null = null;
 
 export async function getClient() {
-	if (!clientPromise) {
+	const dataset = getActiveDataset();
+
+	if (!clientPromise || currentActiveDataset !== dataset) {
+		currentActiveDataset = dataset;
+		if (mddbClient) {
+			try {
+				mddbClient._destroyDb();
+			} catch (e) {
+				console.error('Error destroying mddb db:', e);
+			}
+			mddbClient = null;
+		}
+
 		clientPromise = (async () => {
+			const dbName = `data/${dataset}.db`;
 			mddbClient = new MarkdownDB({
 				client: 'sqlite3',
-				connection: { filename: 'markdown.db' }
+				connection: { filename: dbName }
 			});
 			await mddbClient.init();
 
 			// Perform initial indexing.
-			const uploadsDir = 'data/uploads';
+			const uploadsDir = `data/uploads/${dataset}`;
 			if (fs.existsSync(uploadsDir)) {
 				await mddbClient.indexFolder({
 					folderPath: uploadsDir,
@@ -31,7 +46,8 @@ export async function getClient() {
 
 export async function refreshTasks() {
 	const client = await getClient();
-	const uploadsDir = 'data/uploads';
+	const dataset = getActiveDataset();
+	const uploadsDir = `data/uploads/${dataset}`;
 	if (fs.existsSync(uploadsDir)) {
 		await client.indexFolder({ folderPath: uploadsDir, ignorePatterns: [] });
 	}
@@ -47,9 +63,12 @@ export async function clearTasks() {
 		mddbClient = null;
 		clientPromise = null;
 	}
-	if (fs.existsSync('markdown.db')) {
-		fs.unlinkSync('markdown.db');
+	const dataset = getActiveDataset();
+	const dbFile = `data/${dataset}.db`;
+	if (fs.existsSync(dbFile)) {
+		fs.unlinkSync(dbFile);
 	}
+	currentActiveDataset = null;
 }
 
 export interface TaskItem {

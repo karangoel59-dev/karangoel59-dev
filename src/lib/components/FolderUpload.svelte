@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { invalidateAll } from '$app/navigation';
-	import { FolderUp, RefreshCw, X, HardDrive } from '@lucide/svelte';
+	import { FolderUp, RefreshCw, X, HardDrive, Database } from '@lucide/svelte';
 	import Snackbar from './Snackbar.svelte';
 	import Modal from './Modal.svelte';
+	import { onMount } from 'svelte';
 
 	// Svelte 5 runes for reactive state
 	let isUploading = $state(false);
@@ -15,6 +16,9 @@
 	let directoryHandle = $state<any>(null);
 	let fileInput = $state<HTMLInputElement | null>(null);
 
+	let datasets = $state<string[]>([]);
+	let currentDataset = $state<string>('');
+
 	let snackbarOpen = $state(false);
 	let snackbarMessage = $state('');
 	let snackbarType = $state<'info' | 'success' | 'error'>('info');
@@ -23,6 +27,46 @@
 		snackbarMessage = msg;
 		snackbarType = type;
 		snackbarOpen = true;
+	}
+
+	async function fetchDatasets() {
+		try {
+			const res = await fetch('/api/dataset');
+			if (res.ok) {
+				const data = await res.json();
+				datasets = data.datasets;
+				currentDataset = data.current;
+			}
+		} catch (e) {
+			console.error('Failed to fetch datasets', e);
+		}
+	}
+
+	onMount(() => {
+		fetchDatasets();
+	});
+
+	async function switchDataset(name: string) {
+		isSyncing = true;
+		try {
+			const res = await fetch('/api/dataset', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ name })
+			});
+			if (res.ok) {
+				await invalidateAll();
+				await fetchDatasets();
+				showSnackbar(`Switched to dataset: ${name}`, 'success');
+				isModalOpen = false;
+			} else {
+				showSnackbar('Failed to switch dataset', 'error');
+			}
+		} catch (e) {
+			showSnackbar('Error switching dataset', 'error');
+		} finally {
+			isSyncing = false;
+		}
 	}
 
 	async function selectDir() {
@@ -58,6 +102,10 @@
 			const imageRegex = /\.(png|jpe?g|gif|svg|webp)$/i;
 			const docRegex = /\.(docx?|pdf|txt)$/i;
 
+			const firstFilePath = target.files[0].webkitRelativePath || target.files[0].name;
+			const datasetName = firstFilePath.includes('/') ? firstFilePath.split('/')[0] : 'default';
+			formData.append('dataset', datasetName);
+
 			for (let i = 0; i < target.files.length; i++) {
 				const file = target.files[i];
 				const relPath = file.webkitRelativePath || file.name;
@@ -91,8 +139,9 @@
 
 			if (response.ok) {
 				const result = await response.json();
-				showSnackbar(`Successfully synced ${result.count} files.`, 'success');
+				showSnackbar(`Successfully synced ${result.count} files to ${datasetName}.`, 'success');
 				await invalidateAll();
+				await fetchDatasets();
 				isModalOpen = false;
 			} else {
 				const result = await response.json();
@@ -128,6 +177,9 @@
 
 		try {
 			const formData = new FormData();
+			const datasetName = directoryHandle.name;
+			formData.append('dataset', datasetName);
+
 			let count = 0;
 			const imageRegex = /\.(png|jpe?g|gif|svg|webp)$/i;
 			const docRegex = /\.(docx?|pdf|txt)$/i;
@@ -175,8 +227,9 @@
 
 			if (response.ok) {
 				const result = await response.json();
-				showSnackbar(`Successfully synced ${result.count} files.`, 'success');
+				showSnackbar(`Successfully synced ${result.count} files to ${datasetName}.`, 'success');
 				await invalidateAll();
+				await fetchDatasets();
 				isModalOpen = false;
 			} else {
 				const result = await response.json();
@@ -204,8 +257,9 @@
 
 			if (response.ok) {
 				directoryHandle = null;
-				showSnackbar('Successfully cleared data.', 'success');
+				showSnackbar('Successfully cleared active dataset.', 'success');
 				await invalidateAll();
+				await fetchDatasets();
 			} else {
 				const result = await response.json();
 				showSnackbar(`Clear failed: ${result.error || 'Unknown error'}`, 'error');
@@ -220,26 +274,68 @@
 </script>
 
 <button
-	onclick={() => (isModalOpen = true)}
+	onclick={() => {
+		isModalOpen = true;
+		fetchDatasets();
+	}}
 	class="flex items-center gap-1.5 rounded-md border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700"
 >
 	<HardDrive size={18} />
 	<span class="hidden sm:inline">Data Source</span>
 </button>
 
-<Modal bind:open={isModalOpen} title={isSyncing ? 'Syncing Files...' : 'Manage Data Source'}>
+<Modal bind:open={isModalOpen} title={isSyncing ? 'Processing...' : 'Manage Data Source'}>
 	{#if isSyncing}
 		<div class="flex flex-col items-center justify-center space-y-6 py-10">
 			<RefreshCw size={64} class="animate-spin text-blue-600 dark:text-blue-400" />
 			<p class="text-sm font-medium text-gray-600 dark:text-gray-300">
-				Please wait while your files are being synced...
+				Please wait while your dataset is being processed...
 			</p>
 		</div>
 	{:else}
 		<div class="space-y-4">
-			<p class="text-sm text-gray-500 dark:text-gray-400">
-				Select a local folder containing your markdown and image files to sync with the application.
-			</p>
+			{#if datasets.length > 0}
+				<div>
+					<h4 class="mb-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+						Existing Datasets
+					</h4>
+					<div class="flex max-h-40 flex-col gap-2 overflow-y-auto pr-1">
+						{#each datasets as dataset}
+							<button
+								onclick={() => switchDataset(dataset)}
+								disabled={isUploading || isClearing}
+								class="flex items-center justify-between rounded-md border px-3 py-2 text-sm transition-colors {currentDataset ===
+								dataset
+									? 'border-blue-500 bg-blue-50 text-blue-700 dark:border-blue-700 dark:bg-blue-900/30 dark:text-blue-400'
+									: 'border-gray-200 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-700'}"
+							>
+								<div class="flex items-center gap-2">
+									<Database size={16} />
+									<span>{dataset}</span>
+								</div>
+								{#if currentDataset === dataset}
+									<span class="text-xs font-semibold text-blue-600 dark:text-blue-400">Active</span>
+								{/if}
+							</button>
+						{/each}
+					</div>
+				</div>
+				<div class="relative my-4">
+					<div class="absolute inset-0 flex items-center">
+						<div class="w-full border-t border-gray-200 dark:border-gray-700"></div>
+					</div>
+					<div class="relative flex justify-center text-sm">
+						<span class="bg-white px-2 text-gray-500 dark:bg-gray-800 dark:text-gray-400"
+							>Or add new</span
+						>
+					</div>
+				</div>
+			{:else}
+				<p class="text-sm text-gray-500 dark:text-gray-400">
+					Select a local folder containing your markdown and image files to sync with the
+					application.
+				</p>
+			{/if}
 
 			<div class="flex flex-col gap-3">
 				<!-- Hidden file input for fallback -->
@@ -255,10 +351,10 @@
 				<button
 					onclick={selectDir}
 					disabled={isUploading || isClearing}
-					class="flex w-full items-center justify-center gap-2 rounded-md border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700 transition-colors hover:bg-blue-100 disabled:opacity-50 dark:border-blue-800 dark:bg-blue-900/30 dark:text-blue-400 dark:hover:bg-blue-900/50"
+					class="flex w-full items-center justify-center gap-2 rounded-md border border-green-200 bg-green-50 px-4 py-2 text-sm font-medium text-green-700 transition-colors hover:bg-green-100 disabled:opacity-50 dark:border-green-800 dark:bg-green-900/30 dark:text-green-400 dark:hover:bg-green-900/50"
 				>
 					<FolderUp size={16} />
-					Select Folder
+					Upload New Folder
 				</button>
 			</div>
 
@@ -269,21 +365,21 @@
 						isModalOpen = false;
 						isConfirmOpen = true;
 					}}
-					disabled={isUploading || isClearing}
+					disabled={isUploading || isClearing || datasets.length === 0}
 					class="flex w-full items-center justify-center gap-2 rounded-md border border-red-200 bg-red-50 px-4 py-2 text-sm font-medium text-red-700 transition-colors hover:bg-red-100 disabled:opacity-50 dark:border-red-800 dark:bg-red-900/30 dark:text-red-400 dark:hover:bg-red-900/50"
 				>
 					<X size={16} />
-					Clear All Data
+					Clear Active Data
 				</button>
 			</div>
 		</div>
 	{/if}
 </Modal>
 
-<Modal bind:open={isConfirmOpen} title="Clear All Data">
+<Modal bind:open={isConfirmOpen} title="Clear Active Data">
 	<div class="space-y-4">
 		<p class="text-sm text-gray-600 dark:text-gray-300">
-			Are you sure you want to clear all data and make everything fresh? This action cannot be
+			Are you sure you want to clear the active dataset ({currentDataset})? This action cannot be
 			undone.
 		</p>
 		<div class="flex justify-end gap-3 pt-2">

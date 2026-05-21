@@ -2,10 +2,12 @@ import { json } from '@sveltejs/kit';
 import fs from 'fs';
 import path from 'path';
 import { clearTasks } from '$lib/server/tasks';
+import { getActiveDataset } from '$lib/server/dataset';
 
 export async function POST() {
 	try {
-		const uploadsDir = path.resolve('data/uploads');
+		const dataset = getActiveDataset();
+		const uploadsDir = path.resolve(`data/uploads/${dataset}`);
 
 		// Delete all files in uploadsDir
 		if (fs.existsSync(uploadsDir)) {
