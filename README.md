@@ -44,7 +44,7 @@ Start the development server:
 npm run dev
 ```
 
-Open your browser to `http://localhost:5173`. 
+Open your browser to `http://localhost:5173`.
 
 ### Using the App
 

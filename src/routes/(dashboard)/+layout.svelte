@@ -16,19 +16,21 @@
 </script>
 
 <div
-	class="min-h-screen bg-white font-sans text-[#37352f] transition-colors duration-200 dark:bg-gray-900 dark:text-gray-100"
+	class="flex min-h-screen flex-col bg-white font-sans text-[#37352f] transition-colors duration-200 dark:bg-gray-900 dark:text-gray-100"
 >
 	<!-- Sticky Top Navbar -->
 	<nav
-		class="sticky top-0 z-50 flex items-center border-b border-gray-200 bg-white/80 px-8 py-5 backdrop-blur-md transition-colors duration-200 dark:border-gray-800 dark:bg-gray-900/80"
+		class="sticky top-0 z-50 flex items-center justify-between border-b border-gray-200 bg-white/80 px-4 py-3 backdrop-blur-md transition-colors duration-200 sm:px-8 sm:py-5 dark:border-gray-800 dark:bg-gray-900/80"
 	>
 		<div
-			class="mr-8 flex shrink-0 items-center gap-2 text-lg font-semibold text-gray-900 dark:text-gray-100"
+			class="flex shrink-0 items-center gap-2 text-lg font-semibold text-gray-900 dark:text-gray-100"
 		>
 			<Code2 class="text-blue-500" size={24} />
-			<span>karangoel59-dev</span>
+			<span class="hidden sm:inline">karangoel59-dev</span>
 		</div>
-		<div class="flex flex-1 justify-center space-x-2 sm:justify-start">
+
+		<!-- Desktop Nav Links -->
+		<div class="ml-8 hidden flex-1 justify-start space-x-2 sm:flex">
 			{#each navItems as item}
 				{@const Icon = item.icon}
 				<a
@@ -44,17 +46,42 @@
 				</a>
 			{/each}
 		</div>
-		<div class="ml-4 flex shrink-0 items-center gap-4">
+
+		<!-- Toggles & Actions -->
+		<div class="ml-auto flex shrink-0 items-center gap-2 sm:gap-4">
 			<FolderUpload />
 			<AIToggle />
 			<ThemeToggle />
 		</div>
 	</nav>
 
-	<main class="mx-auto w-full max-w-[1400px] px-6 pt-8 pb-24">
+	<main class="mx-auto w-full max-w-[1400px] flex-1 px-4 pt-6 pb-24 sm:px-6 sm:pt-8 sm:pb-24">
 		<!-- Page Content -->
 		<div class="space-y-4 text-base leading-relaxed">
 			{@render children()}
 		</div>
 	</main>
+
+	<!-- Mobile Bottom Navigation Bar -->
+	<nav
+		class="fixed right-0 bottom-0 left-0 z-50 border-t border-gray-200 bg-white/90 backdrop-blur-md sm:hidden dark:border-gray-800 dark:bg-gray-900/90"
+		style="padding-bottom: env(safe-area-inset-bottom, 0px);"
+	>
+		<div class="flex h-16 items-center justify-around">
+			{#each navItems as item}
+				{@const Icon = item.icon}
+				<a
+					href={item.path}
+					class="flex h-full w-full flex-col items-center justify-center space-y-1 transition-colors {$page.url.pathname.startsWith(
+						item.path
+					)
+						? 'text-blue-600 dark:text-blue-400'
+						: 'text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'}"
+				>
+					<Icon size={20} />
+					<span class="text-[10px] font-medium">{item.name}</span>
+				</a>
+			{/each}
+		</div>
+	</nav>
 </div>
